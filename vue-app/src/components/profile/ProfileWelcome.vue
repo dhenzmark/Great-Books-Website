@@ -12,6 +12,7 @@ const facts = [
 
 /* Move your photo inside its frame: the second number moves it up (higher) or down (lower). */
 const photoPosition = "50% 65%";
+const photo = "assets/img/me.jpeg";
 </script>
 
 <template>
@@ -37,7 +38,7 @@ const photoPosition = "50% 65%";
         <RouterLink class="btn" to="/analyses">Read the analyses</RouterLink>
       </div>
       <div v-reveal class="stack">
-        <div class="s1"><img src="/assets/img/me.jpeg" :alt="author" :style="{ objectPosition: photoPosition }" /></div>
+        <div class="s1"><img :src="photo" :alt="author" :style="{ objectPosition: photoPosition }" /></div>
       </div>
     </div>
   </section>

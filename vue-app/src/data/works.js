@@ -12,11 +12,11 @@ export default [
       "lang": "he"
     },
     "plate": {
-      "src": "/assets/img/job-blake-engraving.jpg",
+      "src": "assets/img/job-blake-engraving.jpg",
       "alt": "Blake's engraving of God in a whirlwind speaking to Job and his wife, framed by verses",
       "fit": "contain",
       "look": {
-        "src": "/assets/img/job-blake-engraving.jpg",
+        "src": "assets/img/job-blake-engraving.jpg",
         "title": "The Lord Answering Job out of the Whirlwind",
         "caption": "William Blake, plate 13 of Illustrations of the Book of Job, engraving, 1826.",
         "text": "Blake surrounds the scene with lines from Job 38. God leans out of the storm with arms spread wide, while Job and his wife kneel below. The swirling lines make the whirlwind feel alive."
@@ -90,11 +90,11 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "/assets/img/panchatantra-tortoise-monkey.jpg",
+      "src": "assets/img/panchatantra-tortoise-monkey.jpg",
       "alt": "Manuscript page with Arabic text above a painting of a monkey riding on a tortoise's back through water",
       "fit": "contain",
       "look": {
-        "src": "/assets/img/panchatantra-tortoise-monkey.jpg",
+        "src": "assets/img/panchatantra-tortoise-monkey.jpg",
         "title": "The Tortoise Ferries the Monkey",
         "caption": "Folio from a Kalila wa Dimna manuscript, 18th century. The Metropolitan Museum of Art.",
         "text": "Kalila wa Dimna is the Arabic version of the Panchatantra. Here the tale of the monkey and the crocodile has become the monkey and the tortoise. The monkey must think fast to escape a friend who plans to betray him."
@@ -146,7 +146,7 @@ export default [
       },
       {
         "label": "Context",
-        "html": "<p>The <em>Panchatantra</em> belongs to the Indian tradition of <em>nitishastra</em>, writing about wise conduct and statecraft. It was meant for future rulers, but its lessons fit anyone. It became one of the most widely traveled books in history. It was translated into Middle Persian in the sixth century, then into Arabic as <em>Kalila wa Dimna</em>, and from there into Hebrew, Latin, and many European languages. Both paintings in this analysis come from Persian and Arabic versions, which shows how far the stories traveled.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:4/3\"><img src=\"/assets/img/panchatantra-lion-bull.jpg\" alt=\"A lion pounces on a black bull while two jackals watch from below\" loading=\"lazy\"></div> <button class=\"look\" type=\"button\" data-src=\"/assets/img/panchatantra-lion-bull.jpg\" data-title=\"The Lion Devours the Bull\" data-caption=\"Kalila wa Dimna, painted in Herat, 1430. Topkapı Palace Museum, Istanbul.\" data-text=\"This is the tragic ending of The Loss of Friends. The jackal Damanaka has convinced the lion that his friend the bull is a traitor. The two jackals watch from the corner, the true villains of the story.\"> <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"M21 21l-4.3-4.3M11 8v6M8 11h6\"></path></svg>Look closer </button> </div> <figcaption>The lion devours the bull, from a Kalila wa Dimna manuscript, Herat, 1430. Topkapı Palace Museum.</figcaption> </figure>"
+        "html": "<p>The <em>Panchatantra</em> belongs to the Indian tradition of <em>nitishastra</em>, writing about wise conduct and statecraft. It was meant for future rulers, but its lessons fit anyone. It became one of the most widely traveled books in history. It was translated into Middle Persian in the sixth century, then into Arabic as <em>Kalila wa Dimna</em>, and from there into Hebrew, Latin, and many European languages. Both paintings in this analysis come from Persian and Arabic versions, which shows how far the stories traveled.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:4/3\"><img src=\"assets/img/panchatantra-lion-bull.jpg\" alt=\"A lion pounces on a black bull while two jackals watch from below\" loading=\"lazy\"></div> <button class=\"look\" type=\"button\" data-src=\"assets/img/panchatantra-lion-bull.jpg\" data-title=\"The Lion Devours the Bull\" data-caption=\"Kalila wa Dimna, painted in Herat, 1430. Topkapı Palace Museum, Istanbul.\" data-text=\"This is the tragic ending of The Loss of Friends. The jackal Damanaka has convinced the lion that his friend the bull is a traitor. The two jackals watch from the corner, the true villains of the story.\"> <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"M21 21l-4.3-4.3M11 8v6M8 11h6\"></path></svg>Look closer </button> </div> <figcaption>The lion devours the bull, from a Kalila wa Dimna manuscript, Herat, 1430. Topkapı Palace Museum.</figcaption> </figure>"
       }
     ],
     "gallery": [],
@@ -168,10 +168,10 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "/assets/img/ramayana-ravi-varma-jatayu.jpg",
+      "src": "assets/img/ramayana-ravi-varma-jatayu.jpg",
       "alt": "The demon king Ravana raises his sword against the giant bird Jatayu as Sita recoils",
       "look": {
-        "src": "/assets/img/ramayana-ravi-varma-jatayu.jpg",
+        "src": "assets/img/ramayana-ravi-varma-jatayu.jpg",
         "title": "Ravana Cutting the Wing of Jatayu",
         "caption": "Raja Ravi Varma, c. 1895.",
         "text": "As Ravana carries Sita away to Lanka, the old vulture king Jatayu tries to stop him and is fatally wounded. Ravi Varma, one of India's most celebrated painters, combined Indian subjects with European oil-painting techniques."
@@ -245,11 +245,11 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "/assets/img/mahabharata-razmnama.jpg",
+      "src": "assets/img/mahabharata-razmnama.jpg",
       "alt": "Mughal miniature of a river of fire sweeping across a battlefield of horsemen and warriors",
       "objectPosition": "50% 70%",
       "look": {
-        "src": "/assets/img/mahabharata-razmnama.jpg",
+        "src": "assets/img/mahabharata-razmnama.jpg",
         "title": "Ashvatthama Fires the Narayana Weapon at the Pandavas",
         "caption": "Folio from a Razmnama, the Persian translation of the Mahabharata, c. 1616–17. The Metropolitan Museum of Art.",
         "text": "The Mughal emperor Akbar ordered the Mahabharata translated into Persian so that his court could understand Hindu culture. In this battle scene from Kurukshetra, a cosmic fire weapon pours over the Pandava army."
@@ -301,7 +301,7 @@ export default [
       },
       {
         "label": "Context",
-        "html": "<p>The <em>Mahabharata</em> grew over many centuries as storytellers added material. It is both a story and a library of religion, law, politics, and philosophy. The <em>Bhagavad Gita</em> is one of the most important texts of Hinduism and has influenced thinkers around the world, including Mahatma Gandhi. In the 1580s the Mughal emperor Akbar had it translated into Persian as the <em>Razmnama</em>, the “Book of War,” and its painted pages are now treasured in museums.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:523/377\"><img src=\"/assets/img/mahabharata-krishna-arjuna.jpg\" alt=\"Krishna, painted blue, drives a chariot pulled by white horses while Arjuna sits behind him\" loading=\"lazy\"></div></div> <figcaption>Krishna and Arjuna on the chariot, India, 18th–19th century.</figcaption> </figure>"
+        "html": "<p>The <em>Mahabharata</em> grew over many centuries as storytellers added material. It is both a story and a library of religion, law, politics, and philosophy. The <em>Bhagavad Gita</em> is one of the most important texts of Hinduism and has influenced thinkers around the world, including Mahatma Gandhi. In the 1580s the Mughal emperor Akbar had it translated into Persian as the <em>Razmnama</em>, the “Book of War,” and its painted pages are now treasured in museums.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:523/377\"><img src=\"assets/img/mahabharata-krishna-arjuna.jpg\" alt=\"Krishna, painted blue, drives a chariot pulled by white horses while Arjuna sits behind him\" loading=\"lazy\"></div></div> <figcaption>Krishna and Arjuna on the chariot, India, 18th–19th century.</figcaption> </figure>"
       }
     ],
     "gallery": [],
@@ -323,11 +323,11 @@ export default [
       "lang": "grc"
     },
     "plate": {
-      "src": "/assets/img/iliad-ivanov-priam.jpg",
+      "src": "assets/img/iliad-ivanov-priam.jpg",
       "alt": "The old king Priam kneels and kisses the hand of Achilles, who sits in his tent",
       "wide": true,
       "look": {
-        "src": "/assets/img/iliad-ivanov-priam.jpg",
+        "src": "assets/img/iliad-ivanov-priam.jpg",
         "title": "Priam Asking Achilles for the Return of Hector’s Body",
         "caption": "Alexander Ivanov, 1824. State Tretyakov Gallery, Moscow.",
         "text": "In Book 24, King Priam secretly enters the Greek camp and kisses the hands of the man who killed his son. Ivanov paints the moment Achilles begins to soften, as the grieving father reminds him of his own."
@@ -384,10 +384,10 @@ export default [
     ],
     "gallery": [
       {
-        "src": "/assets/img/iliad-patroclus.jpg",
+        "src": "assets/img/iliad-patroclus.jpg",
         "alt": "Achilles weeps over the pale body of Patroclus, surrounded by mourners",
         "look": {
-          "src": "/assets/img/iliad-patroclus.jpg",
+          "src": "assets/img/iliad-patroclus.jpg",
           "title": "Achilles Lamenting the Death of Patroclus",
           "caption": "Gavin Hamilton, 1760–63. Scottish National Gallery.",
           "text": "The death of Patroclus is the turning point of the Iliad. Grief replaces Achilles' anger at Agamemnon with a new and deadlier rage against Hector."
@@ -396,10 +396,10 @@ export default [
         "text": "Achilles mourns Patroclus. Gavin Hamilton, 1760–63."
       },
       {
-        "src": "/assets/img/iliad-matsch-triumph.jpg",
+        "src": "assets/img/iliad-matsch-triumph.jpg",
         "alt": "Achilles raises Hector's helmet as his chariot drags Hector's body before Troy",
         "look": {
-          "src": "/assets/img/iliad-matsch-triumph.jpg",
+          "src": "assets/img/iliad-matsch-triumph.jpg",
           "title": "The Triumph of Achilles",
           "caption": "Franz von Matsch, 1892. Achilleion Palace, Corfu.",
           "text": "Achilles holds Hector's helmet high as he drags the body of the Trojan prince past the walls of Troy, where the Trojans watch in horror. The painting shows how rage turns into cruelty."
@@ -408,11 +408,11 @@ export default [
         "text": "Achilles drags Hector before Troy. Franz von Matsch, 1892."
       },
       {
-        "src": "/assets/img/iliad-david-andromache.jpg",
+        "src": "assets/img/iliad-david-andromache.jpg",
         "alt": "Andromache sits grieving beside the body of Hector, holding her young son",
         "objectPosition": "50% 30%",
         "look": {
-          "src": "/assets/img/iliad-david-andromache.jpg",
+          "src": "assets/img/iliad-david-andromache.jpg",
           "title": "Andromache Mourning Hector",
           "caption": "Jacques-Louis David, 1783. Musée du Louvre, Paris.",
           "text": "Hector's wife Andromache weeps beside his body while their son Astyanax reaches for her. David reminds us that every hero killed in battle leaves a family behind."
@@ -439,11 +439,11 @@ export default [
       "lang": "grc"
     },
     "plate": {
-      "src": "/assets/img/odyssey-waterhouse-sirens.jpg",
+      "src": "assets/img/odyssey-waterhouse-sirens.jpg",
       "alt": "Odysseus is tied to his ship's mast while bird-bodied Sirens swoop around the rowing crew",
       "wide": true,
       "look": {
-        "src": "/assets/img/odyssey-waterhouse-sirens.jpg",
+        "src": "assets/img/odyssey-waterhouse-sirens.jpg",
         "title": "Ulysses and the Sirens",
         "caption": "John William Waterhouse, 1891. National Gallery of Victoria, Melbourne.",
         "text": "Odysseus (Ulysses in Latin) has his crew plug their ears with wax and tie him to the mast so he can hear the Sirens' song without steering toward his death. Waterhouse paints the Sirens as birds with women's faces, as ancient Greek vases did."
@@ -517,11 +517,11 @@ export default [
       "lang": "fro"
     },
     "plate": {
-      "src": "/assets/img/roland-fouquet.jpg",
+      "src": "assets/img/roland-fouquet.jpg",
       "alt": "Medieval painting of Roland kneeling on a green hill among fallen knights, striking his sword against a rock",
       "wide": true,
       "look": {
-        "src": "/assets/img/roland-fouquet.jpg",
+        "src": "assets/img/roland-fouquet.jpg",
         "title": "The Death of Roland",
         "caption": "Jean Fouquet, from the Grandes Chroniques de France, c. 1455–60. Bibliothèque nationale de France.",
         "text": "Fouquet shows several moments at once. The battle rages on the left, while Roland tries to break his sword Durendal on a rock so that no enemy can take it. Nearby, he lies dying with his horn."

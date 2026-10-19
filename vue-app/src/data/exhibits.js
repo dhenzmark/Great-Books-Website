@@ -2,7 +2,7 @@
 export default [
   {
     "href": "/analyses#job",
-    "src": "/assets/img/job-blake-watercolor.jpg",
+    "src": "assets/img/job-blake-watercolor.jpg",
     "alt": "God in a whirlwind above Job",
     "title": "Voice out of the Whirlwind",
     "meta": "Hebrew wisdom literature, c. 6th–4th century BCE",
@@ -10,7 +10,7 @@ export default [
   },
   {
     "href": "/analyses#panchatantra",
-    "src": "/assets/img/panchatantra-lion-bull.jpg",
+    "src": "assets/img/panchatantra-lion-bull.jpg",
     "alt": "A lion attacking a bull while jackals watch",
     "title": "The Panchatantra",
     "meta": "Ancient India, c. 200 BCE – 300 CE",
@@ -18,7 +18,7 @@ export default [
   },
   {
     "href": "/analyses#ramayana",
-    "src": "/assets/img/ramayana-ravi-varma-jatayu.jpg",
+    "src": "assets/img/ramayana-ravi-varma-jatayu.jpg",
     "alt": "Ravana fighting the bird Jatayu",
     "objectPosition": "50% 25%",
     "title": "The Ramayana",
@@ -27,7 +27,7 @@ export default [
   },
   {
     "href": "/analyses#mahabharata",
-    "src": "/assets/img/mahabharata-krishna-arjuna.jpg",
+    "src": "assets/img/mahabharata-krishna-arjuna.jpg",
     "alt": "Krishna driving Arjuna's chariot",
     "title": "The Mahabharata",
     "meta": "Ancient India, c. 400 BCE – 400 CE",
@@ -35,7 +35,7 @@ export default [
   },
   {
     "href": "/analyses#iliad",
-    "src": "/assets/img/iliad-patroclus.jpg",
+    "src": "assets/img/iliad-patroclus.jpg",
     "alt": "Achilles mourning over the body of Patroclus",
     "title": "The Iliad",
     "meta": "Ancient Greece, c. 8th century BCE",
@@ -43,7 +43,7 @@ export default [
   },
   {
     "href": "/analyses#odyssey",
-    "src": "/assets/img/hero-turner-polyphemus.jpg",
+    "src": "assets/img/hero-turner-polyphemus.jpg",
     "alt": "Odysseus's ship sailing away from Polyphemus",
     "title": "The Odyssey",
     "meta": "Ancient Greece, late 8th century BCE",
@@ -51,7 +51,7 @@ export default [
   },
   {
     "href": "/analyses#roland",
-    "src": "/assets/img/roland-fouquet.jpg",
+    "src": "assets/img/roland-fouquet.jpg",
     "alt": "Roland dying on a hill among fallen knights",
     "title": "The Song of Roland",
     "meta": "Medieval France, c. 1100 CE",

@@ -24,7 +24,7 @@ import ArtPlate from "../ui/ArtPlate.vue";
     <ArtPlate
       v-reveal
       style="max-width: 380px; justify-self: center"
-      src="/assets/img/homer-bust.webp"
+      src="assets/img/homer-bust.webp"
       alt="Marble bust of Homer as a bearded old man with blank eyes"
       aspect="3/4"
       caption="Bust of Homer, Roman copy of a Hellenistic original. The British Museum. Tradition says Homer was blind and composed his poems orally."

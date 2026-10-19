@@ -1,12 +1,15 @@
 <script setup>
 import CountUp from "../ui/CountUp.vue";
+
+const andromache = "assets/img/iliad-david-andromache.jpg";
+const fresco = "assets/img/iliad-pompeii-fresco.webp";
 </script>
 
 <template>
   <section class="section" aria-label="The portfolio in numbers">
     <div class="wrap figures">
       <div v-reveal class="f-pic">
-        <img v-parallax="0.05" src="/assets/img/iliad-david-andromache.jpg" alt="Andromache grieving beside the body of Hector" loading="lazy" decoding="async" style="object-position: 50% 40%" />
+        <img v-parallax="0.05" :src="andromache" alt="Andromache grieving beside the body of Hector" loading="lazy" decoding="async" style="object-position: 50% 40%" />
       </div>
       <div v-reveal class="f-text">
         <p>I read best when I connect a story to real life. I ask what a character wants, what stands in their way, and what the story is quietly teaching.</p>
@@ -21,7 +24,7 @@ import CountUp from "../ui/CountUp.vue";
         <p class="num-cap">Works of world literature, read closely</p>
       </div>
       <figure v-reveal class="f-pic2">
-        <img v-parallax="0.05" src="/assets/img/iliad-pompeii-fresco.webp" alt="Detail of a Roman wall painting of a young warrior with a spear" loading="lazy" decoding="async" />
+        <img v-parallax="0.05" :src="fresco" alt="Detail of a Roman wall painting of a young warrior with a spear" loading="lazy" decoding="async" />
       </figure>
       <div v-reveal class="f-num2">
         <CountUp :to="1900" suffix=" years" />

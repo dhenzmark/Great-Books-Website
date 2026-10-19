@@ -15,7 +15,7 @@ const active = useScrollSpy(works.map((w) => w.id));
       label="Seven Works"
       prefix="SEVEN "
       before="W"
-      image="/assets/img/panchatantra-lion-bull.jpg"
+      image="assets/img/panchatantra-lion-bull.jpg"
       after="RKS"
       quote-source="Job 38:4, King James Version"
     >

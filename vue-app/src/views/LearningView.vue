@@ -11,7 +11,7 @@ import CraftNotes from "../components/learning/CraftNotes.vue";
     <PageTitle
       label="Summary of Learning"
       prefix="SUMMARY "
-      image="/assets/img/homer-bust.webp"
+      image="assets/img/homer-bust.webp"
       after="F"
       suffix=" LEARNING"
       quote-source="The Song of Roland, laisse 87"

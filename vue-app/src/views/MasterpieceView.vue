@@ -13,7 +13,7 @@ import FavoriteScene from "../components/masterpiece/FavoriteScene.vue";
     <PageTitle
       label="Favorite Work"
       before="FAV"
-      image="/assets/img/iliad-ivanov-priam.jpg"
+      image="assets/img/iliad-ivanov-priam.jpg"
       after="RITE"
       suffix=" WORK"
       quote-source="Homer, the Iliad, Book I, translated by Samuel Butler"
