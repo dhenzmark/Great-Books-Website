@@ -1,0 +1,10 @@
+# Installed packages: Vercel (and anyone cloning) runs `npm install` instead
+node_modules/
+
+# Build output: Vercel runs `npm run build` itself
+dist/
+
+# Editor / OS clutter
+.DS_Store
+Thumbs.db
+.vercel
