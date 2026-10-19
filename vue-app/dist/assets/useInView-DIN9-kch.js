@@ -1,0 +1,1 @@
+import{M as e,S as t,c as n,x as r}from"./index-DyqjxL9f.js";function i(i,{threshold:a=.35}={}){let o=e(!1),s=null;return t(()=>{n()||!(`IntersectionObserver`in window)?o.value=!0:(s=new IntersectionObserver(([e])=>{e.isIntersecting&&(o.value=!0,s.disconnect())},{threshold:a}),i.value&&s.observe(i.value))}),r(()=>s&&s.disconnect()),o}export{i as t};

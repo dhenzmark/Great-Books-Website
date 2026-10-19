@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epic Voices | Home and Student Profile</title>
+  <meta name="description" content="A digital literary portfolio on seven masterpieces of world literature, beginning with the student profile.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Montserrat:wght@300;400;500;600&family=GFS+Didot&family=Tiro+Devanagari+Sanskrit&family=Frank+Ruhl+Libre:wght@500&family=UnifrakturMaguntia&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="side-word" aria-hidden="true">Epic Voices</div>
+  <div class="panel">
+
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html"><svg viewBox="0 0 26 18" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 17L9 4l8 13M9 17L17 4l8 13"/></svg> Epic Voices</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Profile</a></li>
+      <li><a href="analyses.html">Analyses</a></li>
+      <li><a href="masterpiece.html">Masterpiece</a></li>
+      <li><a href="learning.html">Learning</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+    <a class="pill" href="analyses.html">Read the analyses</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  </nav>
+
+
+  <!-- ================= HERO (Louvre) ================= -->
+  <header class="hero" id="top">
+    <div class="hero-slides" aria-live="polite">
+      <figure class="on"><img src="assets/img/homer-bust.webp" alt="Marble bust of Homer, the poet of the Iliad and the Odyssey" fetchpriority="high"><figcaption>Bust of Homer, Roman copy. The British Museum.</figcaption></figure>
+      <figure><img src="assets/img/iliad-ivanov-priam.jpg" alt="King Priam kneeling to kiss the hand of Achilles" loading="lazy"><figcaption>Alexander Ivanov, Priam and Achilles, 1824.</figcaption></figure>
+      <figure><img src="assets/img/job-blake-watercolor.jpg" alt="God appearing in a whirlwind above the kneeling Job" loading="lazy"><figcaption>William Blake, Job and the whirlwind, c. 1805.</figcaption></figure>
+      <figure><img src="assets/img/roland-michallon.jpg" alt="A dark mountain pass where the dying Roland lies" loading="lazy"><figcaption>Achille-Etna Michallon, the death of Roland, c. 1820.</figcaption></figure>
+    </div>
+
+    <div class="hero-copy">
+      <p class="line-label"><span>Art Appreciation portfolio</span><span>Seven works, 800 BCE to 1100 CE</span></p>
+      <h1><span>Seven epics,</span><span>one reader</span></h1>
+      <p>Seven of the world&rsquo;s oldest stories, from the Book of Job to <em>The Song of Roland</em>, each read closely and paired with the paintings they inspired. A portfolio by Dhenz Mark A. Alden.</p>
+      <a class="text-link" href="analyses.html">Read the analyses</a>
+    </div>
+
+    <div class="counter" aria-label="Hero pictures">
+      <button type="button" data-slide="-1" aria-label="Previous picture"><svg viewBox="0 0 30 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M29 7H2M8 1L2 7l6 6"/></svg></button>
+      <span><sup data-slide-now>1</sup>/<sub>4</sub></span>
+      <button type="button" data-slide="1" aria-label="Next picture"><svg viewBox="0 0 30 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 7h27M22 1l6 6-6 6"/></svg></button>
+    </div>
+
+    <div class="hero-row">
+      <a href="analyses.html">
+        <div class="img"><img src="assets/img/mahabharata-razmnama.jpg" alt="Mughal miniature of a river of fire over a battlefield" loading="lazy" style="object-position:50% 65%"></div>
+        <p class="label">Analyses</p>
+        <strong>Seven close readings</strong>
+        <small>Plot, characters, themes, craft and context</small>
+      </a>
+      <a href="masterpiece.html">
+        <div class="img"><img src="assets/img/iliad-matsch-triumph.jpg" alt="Achilles in his chariot before the walls of Troy" loading="lazy"></div>
+        <p class="label">Favorite masterpiece</p>
+        <strong>The Iliad</strong>
+        <small>Why the rage of Achilles stays with me</small>
+      </a>
+      <a href="analyses.html" id="artwork-today">
+        <div class="img"><img src="assets/img/odyssey-waterhouse-sirens.jpg" alt="Odysseus tied to the mast as Sirens circle his ship" loading="lazy" data-today-img></div>
+        <p class="label">Painting of the day</p>
+        <strong data-today-title>Ulysses and the Sirens</strong>
+        <small data-today-by>John William Waterhouse, 1891</small>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= PROFILE (Museum "Welcome") ================= -->
+    <section class="section" id="profile" aria-labelledby="profile-title">
+      <span class="circle" aria-hidden="true"></span>
+      <div class="wrap welcome">
+        <span class="ghost-word" aria-hidden="true">Welcome</span>
+        <div class="reveal">
+          <h2 id="profile-title" class="copper-title">Student profile</h2>
+          <p>Hello! My name is Dhenz Mark A. Alden, and I am a 4th Year BS Information Technology student. I grew up hearing stories at home: folk tales from my grandparents, teleserye plots retold at the dinner table, and the legends we learned in grade school. Stories have always been the way my family made sense of the world. This course gave me the chance to look at much older stories and ask the same questions people asked thousands of years ago.</p>
+          <p>Before this class, I thought of epics as long, difficult poems that only scholars read. I was wrong. Once I looked past the unfamiliar names, I found families arguing, friends grieving, leaders making mistakes, and ordinary people trying to do the right thing.</p>
+          <ul class="facts" aria-label="Student details">
+            <li><span>Name</span>Dhenz Mark A. Alden</li>
+            <li><span>Course</span>4th Year BS Information Technology</li>
+            <li><span>Section</span>GEC-GB-NRn 1454</li>
+            <li><span>Subject</span>Art Appreciation</li>
+            <li><span>Instructor</span>Charlot San Buenaventura</li>
+            <li><span>School</span>University of Nueva Caceres</li>
+          </ul>
+          <a class="btn" href="reflection.html">Read my reflection</a>
+        </div>
+        <div class="stack reveal">
+          <!-- To use your photo: save it as assets/img/me.jpg and replace <span>DA</span> with <img src="assets/img/me.jpg" alt="Portrait of Your Name"> -->
+          <div class="s1"><span aria-hidden="true">DA</span></div>
+          <div class="s2"><img src="assets/img/odyssey-waterhouse-penelope.jpg" alt="Penelope at her loom while suitors crowd the window" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FIGURES (freeART) ================= -->
+    <section class="section" aria-label="The portfolio in numbers">
+      <div class="wrap figures">
+        <div class="f-pic reveal"><img src="assets/img/iliad-david-andromache.jpg" alt="Andromache grieving beside the body of Hector" loading="lazy" style="object-position:50% 40%"></div>
+        <div class="f-text reveal">
+          <p>I read best when I connect a story to real life. I ask what a character wants, what stands in their way, and what the story is quietly teaching.</p>
+          <p>I also pay attention to culture and art: how a story reflects the beliefs of the people who first told it, and how painters across the centuries have imagined its scenes.</p>
+          <p>Interests: mythology, Philippine folklore, painting and design, music, history, and films based on books.</p>
+        </div>
+        <div class="f-num reveal">
+          <p class="big-num">7</p>
+          <p class="num-cap">Works of world literature, read closely</p>
+        </div>
+        <figure class="f-pic2 reveal"><img src="assets/img/iliad-pompeii-fresco.webp" alt="Detail of a Roman wall painting of a young warrior with a spear" loading="lazy"></figure>
+        <div class="f-num2 reveal">
+          <p class="big-num">1,900 years</p>
+          <p class="num-cap">Between the oldest and the youngest work,<br>across four traditions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE SEVEN WORKS (Museum "Our Exhibitions") ================= -->
+    <section class="section deep" id="works" aria-labelledby="works-title">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <h2 id="works-title">The seven works</h2>
+          <p class="lead">Each one hangs here like an exhibition. Open any of them to read the full analysis.</p>
+        </div>
+        <div class="exhibits">
+          <a class="exhibit reveal" href="analyses.html#job">
+            <div class="img"><img src="assets/img/job-blake-watercolor.jpg" alt="God in a whirlwind above Job" loading="lazy"></div>
+            <div class="body"><h3>Voice out of the Whirlwind</h3><p class="meta">Hebrew wisdom literature, c. 6th&ndash;4th century BCE</p><p>A righteous man loses everything and receives a storm of questions instead of answers.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit reveal" href="analyses.html#panchatantra">
+            <div class="img"><img src="assets/img/panchatantra-lion-bull.jpg" alt="A lion attacking a bull while jackals watch" loading="lazy"></div>
+            <div class="body"><h3>The Panchatantra</h3><p class="meta">Ancient India, c. 200 BCE &ndash; 300 CE</p><p>Animal fables that turn three dull princes into wise rulers in six months.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit reveal" href="analyses.html#ramayana">
+            <div class="img"><img src="assets/img/ramayana-ravi-varma-jatayu.jpg" alt="Ravana fighting the bird Jatayu" loading="lazy" style="object-position:50% 25%"></div>
+            <div class="body"><h3>The Ramayana</h3><p class="meta">Ancient India, c. 5th century BCE &ndash; 1st century CE</p><p>A prince keeps his father&rsquo;s word, then crosses an ocean to rescue his wife.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit reveal" href="analyses.html#mahabharata">
+            <div class="img"><img src="assets/img/mahabharata-krishna-arjuna.jpg" alt="Krishna driving Arjuna's chariot" loading="lazy"></div>
+            <div class="body"><h3>The Mahabharata</h3><p class="meta">Ancient India, c. 400 BCE &ndash; 400 CE</p><p>Cousins go to war, and a warrior asks his god what duty really means.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit reveal" href="analyses.html#iliad">
+            <div class="img"><img src="assets/img/iliad-patroclus.jpg" alt="Achilles mourning over the body of Patroclus" loading="lazy"></div>
+            <div class="body"><h3>The Iliad</h3><p class="meta">Ancient Greece, c. 8th century BCE</p><p>The greatest warrior of the Greeks learns too late what his anger costs.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit reveal" href="analyses.html#odyssey">
+            <div class="img"><img src="assets/img/hero-turner-polyphemus.jpg" alt="Odysseus's ship sailing away from Polyphemus" loading="lazy"></div>
+            <div class="body"><h3>The Odyssey</h3><p class="meta">Ancient Greece, late 8th century BCE</p><p>A clever king fights gods and monsters for ten years to get home.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit reveal" href="analyses.html#roland">
+            <div class="img"><img src="assets/img/roland-fouquet.jpg" alt="Roland dying on a hill among fallen knights" loading="lazy"></div>
+            <div class="body"><h3>The Song of Roland</h3><p class="meta">Medieval France, c. 1100 CE</p><p>A proud knight refuses to call for help until it is too late.</p></div>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 6h23M19 1l5 5-5 5"/></svg></span>
+          </a>
+          <a class="exhibit-all reveal" href="analyses.html">Read all seven analyses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPLORE THE TIMELINE (Museum "Explore") ================= -->
+    <section class="section" id="timeline" aria-labelledby="explore-title">
+      <span class="circle" aria-hidden="true" style="width:520px;height:520px;left:-200px;bottom:-120px"></span>
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <h2 id="explore-title">Explore the timeline</h2>
+          <p class="lead">From oldest to youngest. Choose a work to see when it was composed.</p>
+        </div>
+
+        <div class="explore reveal" data-explore>
+          <div class="explore-nav">
+            <button type="button" data-step="-1" aria-label="Earlier work"><svg viewBox="0 0 28 14" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M27 7H2M8 1L2 7l6 6"/></svg></button>
+            <ul class="eras" role="tablist" aria-label="Works in order of composition">
+              <li role="presentation"><button role="tab" aria-selected="true" aria-controls="era-panel" data-i="0">Iliad</button></li>
+              <li role="presentation"><button role="tab" aria-selected="false" aria-controls="era-panel" data-i="1" tabindex="-1">Odyssey</button></li>
+              <li role="presentation"><button role="tab" aria-selected="false" aria-controls="era-panel" data-i="2" tabindex="-1">Job</button></li>
+              <li role="presentation"><button role="tab" aria-selected="false" aria-controls="era-panel" data-i="3" tabindex="-1">Ramayana</button></li>
+              <li role="presentation"><button role="tab" aria-selected="false" aria-controls="era-panel" data-i="4" tabindex="-1">Mahabharata</button></li>
+              <li role="presentation"><button role="tab" aria-selected="false" aria-controls="era-panel" data-i="5" tabindex="-1">Panchatantra</button></li>
+              <li role="presentation"><button role="tab" aria-selected="false" aria-controls="era-panel" data-i="6" tabindex="-1">Roland</button></li>
+            </ul>
+            <button type="button" data-step="1" aria-label="Later work"><svg viewBox="0 0 28 14" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 7h25M20 1l6 6-6 6"/></svg></button>
+          </div>
+
+          <div class="strip" aria-hidden="true">
+            <button type="button" tabindex="-1" class="on" data-i="0"><img src="assets/img/iliad-matsch-triumph.jpg" alt="" loading="lazy"></button>
+            <button type="button" tabindex="-1" data-i="1"><img src="assets/img/odyssey-waterhouse-sirens.jpg" alt="" loading="lazy"></button>
+            <button type="button" tabindex="-1" data-i="2"><img src="assets/img/job-blake-engraving.jpg" alt="" loading="lazy"></button>
+            <button type="button" tabindex="-1" data-i="3"><img src="assets/img/ramayana-ravi-varma-jatayu.jpg" alt="" loading="lazy"></button>
+            <button type="button" tabindex="-1" data-i="4"><img src="assets/img/mahabharata-razmnama.jpg" alt="" loading="lazy"></button>
+            <button type="button" tabindex="-1" data-i="5"><img src="assets/img/panchatantra-tortoise-monkey.jpg" alt="" loading="lazy"></button>
+            <button type="button" tabindex="-1" data-i="6"><img src="assets/img/roland-chroniques.jpg" alt="" loading="lazy"></button>
+          </div>
+
+          <div class="era-detail" id="era-panel" role="tabpanel" aria-live="polite">
+            <div>
+              <p class="era-name" data-era-name>The Iliad</p>
+              <p class="era-date" data-era-date>VIII BCE</p>
+            </div>
+            <span class="rule" aria-hidden="true"></span>
+            <div>
+              <p data-era-text>Homer&rsquo;s poem of the rage of Achilles in the last year of the Trojan War. It is one of the oldest works of Western literature, first performed from memory by singers long before it was written down.</p>
+              <a class="btn" href="analyses.html#iliad" data-era-link>Read the analysis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section next-section" aria-label="Next page">
+      <div class="wrap">
+        <a class="next-page reveal" href="analyses.html">
+          <span><small>Next page</small><strong>Seven Literary Analyses</strong></span>
+          <svg viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 10h36M29 2l8 8-8 8"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="brand" href="index.html"><svg viewBox="0 0 26 18" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 17L9 4l8 13M9 17L17 4l8 13"/></svg> Epic Voices</a>
+        <ul class="footer-links">
+          <li><a href="index.html">Profile</a></li>
+          <li><a href="analyses.html">Analyses</a></li>
+          <li><a href="masterpiece.html">Masterpiece</a></li>
+          <li><a href="learning.html">Learning</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+        </ul>
+        <p>&copy; <span data-year>2026</span> Dhenz Mark A. Alden</p>
+      </div>
+      <details class="credits-box">
+        <summary><span>Image credits</span><small>18 public-domain artworks</small><svg viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 1l6 6 6-6"/></svg></summary>
+        <ol class="credits">
+        <li>J. M. W. Turner, Ulysses Deriding Polyphemus, 1829. The National Gallery, London.</li>
+        <li>William Blake, The Lord Answering Job out of the Whirlwind, c. 1805 (Butts set) and 1826 (engraving).</li>
+        <li>&ldquo;The Tortoise Ferries the Monkey,&rdquo; Kalila wa Dimna folio, 18th century. The Metropolitan Museum of Art.</li>
+        <li>The lion devours the bull, Kalila wa Dimna, Herat, 1430. Topkapı Palace Museum.</li>
+        <li>Raja Ravi Varma, Ravana Cutting the Wing of Jatayu, c. 1895.</li>
+        <li>&ldquo;Ashvatthama Fires the Narayana Weapon,&rdquo; Razmnama folio, c. 1616&ndash;17. The Metropolitan Museum of Art.</li>
+        <li>Krishna and Arjuna on the chariot, India, 18th&ndash;19th century.</li>
+        <li>Alexander Ivanov, Priam Asking Achilles for the Return of Hector&rsquo;s Body, 1824. State Tretyakov Gallery.</li>
+        <li>Gavin Hamilton, Achilles Lamenting the Death of Patroclus, 1760&ndash;63. Scottish National Gallery.</li>
+        <li>Franz von Matsch, The Triumph of Achilles, 1892. Achilleion Palace, Corfu.</li>
+        <li>Jacques-Louis David, Andromache Mourning Hector, 1783. Mus&eacute;e du Louvre.</li>
+        <li>John William Waterhouse, Ulysses and the Sirens, 1891. National Gallery of Victoria.</li>
+        <li>John William Waterhouse, Penelope and the Suitors, 1912. Aberdeen Art Gallery.</li>
+        <li>Jean Fouquet, The Death of Roland, Grandes Chroniques de France, c. 1455&ndash;60. Biblioth&egrave;que nationale de France.</li>
+        <li>The Death of Roland, Grandes Chroniques de France, c. 1375&ndash;80.</li>
+        <li>Achille-Etna Michallon, Landscape with the Death of Roland (sketch), c. 1819&ndash;22.</li>
+        <li>Bust of Homer, Roman copy of a Hellenistic original. The British Museum.</li>
+        <li>Wall painting from Pompeii, 1st century CE (detail of a warrior).</li>
+      </ol>
+      </details>
+      <div class="footer-row"><p>A literary portfolio for Art Appreciation.</p><p><a href="#top">Back to top</a></p></div>
+    </div>
+  </footer>
+
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+    <button class="dialog-close" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="dialog-grid">
+      <div class="dialog-media"><img id="lb-img" alt=""></div>
+      <div class="dialog-body">
+        <h3 id="lb-title"></h3>
+        <p id="lb-caption" style="font-size:.85rem"></p>
+        <p id="lb-text"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

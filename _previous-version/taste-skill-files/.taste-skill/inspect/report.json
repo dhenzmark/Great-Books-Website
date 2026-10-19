@@ -1,0 +1,1713 @@
+{
+ "url": "index.html",
+ "at": "2026-10-18T16:29:44.851Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.96,
+    0.51,
+    0.61,
+    0.65,
+    0.65
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 7,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4186,
+     "screens": 4.7,
+     "words": 823,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 13,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "iliad-matsch-triumph.jpg",
+      "ramayana-ravi-varma-jatayu.jpg",
+      "mahabharata-razmnama.jpg",
+      "job-blake-watercolor.jpg",
+      "panchatantra-lion-bull.jpg",
+      "hero-turner-polyphemus.jpg",
+      "roland-fouquet.jpg",
+      "iliad-matsch-triumph.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Epic Voices",
+     "words": 2,
+     "chars": 11,
+     "lines": 1,
+     "size": 112,
+     "vw": 7.8,
+     "font": "IM Fell English",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.51,
+     "top": 152,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Epic Voices",
+     "words": 2,
+     "lines": 1,
+     "size": 112,
+     "font": "IM Fell English"
+    },
+    "headings": [
+     {
+      "text": "Epic Voices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 112,
+      "vw": 7.8,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 152,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Student Profile",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 1257,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "YN",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 1350,
+      "tag": "figure",
+      "kind": "heading"
+     },
+     {
+      "text": "About Me",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 41.6,
+      "vw": 2.9,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 1350,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "What I Bring to Reading",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 1821,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "My Goal for This Portfolio",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 2067,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Seven Works Through Time",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 2448,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven Literary Analyses",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 44.8,
+      "vw": 3.1,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 3465,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "IM Fell English",
+       "share": 0.19,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      17,
+      18,
+      24,
+      25,
+      26,
+      28,
+      42,
+      44,
+      45,
+      72,
+      112
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 14.1,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7
+     },
+     "measureChars": 78,
+     "max": {
+      "size": 112,
+      "vw": 7.8,
+      "font": "IM Fell English",
+      "text": "Epic Voices"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Next page",
+      "above": "Seven Literary Analyses",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3432
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e7e6e1",
+     "bodyBgHsl": {
+      "h": 50,
+      "s": 0.11,
+      "l": 0.89
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#22352e",
+       "top": 64,
+       "hsl": {
+        "h": 158,
+        "s": 0.22,
+        "l": 0.17
+       }
+      },
+      {
+       "color": "#1a2924",
+       "top": 2344,
+       "hsl": {
+        "h": 160,
+        "s": 0.22,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a9b3ab",
+       "share": 0.52
+      },
+      {
+       "color": "#1b1c19",
+       "share": 0.32
+      },
+      {
+       "color": "#e6e4dc",
+       "share": 0.09
+      },
+      {
+       "color": "#4a4c46",
+       "share": 0.04
+      },
+      {
+       "color": "#e9cf95",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#1b1c19",
+      "hsl": {
+       "h": 80,
+       "s": 0.06,
+       "l": 0.1
+      },
+      "fg": "#f3f2ee"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 31,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "span.fill-in → rgb(168, 133, 63) 0px 1px 0px 0px",
+      "span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px",
+      "img → rgba(0, 0, 0, 0.4) 0px 0px 0px 1px",
+      "span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 9,
+     "hairlineSamples": [
+      "nav.nav 1440px",
+      "li 320px",
+      "li 320px",
+      "li 320px",
+      "li 320px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 13,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.15
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "im fell english",
+     "public sans"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.95,
+    0.95,
+    0.41,
+    0.65,
+    0.77,
+    0.78
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 7,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5766,
+     "screens": 5.6,
+     "words": 819,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 13,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "iliad-matsch-triumph.jpg",
+      "ramayana-ravi-varma-jatayu.jpg",
+      "mahabharata-razmnama.jpg",
+      "job-blake-watercolor.jpg",
+      "panchatantra-lion-bull.jpg",
+      "hero-turner-polyphemus.jpg",
+      "roland-fouquet.jpg",
+      "iliad-matsch-triumph.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Epic Voices",
+     "words": 2,
+     "chars": 11,
+     "lines": 1,
+     "size": 69.1,
+     "vw": 9,
+     "font": "IM Fell English",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 110,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Epic Voices",
+     "words": 2,
+     "lines": 1,
+     "size": 69.1,
+     "font": "IM Fell English"
+    },
+    "headings": [
+     {
+      "text": "Epic Voices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 69.1,
+      "vw": 9,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 110,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Student Profile",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2326,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "YN",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 9.4,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2392,
+      "tag": "figure",
+      "kind": "heading"
+     },
+     {
+      "text": "About Me",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 4,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3098,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Seven Works Through Time",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 4003,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven Literary Analyses",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 30.7,
+      "vw": 4,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 4891,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "IM Fell English",
+       "share": 0.19,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      17,
+      18,
+      21,
+      23,
+      24,
+      26,
+      30,
+      31,
+      32,
+      69,
+      72
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 14.1,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7
+     },
+     "measureChars": 64,
+     "max": {
+      "size": 72,
+      "vw": 9.4,
+      "font": "IM Fell English",
+      "text": "YN"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "School",
+      "above": "About Me",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 3017
+     },
+     {
+      "text": "Next page",
+      "above": "Seven Literary Analyses",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 4861
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e7e6e1",
+     "bodyBgHsl": {
+      "h": 50,
+      "s": 0.11,
+      "l": 0.89
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#22352e",
+       "top": 64,
+       "hsl": {
+        "h": 158,
+        "s": 0.22,
+        "l": 0.17
+       }
+      },
+      {
+       "color": "#a8853f",
+       "top": 333,
+       "hsl": {
+        "h": 40,
+        "s": 0.45,
+        "l": 0.45
+       }
+      },
+      {
+       "color": "#1a2924",
+       "top": 3942,
+       "hsl": {
+        "h": 160,
+        "s": 0.22,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a9b3ab",
+       "share": 0.52
+      },
+      {
+       "color": "#1b1c19",
+       "share": 0.33
+      },
+      {
+       "color": "#e6e4dc",
+       "share": 0.09
+      },
+      {
+       "color": "#4a4c46",
+       "share": 0.03
+      },
+      {
+       "color": "#e9cf95",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#1b1c19",
+      "hsl": {
+       "h": 80,
+       "s": 0.06,
+       "l": 0.1
+      },
+      "fg": "#f3f2ee"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 31,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "span.fill-in → rgb(168, 133, 63) 0px 1px 0px 0px",
+      "span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px",
+      "img → rgba(0, 0, 0, 0.4) 0px 0px 0px 1px",
+      "span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 9,
+     "hairlineSamples": [
+      "nav.nav 768px",
+      "li 707px",
+      "li 707px",
+      "li 707px",
+      "li 707px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 13,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "im fell english",
+     "public sans"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.96,
+    0.85,
+    0.53,
+    0.68,
+    0.86,
+    0.79,
+    0.99,
+    0.96
+   ],
+   "motion": {
+    "elements": 7,
+    "css": 7,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5943,
+     "screens": 7,
+     "words": 819,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 12,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "iliad-matsch-triumph.jpg",
+      "ramayana-ravi-varma-jatayu.jpg",
+      "mahabharata-razmnama.jpg",
+      "job-blake-watercolor.jpg",
+      "panchatantra-lion-bull.jpg",
+      "hero-turner-polyphemus.jpg",
+      "roland-fouquet.jpg",
+      "iliad-matsch-triumph.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Epic Voices",
+     "words": 2,
+     "chars": 11,
+     "lines": 1,
+     "size": 51.2,
+     "vw": 13.1,
+     "font": "IM Fell English",
+     "weight": 400,
+     "tracking": -0.01,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 104,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Epic Voices",
+     "words": 2,
+     "lines": 1,
+     "size": 51.2,
+     "font": "IM Fell English"
+    },
+    "headings": [
+     {
+      "text": "Epic Voices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 12,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Epic Voices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 51.2,
+      "vw": 13.1,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 104,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Student Profile",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1542,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "YN",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1606,
+      "tag": "figure",
+      "kind": "heading"
+     },
+     {
+      "text": "About Me",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2297,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "What I Bring to Reading",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2924,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "My Goal for This Portfolio",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3257,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Seven Works Through Time",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3579,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Mahabharata",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.59,
+      "top": 3902,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Song of Roland",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.59,
+      "top": 3902,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Iliad",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 4195,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Odyssey",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.59,
+      "top": 4195,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Voice out of the Whirlwind",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.59,
+      "top": 4195,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Ramayana",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.59,
+      "top": 4195,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The Panchatantra",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.59,
+      "top": 4195,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven Literary Analyses",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 7.4,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.73,
+      "top": 4550,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Image credits",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "IM Fell English",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4697,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 17,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "IM Fell English",
+       "share": 0.19,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      23,
+      24,
+      26,
+      29,
+      30,
+      32,
+      51,
+      72
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 14.1,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7
+     },
+     "measureChars": 34,
+     "max": {
+      "size": 72,
+      "vw": 18.5,
+      "font": "IM Fell English",
+      "text": "YN"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "School",
+      "above": "About Me",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15.2,
+      "top": 2231
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e7e6e1",
+     "bodyBgHsl": {
+      "h": 50,
+      "s": 0.11,
+      "l": 0.89
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#22352e",
+       "top": 64,
+       "hsl": {
+        "h": 158,
+        "s": 0.22,
+        "l": 0.17
+       }
+      },
+      {
+       "color": "#a8853f",
+       "top": 1606,
+       "hsl": {
+        "h": 40,
+        "s": 0.45,
+        "l": 0.45
+       }
+      },
+      {
+       "color": "#1a2924",
+       "top": 3523,
+       "hsl": {
+        "h": 160,
+        "s": 0.22,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a9b3ab",
+       "share": 0.52
+      },
+      {
+       "color": "#1b1c19",
+       "share": 0.33
+      },
+      {
+       "color": "#e6e4dc",
+       "share": 0.09
+      },
+      {
+       "color": "#4a4c46",
+       "share": 0.03
+      },
+      {
+       "color": "#e9cf95",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#1b1c19",
+      "hsl": {
+       "h": 80,
+       "s": 0.06,
+       "l": 0.1
+      },
+      "fg": "#f3f2ee"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": 0,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 30,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "span.fill-in → rgb(168, 133, 63) 0px 1px 0px 0px",
+      "span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px",
+      "img → rgba(0, 0, 0, 0.4) 0px 0px 0px 1px",
+      "span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 9,
+     "hairlineSamples": [
+      "nav.nav 390px",
+      "li 358px",
+      "li 358px",
+      "li 358px",
+      "li 358px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 6,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.2
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "im fell english",
+     "public sans"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Next page\" above \"Seven Literary Analyses\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "31 box-shadow(s) on elements at rest: span.fill-in → rgb(168, 133, 63) 0px 1px 0px 0px | span.frame → rgb(111, 86, 38) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.28) 0px 10px 24px 0px | img → rgba(0, 0, 0, 0.4) 0px 0px 0px 1px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "9 thin rule(s)/divider line(s): nav.nav 1440px | li 320px | li 320px | li 320px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (text #e6e4dc).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (13, 14, 15, 17, 18, 24, 25, 26, 28, 42, 44, 45, 72, 112).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14.1px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 7 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\desktop-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\tablet-page-01.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Asus V16\\OneDrive\\Documents\\School\\Art App\\Final Website\\.taste-skill\\inspect\\mobile-page-01.jpg"
+   ]
+  }
+ ]
+}

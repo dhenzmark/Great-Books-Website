@@ -1,0 +1,174 @@
+/* ==========================================================
+   Motion layer for the Vue version.
+   Loaded after style.css; everything here is presentation only.
+   ========================================================== */
+
+:root { --ease-in-out: cubic-bezier(.65, 0, .35, 1); }
+
+/* ---------- transition card: full-screen panel used by the links at the bottom of the page (driven by App.vue) ---------- */
+.transition-card { position: fixed; inset: 0; z-index: 350; display: grid; place-content: center; gap: 10px; text-align: center; background: var(--panel); border-top: 1px solid var(--gold-line); transform: translateY(100%); visibility: hidden; pointer-events: none; }
+.transition-card small { font: 500 .72rem var(--sans); text-transform: uppercase; letter-spacing: .3em; color: var(--muted); }
+.transition-card strong { font: 400 clamp(2rem, 5vw, 3.6rem)/1.1 var(--serif); color: var(--copper); }
+/* the new page's title and hero animations wait while the card still covers them */
+.card-hold .page * { animation-play-state: paused !important; }
+
+/* ---------- the "next page" card at the end of each page: a copper glow sweeps in on hover ---------- */
+.next-page { position: relative; overflow: hidden; isolation: isolate; }
+.next-page::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(201, 138, 90, .14), rgba(201, 138, 90, 0)); transform: scaleX(0); transform-origin: 0 50%; transition: transform .7s var(--ease); }
+.next-page:hover::before, .next-page:focus-visible::before { transform: scaleX(1); }
+.next-page small { transition: color .3s ease, letter-spacing .6s var(--ease); }
+.next-page:hover small { color: var(--gold); letter-spacing: .22em; }
+
+/* ---------- reveal on scroll (stagger delays are set by v-reveal) ---------- */
+.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease) var(--d, 0ms), transform .8s var(--ease) var(--d, 0ms); }
+.js .reveal.in { opacity: 1; transform: none; }
+
+/*
+  Paintings unveil from the top as they reveal. This is a one-off animation, not a
+  lasting clip-path: once it ends the frame has no clip left to recompute while scrolling.
+  (The picture is clipped, never the observed element itself, or it would never count as visible.)
+*/
+.js .plate.reveal:not(.in) .plate-window,
+.js .exhibit.reveal:not(.in) .img,
+.js .stack.reveal:not(.in) .s1,
+.js .f-pic.reveal:not(.in) > img,
+.js .f-pic2.reveal:not(.in) > img { clip-path: inset(0 0 100% 0); }
+.js .plate.reveal.in .plate-window,
+.js .exhibit.reveal.in .img,
+.js .stack.reveal.in .s1,
+.js .f-pic.reveal.in > img,
+.js .f-pic2.reveal.in > img { animation: unveil 1s var(--ease-in-out) calc(var(--d, 0ms) + 60ms) backwards; }
+@keyframes unveil { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0); } }
+
+/* ---------- parallax images (offset set by v-parallax) ---------- */
+/* the drift is an inline transform; the zoom uses the separate scale property, both run on the GPU */
+img[data-parallax] {
+  scale: 1.12;
+  transition: scale 1.2s var(--ease), filter .4s ease !important;
+}
+.js .reveal:not(.in) img[data-parallax] { scale: 1.3; }
+.plate:hover img[data-parallax], .exhibit:hover img[data-parallax] { scale: 1.17; transition-duration: .9s, .4s !important; }
+
+/* profile figures: the text block overlaps the painting, keep it above the (transformed) picture */
+.figures .f-pic { position: relative; z-index: 1; }
+.figures .f-text { position: relative; z-index: 2; }
+
+/* ---------- page titles: letters rise, the painted O spins in ---------- */
+.title-hero h1 { animation: none; }
+.title-hero .char { display: inline-block; white-space: pre; animation: char-in 1s var(--ease) both; animation-delay: calc(var(--i) * 38ms + 60ms); }
+.title-hero .o-img { animation: o-in 1.4s var(--ease) both; animation-delay: calc(var(--i) * 38ms + 60ms); }
+.title-hero .o-img img { animation: o-zoom 2.6s var(--ease) both; animation-delay: inherit; }
+.title-hero > :not(h1) { animation: rise 1s var(--ease) both; }
+.title-hero > :nth-child(2) { animation-delay: .45s; }
+.title-hero > :nth-child(3) { animation-delay: .58s; }
+.title-hero > :nth-child(4) { animation-delay: .7s; }
+@keyframes char-in { from { opacity: 0; transform: translateY(.38em); } to { opacity: 1; transform: none; } }
+@keyframes o-in { from { opacity: 0; transform: scale(.25) rotate(-35deg); } to { opacity: 1; transform: none; } }
+@keyframes o-zoom { from { transform: scale(1.7); } to { transform: none; } }
+
+/* ---------- navigation ---------- */
+.panel > .nav { z-index: 20; } /* keep the mobile menu above the page below it */
+@media (min-width: 981px) { .nav-links { position: relative; } }
+.nav-ink { position: absolute; left: 0; bottom: 0; height: 1px; width: var(--w, 0); background: var(--gold); transform: translateX(var(--x, 0)); transition: transform .5s var(--ease), width .5s var(--ease), opacity .3s ease; pointer-events: none; }
+.nav-links a { position: relative; }
+@media (max-width: 980px) {
+  .nav-ink { display: none; }
+  .nav-links.is-open { animation: menu-in .4s var(--ease) both; }
+  .nav-links.is-open li { animation: rise .5s var(--ease) both; animation-delay: calc(var(--i) * 45ms + 60ms); }
+}
+@keyframes menu-in { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+
+/* ---------- home hero: cross-fading slides with a slow push-in ---------- */
+.hero-slides figure { opacity: 1; transition: none; }
+.hero-slides .slide-enter-active, .hero-slides .slide-leave-active { transition: opacity 1.4s ease; }
+.hero-slides .slide-enter-from, .hero-slides .slide-leave-to { opacity: 0; }
+.hero-slides figure img { animation: push-in 9s cubic-bezier(.25, .1, .25, 1) both; }
+.hero-slides figcaption { animation: rise 1s .5s var(--ease) both; }
+@keyframes push-in { from { transform: scale(1.09); } to { transform: none; } }
+.hero-copy > p:not(.line-label) { animation: rise 1s .2s var(--ease) both; }
+.hero h1 span:nth-child(2) { animation-delay: .12s; }
+.hero-copy .text-link { animation-delay: .3s; }
+.counter, .hero-row > * { animation: rise 1s var(--ease) both; }
+.counter { animation-delay: .45s; }
+.hero-row > :nth-child(1) { animation-delay: .55s; }
+.hero-row > :nth-child(2) { animation-delay: .65s; }
+.hero-row > :nth-child(3) { animation-delay: .75s; }
+
+/* the slide number rolls up or down */
+.digits { display: inline-grid; overflow: hidden; vertical-align: top; }
+.digits > * { grid-area: 1 / 1; }
+.roll-up-enter-active, .roll-up-leave-active, .roll-down-enter-active, .roll-down-leave-active { transition: transform .55s var(--ease), opacity .55s var(--ease); }
+.roll-up-enter-from, .roll-down-leave-to { transform: translateY(100%); opacity: 0; }
+.roll-up-leave-to, .roll-down-enter-from { transform: translateY(-100%); opacity: 0; }
+
+/* ---------- timeline explorer ---------- */
+.era-next-enter-active, .era-prev-enter-active { transition: opacity .55s var(--ease), transform .55s var(--ease); }
+.era-next-leave-active, .era-prev-leave-active { transition: opacity .2s ease, transform .2s ease; }
+.era-next-enter-from { opacity: 0; transform: translateX(24px); }
+.era-prev-enter-from { opacity: 0; transform: translateX(-24px); }
+.era-next-leave-to { opacity: 0; transform: translateX(-12px); }
+.era-prev-leave-to { opacity: 0; transform: translateX(12px); }
+.era-detail > * { min-width: 0; }
+.eras .era-ink { position: absolute; bottom: 6px; left: 0; height: 1px; width: var(--w, 0); background: var(--gold); transform: translateX(var(--x, 0)); transition: transform .6s var(--ease), width .6s var(--ease); z-index: 1; }
+.eras button::after { z-index: 2; }
+.strip img { transition: transform .8s var(--ease); }
+.strip button.on img { transform: scale(1.06); }
+
+/* ---------- tabs: sliding underline, panels slide in from the side you came from ---------- */
+.tablist { position: relative; }
+.tablist .tab[aria-selected="true"] { border-bottom-color: transparent; }
+.tab-ink { position: absolute; left: 0; top: 0; height: 2px; width: var(--w, 0); background: var(--gold); transform: translate(var(--x, 0), calc(var(--b, 2px) - 2px)); transition: transform .45s var(--ease), width .45s var(--ease); pointer-events: none; }
+.tabpanel { animation: none; }
+.tabs[data-dir="next"] .tabpanel:not([hidden]) { animation: panel-next .5s var(--ease) both; }
+.tabs[data-dir="prev"] .tabpanel:not([hidden]) { animation: panel-prev .5s var(--ease) both; }
+@keyframes panel-next { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
+@keyframes panel-prev { from { opacity: 0; transform: translateX(-22px); } to { opacity: 1; transform: none; } }
+
+/* ---------- analyses: the contents marker glides with you ---------- */
+.toc ol { position: relative; }
+.toc-ink { position: absolute; left: -1px; top: 0; width: 2px; height: var(--h, 0); background: var(--gold); transform: translateY(var(--y, 0)); transition: transform .5s var(--ease), height .5s var(--ease); }
+@media (min-width: 981px) { .toc a.active { border-left-color: transparent; } }
+@media (max-width: 980px) { .toc-ink { display: none; } }
+.chips li { transition: color .3s ease; }
+.work-num { transition: background-color .4s ease, color .4s ease; }
+.work.in-view .work-num { background: var(--copper); color: var(--black); }
+
+/* ---------- masterpiece: the rage arc draws itself ---------- */
+.journey .path { stroke-dasharray: var(--len, 1200); stroke-dashoffset: var(--len, 1200); }
+/* only the draw itself animates, so measuring the real length never shows a stray piece of line */
+.journey.drawn .path { stroke-dashoffset: 0; transition: stroke-dashoffset 2.4s var(--ease-in-out); }
+.journey .stop { opacity: 0; transition: opacity .6s ease; transition-delay: calc(var(--i) * .3s + .25s); }
+.journey .stop circle { transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform .7s cubic-bezier(.34, 1.56, .64, 1); transition-delay: inherit; }
+.journey.drawn .stop { opacity: 1; }
+.journey.drawn .stop circle { transform: none; }
+.principle { transition: background-color .4s ease; }
+.principle-glyph { transition: letter-spacing .8s var(--ease), color .4s ease; }
+.principle:hover .principle-glyph { letter-spacing: .06em; color: #f3c77f; }
+
+/* ---------- painting viewer: opens and closes smoothly ---------- */
+dialog.lightbox[open]::backdrop { animation: backdrop-in .35s ease both; }
+dialog.lightbox[open] .dialog-media img { animation: lb-img .9s var(--ease) both; }
+dialog.lightbox[open] .dialog-body > * { animation: rise .7s var(--ease) both; }
+dialog.lightbox[open] .dialog-body > :nth-child(2) { animation-delay: .08s; }
+dialog.lightbox[open] .dialog-body > :nth-child(3) { animation-delay: .16s; }
+dialog.lightbox.closing { animation: dialog-out .22s ease forwards; }
+dialog.lightbox.closing::backdrop { animation: backdrop-out .22s ease forwards; }
+@keyframes backdrop-in { from { opacity: 0; } }
+@keyframes backdrop-out { to { opacity: 0; } }
+@keyframes dialog-out { to { opacity: 0; transform: translateY(10px) scale(.985); } }
+@keyframes lb-img { from { opacity: 0; transform: scale(1.04); } to { opacity: 1; transform: none; } }
+
+/* ---------- small touches ---------- */
+.btn, .pill, .look { transition: background-color .25s ease, transform .2s var(--ease), color .25s ease; }
+.exhibit .arrow svg { transition: transform .35s var(--ease); }
+.exhibit:hover .arrow svg { transform: translateX(4px); }
+.big-num { font-variant-numeric: tabular-nums; }
+
+/* ---------- reduced motion: show everything, move nothing ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { filter: none; }
+  .js .plate.reveal .plate-window, .js .exhibit.reveal .img, .js .f-pic.reveal > img, .js .f-pic2.reveal > img, .js .stack.reveal .s1 { clip-path: none !important; }
+  .journey .path { stroke-dashoffset: 0; }
+  .journey .stop { opacity: 1; }
+  .journey .stop circle { transform: none; }
+}

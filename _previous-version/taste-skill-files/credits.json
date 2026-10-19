@@ -1,0 +1,28 @@
+[
+ {
+  "file": "assets/waves-of-the-sea-video.webm",
+  "media": "video",
+  "poster": "assets/waves-of-the-sea-video-poster.jpg",
+  "ref": "commons:44423600",
+  "title": "Waves of the sea (Video)",
+  "creator": "Amada44",
+  "creatorUrl": null,
+  "date": "2014-07-13",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Waves_of_the_sea_(Video).webm",
+  "via": "Wikimedia Commons",
+  "video": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d6/Waves_of_the_sea_%28Video%29.webm/Waves_of_the_sea_%28Video%29.webm.480p.vp9.webm",
+  "width": 854,
+  "height": 480,
+  "duration": 18.2,
+  "bytes": 3079523,
+  "credit": "\"Waves of the sea (Video)\" by Amada44, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-10-18T16:32:28.877Z"
+ }
+]
