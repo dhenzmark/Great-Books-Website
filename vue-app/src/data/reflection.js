@@ -6,7 +6,7 @@ export default [
   },
   {
     "tag": "p",
-    "html": "What I found instead was a mirror. In Job, I saw the questions my own family asked after hard times: why us, and why now? In the <em>Panchatantra</em>, I recognized the classmates who spread gossip and the friends who stood by me. In the <em>Ramayana</em> and <em>Mahabharata</em>, I saw how heavily duty to family can weigh on a person, something every Filipino child understands. In the <em>Iliad</em>, I saw how pride and anger can destroy relationships. In the <em>Odyssey</em>, I felt the longing of families separated by distance. In <em>The Song of Roland</em>, I saw how hard it can be to ask for help."
+    "html": "What I found instead was a mirror. In Job, I saw the questions my own family asked after hard times: why us, and why now? In the <em>Panchatantra</em>, I saw how quickly fear can turn into a judgment we regret. In the <em>Ramayana</em> and <em>Mahabharata</em>, I saw how heavily duty to family can weigh on a person, something every Filipino child understands. In the <em>Iliad</em>, I saw how pride and anger can destroy relationships. In the <em>Odyssey</em>, I felt the longing of families separated by distance. In <em>The Song of Roland</em>, I saw how hard it can be to ask for help."
   },
   {
     "tag": "h3",

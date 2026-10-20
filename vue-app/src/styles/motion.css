@@ -67,7 +67,17 @@ img[data-parallax] {
 @keyframes o-zoom { from { transform: scale(1.7); } to { transform: none; } }
 
 /* ---------- navigation ---------- */
-.panel > .nav { z-index: 20; } /* keep the mobile menu above the page below it */
+/* sticky: stays at the top while you scroll, on a blurred panel so text behind it never shows through */
+:root { --nav-h: 76px; }
+html { scroll-padding-top: calc(var(--nav-h) + 16px); }
+.panel > .nav {
+  position: sticky; top: 0; z-index: 60; /* above the page, so the mobile menu also stays on top */
+  min-height: var(--nav-h); padding-top: 14px; padding-bottom: 14px;
+  background: rgba(28, 28, 28, .82); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  border-bottom: 1px solid rgba(227, 176, 98, .14);
+}
+.toc { top: calc(var(--nav-h) + 24px); }
+.work { scroll-margin-top: calc(var(--nav-h) + 16px); }
 @media (min-width: 981px) { .nav-links { position: relative; } }
 .nav-ink { position: absolute; left: 0; bottom: 0; height: 1px; width: var(--w, 0); background: var(--gold); transform: translateX(var(--x, 0)); transition: transform .5s var(--ease), width .5s var(--ease), opacity .3s ease; pointer-events: none; }
 .nav-links a { position: relative; }
@@ -172,3 +182,24 @@ dialog.lightbox.closing::backdrop { animation: backdrop-out .22s ease forwards; 
   .journey .stop { opacity: 1; }
   .journey .stop circle { transform: none; }
 }
+
+/* ---------- the backdrop outside the panel: glows, a gold ring, stars and a vignette ---------- */
+/* one fixed layer, so it is composited once and never repaints while scrolling */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 55% at 8% 12%, rgba(201, 138, 90, .2), transparent 70%),
+    radial-gradient(ellipse 55% 60% at 96% 88%, rgba(63, 124, 134, .2), transparent 70%),
+    radial-gradient(ellipse 40% 35% at 92% 8%, rgba(227, 176, 98, .08), transparent 70%),
+    radial-gradient(circle at 50% 50%, transparent 55%, rgba(0, 0, 0, .55) 100%),
+    url("../assets/ornament.svg") center / cover no-repeat,
+    #121212;
+}
+body::after {
+  content: ""; position: fixed; z-index: -1; pointer-events: none;
+  width: 130vmax; height: 130vmax; left: -55vmax; top: 18vh; border-radius: 50%;
+  border: 1px solid rgba(227, 176, 98, .09);
+  box-shadow: 0 0 0 46px rgba(227, 176, 98, .025), inset 0 0 0 1px rgba(227, 176, 98, .04);
+}
+body { background: transparent; }
+html { background: #121212; }

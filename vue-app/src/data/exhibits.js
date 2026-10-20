@@ -10,11 +10,11 @@ export default [
   },
   {
     "href": "/analyses#panchatantra",
-    "src": "assets/img/panchatantra-lion-bull.jpg",
-    "alt": "A lion attacking a bull while jackals watch",
+    "src": "assets/img/panchatantra-mongoose.jpg",
+    "alt": "A weasel beside a slain snake and a baby safe in its crib",
     "title": "The Panchatantra",
     "meta": "Ancient India, c. 200 BCE – 300 CE",
-    "text": "Animal fables that turn three dull princes into wise rulers in six months."
+    "text": "A mother strikes the loyal mongoose that saved her child, before she sees the snake it killed."
   },
   {
     "href": "/analyses#ramayana",

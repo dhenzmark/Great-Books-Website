@@ -1,10 +1,12 @@
 <script setup>
-/* One full analysis: heading, painting, key facts, tabs, gallery and insight. */
-import ArtPlate from "../ui/ArtPlate.vue";
+/* One full analysis: poster, key facts, tabs, gallery and insight. */
 import TabGroup from "../ui/TabGroup.vue";
 import WorkFoot from "../ui/WorkFoot.vue";
 import WorkSummary from "./WorkSummary.vue";
 import WorkGallery from "./WorkGallery.vue";
+import WorkPoster from "./WorkPoster.vue";
+import OdysseyMapToggle from "./OdysseyMapToggle.vue";
+import WorkBackdrop from "./WorkBackdrop.vue";
 
 defineProps({
   work: { type: Object, required: true },
@@ -14,18 +16,13 @@ defineProps({
 
 <template>
   <article :id="work.id" class="work" :class="{ 'is-right': work.right, 'in-view': current }" :aria-labelledby="work.titleId">
-    <div v-reveal class="work-head">
-      <span class="work-num">{{ work.num }}</span>
-      <h3 :id="work.titleId">{{ work.title }}</h3>
-      <span class="orig" :class="work.orig.font" :lang="work.orig.lang">{{ work.orig.text }}</span>
-    </div>
+    <WorkBackdrop :id="work.id" />
+    <WorkPoster v-reveal :work="work" />
+    <WorkSummary v-reveal :work="work" />
 
-    <div class="work-grid">
-      <ArtPlate v-reveal v-bind="work.plate" />
-      <WorkSummary v-reveal :work="work" />
-    </div>
-
-    <TabGroup v-reveal :tabs="work.tabs" :prefix="work.tabPrefix" :label="`${work.title} analysis`" />
+    <TabGroup v-reveal :tabs="work.tabs" :prefix="work.tabPrefix" :label="`${work.title} analysis`">
+      <template v-if="work.id === 'odyssey'" #panel-0><OdysseyMapToggle /></template>
+    </TabGroup>
 
     <WorkGallery v-if="work.gallery.length" :title="`${work.title} in Art`" :paintings="work.gallery" />
 

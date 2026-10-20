@@ -1,0 +1,143 @@
+/* ---------- The wanderings of Odysseus (OdysseyMap.vue) ---------- */
+.odm {
+  --sea: #173f46; --sea-deep: #0d2a30; --land: #dccb9f; --land-edge: #7a6443; --ink: #2a2118;
+  --route: #c4512f; --card: #f2ead8;
+  position: relative; margin: 36px 0 12px;
+}
+.odm-stage {
+  position: sticky; top: var(--nav-h); height: calc(100vh - var(--nav-h)); height: calc(100svh - var(--nav-h));
+  overflow: hidden; border-radius: 18px; border: 1px solid var(--gold-line);
+  background: radial-gradient(ellipse at 40% 45%, var(--sea), var(--sea-deep) 85%);
+  isolation: isolate; contain: layout paint;
+}
+/* soft vignette, like the edge of an old chart */
+.odm-stage::after { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; box-shadow: inset 0 0 120px rgba(5, 18, 20, .65); border-radius: inherit; }
+
+.odm-world { position: absolute; left: 0; top: 0; z-index: 1; transform-origin: 0 0; will-change: transform; }
+.odm-land, .odm-route { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.odm-route { will-change: transform; } /* its own layer: redrawing the route never repaints the coast */
+.odm-ripple { fill: none; stroke: rgba(196, 226, 222, .2); stroke-linejoin: round; }
+.odm-ripple-1 { stroke-width: 9; }
+.odm-ripple-2 { stroke-width: 22; stroke: rgba(196, 226, 222, .08); }
+.odm-coast { fill: var(--land); stroke: var(--land-edge); stroke-width: 1.1; stroke-linejoin: round; }
+.odm-route-ahead { fill: none; stroke: rgba(42, 33, 24, .55); stroke-width: 2.4; stroke-dasharray: 2 7; stroke-linecap: round; }
+.odm-route-done { fill: none; stroke: var(--route); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+
+.odm-label { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; pointer-events: none; font-family: var(--serif); }
+.odm-label.is-sea { font-style: italic; font-size: 1rem; letter-spacing: .14em; color: rgba(214, 233, 228, .55); }
+.odm-label.is-land { font-size: .78rem; letter-spacing: .32em; text-transform: uppercase; color: rgba(42, 33, 24, .55); }
+
+.odm-ship { position: absolute; left: 0; top: 0; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--route); box-shadow: 0 0 0 4px rgba(242, 234, 216, .9), 0 0 0 10px rgba(196, 81, 47, .25); z-index: 3; }
+
+.odm-pin { position: absolute; z-index: 2; display: flex; align-items: center; gap: 8px; padding: 0; border: 0; background: none; cursor: pointer; transform: translate(-13px, -13px); font: inherit; }
+.odm-pin.is-left { flex-direction: row-reverse; transform: translate(calc(-100% + 13px), -13px); }
+.odm-pin-dot { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--card); border: 2px solid var(--ink); color: var(--ink); font: 600 .72rem var(--sans); transition: background-color .3s ease, color .3s ease, transform .4s var(--ease); }
+/* names only for the current stop and on hover, so nearby stops never pile up */
+.odm-pin:not(.is-active):not(:hover) .odm-pin-name { opacity: 0; }
+.odm-pin-name { transition: opacity .3s ease; padding: 3px 9px; border-radius: 999px; background: rgba(242, 234, 216, .92); color: var(--ink); font: 600 .72rem var(--sans); letter-spacing: .04em; white-space: nowrap; box-shadow: 0 2px 8px rgba(0, 0, 0, .25); }
+.odm-pin.is-done .odm-pin-dot { background: var(--ink); color: var(--card); }
+.odm-pin.is-active .odm-pin-dot { background: var(--route); border-color: var(--card); color: #fff; transform: scale(1.25); }
+.odm-pin:hover .odm-pin-name { background: #fff; }
+
+/* list of stops, left */
+.odm-list { position: absolute; z-index: 4; left: 16px; top: 50%; translate: 0 -50%; margin: 0; padding: 10px 12px; list-style: none; border-radius: 12px; background: rgba(13, 42, 48, .9); box-shadow: 0 6px 20px rgba(0, 0, 0, .3); }
+.odm-list button { display: flex; align-items: center; gap: 9px; min-height: 26px; padding: 0 8px 0 0; border: 0; background: none; cursor: pointer; font: 600 .66rem var(--sans); text-transform: uppercase; letter-spacing: .12em; color: rgba(242, 234, 216, .62); text-shadow: 0 1px 6px rgba(0, 0, 0, .5); transition: color .25s ease; }
+.odm-list-dot { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid currentColor; transition: background-color .25s ease; }
+.odm-list button.is-done { color: rgba(242, 234, 216, .85); }
+.odm-list button.is-done .odm-list-dot { background: currentColor; }
+.odm-list button.is-active { color: #fff; }
+.odm-list button.is-active .odm-list-dot { background: var(--route); border-color: var(--route); box-shadow: 0 0 0 3px rgba(196, 81, 47, .35); }
+.odm-list button:hover { color: #fff; }
+
+/* stat chips, top */
+.odm-chips { position: absolute; z-index: 4; top: 18px; right: 460px; display: flex; gap: 6px; }
+.odm-chips span { padding: 6px 12px; border-radius: 9px; background: var(--ink); color: var(--card); font: 600 .72rem var(--sans); letter-spacing: .03em; box-shadow: 0 0 0 2px rgba(196, 81, 47, .7); white-space: nowrap; }
+
+/* mini map, bottom left */
+.odm-mini { position: absolute; z-index: 4; left: 18px; bottom: 52px; width: 150px; height: auto; aspect-ratio: auto; border-radius: 12px; border: 2px solid var(--ink); background: var(--sea-deep); box-shadow: 0 6px 20px rgba(0, 0, 0, .35); }
+.odm-mini-land { fill: var(--land); }
+.odm-mini-route { fill: none; stroke: var(--route); stroke-width: 10; stroke-linecap: round; opacity: .75; }
+.odm-mini-dot { fill: #fff; stroke: var(--route); stroke-width: 14; }
+
+/* story card, right */
+.odm-card { position: absolute; z-index: 5; top: 16px; right: 16px; max-height: calc(100% - 68px); width: 420px; display: flex; flex-direction: column; border-radius: 18px; border: 2px solid var(--ink); background: var(--card); color: var(--ink); box-shadow: 0 18px 50px rgba(0, 0, 0, .45); overflow: hidden; }
+.odm-card-inner { flex: 1; min-height: 0; display: flex; flex-direction: column; overflow-y: auto; scrollbar-width: thin; }
+.odm-card-media { margin: 0; flex: none; position: relative; background: var(--ink); }
+.odm-card-media img { display: block; width: 100%; height: clamp(150px, 30vh, 270px); object-fit: cover; }
+.odm-card-media figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 14px 8px; font-size: .64rem; line-height: 1.4; color: rgba(255, 255, 255, .85); background: linear-gradient(transparent, rgba(0, 0, 0, .7)); }
+.odm-card-body { padding: 20px 24px 12px; }
+.odm-card-eyebrow { margin: 0 0 8px; font: 700 .68rem var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--route); }
+.odm-card h4 { margin: 0 0 10px; font-family: var(--serif); font-weight: 500; font-size: 1.7rem; line-height: 1.1; color: var(--ink); }
+.odm-card-body p:last-child { margin: 0; font-size: .95rem; line-height: 1.65; color: #3d3226; }
+.odm-card-nav { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; border-top: 2px dashed rgba(42, 33, 24, .5); }
+.odm-card-nav span { font: 600 .72rem var(--sans); letter-spacing: .1em; color: rgba(42, 33, 24, .6); }
+.odm-card-nav button { min-height: 40px; padding: 0 16px; border-radius: 999px; border: 2px solid var(--ink); background: var(--card); color: var(--ink); font: 700 .8rem var(--serif); cursor: pointer; transition: background-color .2s ease, color .2s ease; }
+.odm-card-nav button:hover:not(:disabled) { background: var(--ink); color: var(--card); }
+.odm-card-nav button:disabled { opacity: .35; cursor: default; }
+.odm-card-enter-active { transition: opacity .45s var(--ease), transform .45s var(--ease); }
+.odm-card-leave-active { transition: opacity .18s ease; }
+.odm-card-enter-from { opacity: 0; transform: translateY(14px); }
+.odm-card-leave-to { opacity: 0; }
+
+/* journey timeline, bottom */
+.odm-timeline { position: absolute; z-index: 4; left: 18px; right: 18px; bottom: 20px; height: 3px; border-radius: 3px; background: rgba(242, 234, 216, .22); }
+.odm-timeline-fill { position: absolute; inset: 0; border-radius: inherit; background: var(--route); transform-origin: 0 50%; }
+.odm-timeline i { position: absolute; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: var(--sea-deep); border: 2px solid rgba(242, 234, 216, .6); }
+.odm-timeline i.is-done { background: var(--route); border-color: var(--card); }
+
+@media (max-width: 1100px) {
+  .odm-list { display: none; }
+  .odm-chips { right: auto; left: 18px; }
+}
+@media (max-width: 760px) {
+  .odm-stage { border-radius: 14px; }
+  .odm-card { top: auto; left: 10px; right: 10px; bottom: 34px; width: auto; height: 50%; }
+  .odm-card-media img { height: 110px; }
+  .odm-card h4 { font-size: 1.35rem; }
+  .odm-card-body { padding: 14px 16px 8px; }
+  .odm-card-body p:last-child { font-size: .88rem; }
+  .odm-mini { display: none; }
+  .odm-chips { top: 12px; left: 10px; flex-wrap: wrap; }
+  .odm-chips span { padding: 5px 9px; font-size: .66rem; }
+  .odm-pin-name { display: none; }
+  .odm-pin.is-active .odm-pin-name { display: block; }
+  .odm-timeline { left: 12px; right: 12px; bottom: 14px; }
+}
+
+/* reduced motion: no pinning; the whole map at once, with the stops listed below */
+.odm.is-still .odm-stage { position: relative; top: auto; height: auto; aspect-ratio: 2063 / 1670; }
+.odm.is-still .odm-card, .odm.is-still .odm-timeline, .odm.is-still .odm-mini, .odm.is-still .odm-ship, .odm.is-still .odm-chips { display: none; }
+.odm.is-still .odm-pin-name { display: none; }
+.odm-still-list { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 22px; }
+.odm-still-list h4 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: 1.35rem; color: var(--copper); }
+.odm-still-list p:last-child { margin: 0; color: #cfc8bd; }
+
+/* ---------- the button that opens the map ---------- */
+.odm-toggle { margin-top: 28px; max-width: 74ch; }
+.odm-open { display: flex; align-items: center; gap: 18px; width: 100%; padding: 18px 22px; border: 1px solid var(--gold-line); border-radius: 14px; background: linear-gradient(120deg, rgba(23, 63, 70, .55), rgba(13, 42, 48, .3)); color: var(--text); text-align: left; cursor: pointer; transition: border-color .25s ease, background-color .25s ease, transform .2s var(--ease); }
+.odm-open:hover { border-color: var(--gold); }
+.odm-open:active { transform: scale(.99); }
+.odm-open-icon { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: rgba(227, 176, 98, .12); color: var(--gold); }
+.odm-open-icon svg { width: 26px; height: 26px; }
+.odm-open-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.odm-open-text strong { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; color: var(--copper); }
+.odm-open-text small { font-size: .82rem; color: var(--muted); }
+.odm-open-arrow { flex: none; font-size: 1.4rem; color: var(--gold); transition: transform .3s var(--ease); }
+.odm-open:hover .odm-open-arrow { transform: translateX(5px); }
+.odm-toggle:has(.odm-open-box) { max-width: none; }
+.odm-open-title { margin: 0; font-family: var(--serif); text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; color: var(--muted); }
+.odm-open-title span { text-transform: none; letter-spacing: .02em; font-family: var(--sans); font-size: .78rem; }
+/* close button inside the map */
+.odm-x { position: absolute; z-index: 8; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 2px solid var(--ink); background: var(--card); color: var(--ink); font: 700 .8rem var(--serif); cursor: pointer; box-shadow: 0 4px 14px rgba(0, 0, 0, .3); transition: background-color .2s ease, color .2s ease; }
+.odm-x:hover { background: var(--ink); color: var(--card); }
+@media (max-width: 1100px) { .odm-chips { left: 150px; } }
+@media (max-width: 760px) { .odm-x { top: 10px; left: auto; right: 10px; min-height: 34px; padding: 0 12px; } .odm-chips { left: 10px; right: 120px; } }
+.odm-open-box .odm { margin-top: 14px; }
+
+/* paused: frozen in place, the page scrolls past it normally */
+.odm.is-paused .odm-stage { position: relative; top: auto; }
+.odm-paused { position: absolute; z-index: 7; inset: 0; display: grid; place-content: center; gap: 10px; text-align: center; border: 0; border-radius: inherit; background: rgba(13, 26, 28, .55); color: var(--card); cursor: pointer; animation: odm-fade .35s ease both; }
+.odm-paused span { font: 600 .72rem var(--sans); text-transform: uppercase; letter-spacing: .2em; color: rgba(242, 234, 216, .75); }
+.odm-paused strong { justify-self: center; padding: 14px 26px; border-radius: 999px; border: 2px solid var(--ink); background: var(--card); color: var(--ink); font: 700 1rem var(--serif); box-shadow: 0 10px 30px rgba(0, 0, 0, .4); transition: transform .2s var(--ease); }
+.odm-paused:hover strong { transform: scale(1.04); }
+@keyframes odm-fade { from { opacity: 0; } }

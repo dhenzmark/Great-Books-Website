@@ -30,6 +30,9 @@ function pageTop(el) {
   return y;
 }
 
+/* room for the sticky navbar above an anchored section */
+const anchorOffset = () => (document.querySelector(".panel > .nav")?.offsetHeight || 0) + 16;
+
 const jump = (top) => window.scrollTo({ top, behavior: "instant" });
 
 /* called once the old page is out of sight */
@@ -43,7 +46,7 @@ export function applyPendingScroll() {
   const { hash, saved } = pending;
   pending = null;
   const el = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
-  jump(saved ? saved.top : el ? pageTop(el) - 24 : 0);
+  jump(saved ? saved.top : el ? pageTop(el) - anchorOffset() : 0);
 }
 
 const router = createRouter({
@@ -52,7 +55,7 @@ const router = createRouter({
   scrollBehavior(to, from, saved) {
     if (to.path === from.path) {
       if (saved) return saved;
-      return to.hash ? { el: to.hash, top: 24, behavior: prefersReducedMotion() ? "auto" : "smooth" } : false;
+      return to.hash ? { el: to.hash, top: anchorOffset(), behavior: prefersReducedMotion() ? "auto" : "smooth" } : false;
     }
     /* Back/Forward: remember where the reader was (this callback runs a little after afterEach) */
     if (saved) {

@@ -90,16 +90,16 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "assets/img/panchatantra-tortoise-monkey.jpg",
-      "alt": "Manuscript page with Arabic text above a painting of a monkey riding on a tortoise's back through water",
-      "fit": "contain",
+      "src": "assets/img/panchatantra-mongoose.jpg",
+      "alt": "A bearded man finds his baby asleep and safe in its crib, while a weasel stands beside a snake cut into pieces",
+      "objectPosition": "50% 50%",
       "look": {
-        "src": "assets/img/panchatantra-tortoise-monkey.jpg",
-        "title": "The Tortoise Ferries the Monkey",
-        "caption": "Folio from a Kalila wa Dimna manuscript, 18th century. The Metropolitan Museum of Art.",
-        "text": "Kalila wa Dimna is the Arabic version of the Panchatantra. Here the tale of the monkey and the crocodile has become the monkey and the tortoise. The monkey must think fast to escape a friend who plans to betray him."
+        "src": "assets/img/panchatantra-mongoose.jpg",
+        "title": "The Ascetic Finds his Son Alive in his Crib",
+        "caption": "Folio from a Kalila wa Dimna manuscript, India, second quarter of the 16th century. The Metropolitan Museum of Art.",
+        "text": "In Kalila wa Dimna, the Arabic version of the Panchatantra, the mongoose becomes a weasel and the parent is an ascetic. The painter shows the moment of discovery: the child asleep and unharmed, the snake lying in pieces, and the loyal animal that saved him."
       },
-      "caption": "“The Tortoise Ferries the Monkey,” folio from a Kalila wa Dimna manuscript, 18th century. The Metropolitan Museum of Art."
+      "caption": "“The Ascetic Finds his Son Alive in his Crib,” folio from a Kalila wa Dimna manuscript, India, second quarter of the 16th century. The Metropolitan Museum of Art."
     },
     "kicker": "c. 200 BCE – 300 CE",
     "meta": [
@@ -112,49 +112,49 @@ export default [
         "Sanskrit"
       ],
       [
-        "Meaning",
-        "“Five Treatises”"
+        "Source",
+        "Book 5, “Ill-Considered Action,” story 2"
       ],
       [
         "Form",
-        "Frame tale of animal fables in prose and verse"
+        "Animal fable with a moral"
       ]
     ],
-    "hook": "A wise teacher turns three dull princes into thinkers in six months, using nothing but stories about animals.",
+    "hook": "A mother sees blood on the mouth of the family mongoose and strikes before she looks.",
     "chips": [
-      "Practical wisdom",
-      "Friendship",
-      "Brains over strength"
+      "Think before acting",
+      "Loyalty",
+      "Appearances deceive"
     ],
     "tabPrefix": "pan",
     "tabs": [
       {
         "label": "Summary",
-        "html": "<p>The <em>Panchatantra</em> begins with a frame story. King Amarashakti is worried because his three sons are dull and refuse to learn. A wise old Brahmin named Vishnu Sharma promises to make the princes wise in the ways of the world in only six months. Instead of lecturing, he teaches through stories, mostly about animals who talk, scheme, and make mistakes the way people do.</p> <p>The work has five books. <strong>The Loss of Friends</strong> tells how two jackals, Karataka and Damanaka, destroy the friendship between Pingalaka the lion and Sanjivaka the bull through gossip and lies. <strong>The Winning of Friends</strong> shows a crow, a mouse, a tortoise, and a deer who save one another through loyalty and teamwork. <strong>Crows and Owls</strong> describes a war between the two birds, won through clever strategy. <strong>Loss of Gains</strong> includes the famous tale of the monkey who escapes a crocodile by quick thinking. <strong>Ill-Considered Action</strong> warns against haste, as in the story of the Brahmin’s wife who kills a loyal mongoose before learning it had saved her baby from a snake.</p> <p>Stories are nested inside other stories. A character often begins a tale to prove a point, and within that tale another character tells yet another. The result is a web of lessons that the princes, and the reader, must learn to connect.</p>"
+        "html": "<p>The story of the Brahmin’s wife and the mongoose comes from the fifth book of the <em>Panchatantra</em>, <em>Ill-Considered Action</em>. A Brahmin named Devasharman and his wife long for a child. When a son is finally born to them, a mongoose is born nearby on the same day, and the wife takes the little animal in and raises it beside her baby, feeding and caring for it as if it were a second son. Still, she never fully trusts it. Mongooses are wild creatures, and she worries that one day it might turn on the child.</p> <p>One day she goes out to fetch water from the pond. She leaves the baby with her husband and warns him to guard the boy from the mongoose. But the Brahmin soon leaves too, to go begging for alms, and the house is left with only the sleeping child and the mongoose. While they are gone, a black snake slides out of its hole and moves toward the baby. The mongoose sees it, fights it, and tears it to pieces.</p> <p>Proud of what he has done, the mongoose runs to meet the mother on her way home, his face still red with the snake’s blood. She sees the blood and is sure he has killed her son. Without stopping to look, she throws her heavy water pitcher down on him and kills him on the spot. Then she rushes home and finds her baby sleeping peacefully beside the torn body of the snake. Overcome with grief and guilt, she weeps for the mongoose she had raised as a son, and she blames her husband for leaving the child alone.</p>"
       },
       {
         "label": "Characters",
-        "html": "<ul class=\"char-list\"> <li><strong>Vishnu Sharma</strong>The wise teacher and narrator of the frame story.</li> <li><strong>Damanaka</strong>An ambitious jackal who breaks a friendship for his own gain.</li> <li><strong>The Four Friends</strong>The crow, mouse, tortoise, and deer, who show the power of loyalty.</li> <li><strong>The Monkey</strong>A clever animal who escapes a crocodile with a quick lie about leaving his heart in a tree.</li> </ul>"
+        "html": "<ul class=\"char-list\"> <li><strong>The mongoose</strong>Raised alongside the baby, he risks his life to kill the snake and is killed for it by the one he trusted most.</li> <li><strong>The Brahmin’s wife</strong>A loving mother whose fear turns into a sudden, terrible judgment.</li> <li><strong>Devasharman</strong>The Brahmin, who is told to guard his son but leaves to beg for alms.</li> <li><strong>The baby</strong>The sleeping son at the center of the story, saved without ever knowing it.</li> <li><strong>The black snake</strong>The real danger, which no one but the mongoose sees.</li> </ul>"
       },
       {
         "label": "Themes",
-        "html": "<ul class=\"char-list\"> <li><strong>Practical wisdom (niti)</strong>The book teaches how to live wisely in a real and often dangerous world.</li> <li><strong>Friendship and betrayal</strong>True friends protect each other, while flatterers bring ruin.</li> <li><strong>Brains over strength</strong>Small, weak animals often defeat stronger ones by thinking clearly.</li> <li><strong>Think before acting</strong>Many tragedies in the book come from haste and anger.</li> </ul>"
+        "html": "<ul class=\"char-list\"> <li><strong>Think before acting</strong>The whole book warns against “ill-considered action,” and this tale shows its cost in a single moment.</li> <li><strong>Appearances deceive</strong>The same blood that proves the mongoose’s courage is read as proof of his guilt.</li> <li><strong>Loyalty</strong>The mongoose protects the child out of love for the family that raised him.</li> <li><strong>Shared responsibility</strong>The father who left and the mother who struck both carry the blame.</li> </ul>"
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The most important device is the <strong>frame narrative</strong>, a story that holds other stories, used again and again in layers. The animals are examples of <strong>anthropomorphism</strong>, which gives animals human speech and personality. Each tale works as a <strong>fable</strong> that ends with a clear moral. The prose is mixed with short <strong>verses</strong> that state a lesson in memorable form, much like our own <em>salawikain</em>. The book is also full of <strong>irony</strong>, since clever characters are often trapped by their own tricks.</p>"
+        "html": "<p>The tale is a <strong>fable</strong>: a short story with animal characters that teaches a clear lesson. Its power comes from <strong>dramatic irony</strong>. The reader watches the mongoose kill the snake, so we know the truth while the mother does not, and we can only watch as she makes her mistake. The wife’s early distrust of the mongoose works as <strong>foreshadowing</strong>, since her fear is already waiting for a reason. The blood on the mongoose’s face is the central <strong>symbol</strong>: one piece of evidence with two opposite meanings. Even the ordinary water pitcher, carried for the family’s daily needs, becomes the weapon of a tragedy. Like the other stories in the fifth book, the tale belongs to a chain of warnings about acting in haste.</p>"
       },
       {
         "label": "Context",
-        "html": "<p>The <em>Panchatantra</em> belongs to the Indian tradition of <em>nitishastra</em>, writing about wise conduct and statecraft. It was meant for future rulers, but its lessons fit anyone. It became one of the most widely traveled books in history. It was translated into Middle Persian in the sixth century, then into Arabic as <em>Kalila wa Dimna</em>, and from there into Hebrew, Latin, and many European languages. Both paintings in this analysis come from Persian and Arabic versions, which shows how far the stories traveled.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:4/3\"><img src=\"assets/img/panchatantra-lion-bull.jpg\" alt=\"A lion pounces on a black bull while two jackals watch from below\" loading=\"lazy\"></div> <button class=\"look\" type=\"button\" data-src=\"assets/img/panchatantra-lion-bull.jpg\" data-title=\"The Lion Devours the Bull\" data-caption=\"Kalila wa Dimna, painted in Herat, 1430. Topkapı Palace Museum, Istanbul.\" data-text=\"This is the tragic ending of The Loss of Friends. The jackal Damanaka has convinced the lion that his friend the bull is a traitor. The two jackals watch from the corner, the true villains of the story.\"> <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"M21 21l-4.3-4.3M11 8v6M8 11h6\"></path></svg>Look closer </button> </div> <figcaption>The lion devours the bull, from a Kalila wa Dimna manuscript, Herat, 1430. Topkapı Palace Museum.</figcaption> </figure>"
+        "html": "<p>The <em>Panchatantra</em> belongs to the Indian tradition of <em>nitishastra</em>, writing about wise conduct, and its fifth book, <em>Aparīkṣitakārakam</em> or “Ill-Considered Action,” gathers stories about acting without thinking. The mongoose tale travelled with the rest of the collection into Persian and then Arabic, as <em>Kalila wa Dimna</em>. In that version the mongoose becomes a weasel and the parent an ascetic, as in the painting above. The same plot later spread across medieval Europe with a faithful greyhound that kills a serpent, and it lives on in the Welsh legend of Gelert, the hound of Prince Llywelyn, who kills a wolf to save the prince’s son and is slain by his own master. It is one of the most widely travelled stories in the world.</p>"
       }
     ],
     "gallery": [],
     "quote": {
-      "text": "A friend in need is worth more than a fortune, and a clever mind is worth more than a strong arm.",
-      "cite": "The lesson of “The Winning of Friends,” in my own words"
+      "text": "Do not act until you have looked closely at a thing, or you may destroy the one who saved you.",
+      "cite": "The moral of the mongoose tale, in my own words"
     },
-    "insight": "The <em>Panchatantra</em> reminded me of the fables I heard in elementary school, like the story of the monkey and the turtle. I liked how it treats wisdom as something practical. The tale of Damanaka made me think about how gossip can ruin friendships, even in a classroom or group chat. The four friends reminded me of <em>bayanihan</em>, the Filipino spirit of helping one another. Their story shows that ordinary creatures can survive almost anything if they work together."
+    "insight": "The mongoose tale is short, but it stayed with me more than many of the longer epics. The mother is not cruel. She is frightened, and her fear makes her act before she looks. I see the same thing in myself when I react to a message or a rumor before I know the whole story, especially online, where a single screenshot can look like proof. What hurts most is that she had raised the mongoose like her own son. The story reminded me that the people we love deserve a second look before we judge them."
   },
   {
     "id": "ramayana",

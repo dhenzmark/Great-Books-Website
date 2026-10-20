@@ -20,10 +20,10 @@ export default {
     [
       "The Panchatantra",
       "Indian",
-      "Vishnu Sharma and his animals",
-      "Wisdom versus foolishness and deceit",
-      "Practical wisdom",
-      "Think before acting, and choose friends carefully."
+      "The Brahmin’s wife and the mongoose",
+      "A mother’s fear against a loyal animal’s courage",
+      "Careful judgment",
+      "Look closely before you judge, especially when you are afraid."
     ],
     [
       "The Ramayana",

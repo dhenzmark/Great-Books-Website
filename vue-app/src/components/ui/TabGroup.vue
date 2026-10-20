@@ -63,5 +63,11 @@ function onKey(e, i) {
       :hidden="i !== selected"
       v-html="tab.html"
     ></div>
+    <!-- extra content for a tab, e.g. <template #panel-0> for the first tab -->
+    <template v-for="(tab, i) in tabs" :key="`extra-${tab.label}`">
+      <div v-if="$slots[`panel-${i}`]" v-show="i === selected" class="tabpanel-extra">
+        <slot :name="`panel-${i}`" />
+      </div>
+    </template>
   </div>
 </template>

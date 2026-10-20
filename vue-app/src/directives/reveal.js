@@ -13,8 +13,9 @@ function getObserver() {
   if (io) return io;
   io = new IntersectionObserver(
     (entries) => {
+      /* in view: 8% of it showing, or (for very tall elements) a good slice of it */
       const arrived = entries
-        .filter((e) => e.isIntersecting)
+        .filter((e) => e.isIntersecting && (e.intersectionRatio >= 0.08 || e.intersectionRect.height >= 160))
         .map((e) => ({ el: e.target, box: e.boundingClientRect }))
         .sort((a, b) => a.box.top - b.box.top || a.box.left - b.box.left);
       arrived.forEach(({ el }, i) => {
@@ -27,7 +28,7 @@ function getObserver() {
         el.classList.add("in");
       });
     },
-    { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+    { rootMargin: "0px 0px -8% 0px", threshold: [0, 0.02, 0.05, 0.08] }
   );
   return io;
 }

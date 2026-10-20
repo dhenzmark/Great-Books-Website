@@ -4,13 +4,12 @@ import { ref, onMounted } from "vue";
 import { useInView } from "../../composables/useInView.js";
 
 const stops = [
-  { x: 40, y: 190, label: "The quarrel", book: "Book 1", tx: 30, ty: 218 },
-  { x: 130, y: 160, label: "Withdrawal", book: "Books 1–8", anchor: "middle" },
-  { x: 220, y: 135, label: "Embassy refused", book: "Book 9", anchor: "middle" },
-  { x: 320, y: 100, label: "Patroclus dies", book: "Book 16", anchor: "middle" },
-  { x: 420, y: 70, r: 8, label: "Hector falls", book: "Book 22", anchor: "middle", ty: 34 },
-  { x: 520, y: 190, label: "Funeral games", book: "Book 23", tx: 534, ty: 180 },
-  { x: 600, y: 280, r: 11, label: "MERCY FOR PRIAM", book: "Book 24", anchor: "end", tx: 610, ty: 314, home: true },
+  { x: 40, y: 160, label: "Wrath of Achilles", book: "Book 1", tx: 30, ty: 188 },
+  { x: 170, y: 140, label: "War without Achilles", book: "Books 2–15", anchor: "middle" },
+  { x: 295, y: 85, label: "Death of Patroclus", book: "Books 16–18", anchor: "middle", ty: 120 },
+  { x: 405, y: 55, r: 8, label: "Death of Hector", book: "Book 22", anchor: "middle", ty: 20 },
+  { x: 505, y: 245, label: "Priam and reconciliation", book: "Book 24", anchor: "end", tx: 490, ty: 238 },
+  { x: 605, y: 282, r: 11, label: "HECTOR’S FUNERAL", book: "Book 24, the last lines", anchor: "end", tx: 615, ty: 314, home: true },
 ];
 
 const svg = ref(null);
@@ -26,11 +25,11 @@ onMounted(() => (length.value = Math.ceil(path.value.getTotalLength())));
     <svg ref="svg" class="journey" :class="{ drawn }" :style="{ '--len': length }" viewBox="0 0 640 340" role="img" aria-labelledby="arc-title arc-desc">
       <title id="arc-title">The rise and fall of Achilles' rage</title>
       <desc id="arc-desc">
-        A line rises from the quarrel in Book 1, through Achilles' withdrawal and the refused embassy in Book 9, to the death of Patroclus in Book 16
-        and its peak when Achilles kills Hector in Book 22. It then falls through the funeral games in Book 23 to its lowest, calmest point when
-        Achilles shows mercy to Priam in Book 24.
+        A line starts with the wrath of Achilles in Book 1, stays high through the war without Achilles in Books 2 to 15, climbs at the death of
+        Patroclus in Books 16 to 18 and peaks at the death of Hector in Book 22. It then falls sharply with Priam and the reconciliation in Book 24,
+        and settles at its lowest, calmest point with Hector's funeral, where the poem ends.
       </desc>
-      <path ref="path" class="path" d="M40 190 C90 180 100 165 130 160 S190 140 220 135 S290 110 320 100 S400 65 420 70 S480 150 520 190 S580 270 600 280" />
+      <path ref="path" class="path" d="M40 160 C95 150 130 142 170 140 S265 100 295 85 S380 48 405 55 S470 200 505 245 S578 280 605 282" />
       <g v-for="(s, i) in stops" :key="s.label" class="stop" :class="{ home: s.home }" :style="{ '--i': i }">
         <circle :cx="s.x" :cy="s.y" :r="s.r || 7" />
         <text :x="s.tx ?? s.x" :y="s.ty ?? s.y + 28" :text-anchor="s.anchor">{{ s.label }}</text>

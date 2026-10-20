@@ -6,7 +6,7 @@ export default [
   },
   {
     "title": "Heroism has many faces",
-    "html": "Achilles is a hero of strength, Odysseus of wit, Rama of duty, Roland of loyalty, and Job of endurance. The <em>Panchatantra</em> even makes heroes of a mouse and a tortoise."
+    "html": "Achilles is a hero of strength, Odysseus of wit, Rama of duty, Roland of loyalty, and Job of endurance. The <em>Panchatantra</em> even makes a hero of a mongoose."
   },
   {
     "title": "Duty and desire collide",
