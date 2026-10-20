@@ -77,7 +77,6 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
   border-bottom: 1px solid rgba(205, 178, 124, .14);
 }
 .toc { top: calc(var(--nav-h) + 24px); }
-.work { scroll-margin-top: calc(var(--nav-h) + 16px); }
 @media (min-width: 981px) { .nav-links { position: relative; } }
 .nav-ink { position: absolute; left: 0; bottom: 0; height: 1px; width: var(--w, 0); background: var(--gold); transform: translateX(var(--x, 0)); transition: transform .5s var(--ease), width .5s var(--ease), opacity .3s ease; pointer-events: none; }
 .nav-links a { position: relative; }

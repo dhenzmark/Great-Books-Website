@@ -14,8 +14,10 @@
   --copper: #b89a62; /* antique gold, for lines, borders and numbers */
   --ivory: #ece2cc; /* headings */
   --gold: #cdb27c;
+  --try: #777777;
   --gold-line: rgba(205, 178, 124, .55);
   --grid-line: rgba(255, 255, 255, .06);
+  
 
   --serif: "Bodoni Moda", "Didot", "Times New Roman", serif;
   --sans: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -60,7 +62,7 @@ blockquote { margin: 0; }
 .panel {
   position: relative; z-index: 1;
   width: min(var(--max), 100% - 2 * clamp(0px, 4vw, 64px)); margin: clamp(0px, 3vw, 40px) auto;
-  background: var(--panel); border: 1px solid var(--gold-line); border-radius: clamp(0px, 3vw, 40px);
+  background: var(--panel); border: 1px solid var(--try); border-radius: clamp(0px, 3vw, 40px);
   overflow: clip;
 }
 .panel > * { position: relative; z-index: 1; }
@@ -580,7 +582,7 @@ dialog.lightbox .dialog-body::-webkit-scrollbar { display: none; }
   .toc.is-open ol { display: flex; animation: rise .3s var(--ease) both; }
   .toc a { min-height: 46px; margin: 0; padding: 0 var(--pad); border: 0; border-radius: 0; font-size: .95rem; white-space: normal; }
   .toc a.active { background: rgba(205, 178, 124, .08); border: 0; }
-  .work { scroll-margin-top: calc(var(--nav-h) + 64px); }
+  .work { scroll-margin-top: 56px; } /* room for the bar above (the navbar is already allowed for) */
 
   /* tabs: one row you can swipe instead of two wrapped lines */
   .tablist { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--pad)); padding-inline: var(--pad); }
@@ -614,3 +616,14 @@ dialog.lightbox .dialog-body::-webkit-scrollbar { display: none; }
 
 .toc-current { display: none; } /* the phone bar only */
 @media (max-width: 760px) { .toc-current { display: flex; } }
+
+/* ---------- links to a work land on its painting ----------
+   the space between works is outside each article, so the article starts at the poster;
+   the navbar allowance comes from html's scroll-padding only */
+.work { padding-top: 0; scroll-margin-top: 0; }
+.work + .work { margin-top: calc(clamp(40px, 6vw, 80px) + clamp(56px, 8vw, 110px)); }
+@media (max-width: 760px) { .work { scroll-margin-top: 56px; } }
+
+/* ---------- no page scrollbar (the back-to-top ring shows how far down you are) ---------- */
+html { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; width: 0; height: 0; }
