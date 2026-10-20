@@ -1,12 +1,16 @@
 <script setup>
 import works from "../data/works.js";
+import { watch } from "vue";
 import { useScrollSpy } from "../composables/useScrollSpy.js";
+import { backdrop, traditionOf } from "../composables/backdrop.js";
 import PageTitle from "../components/layout/PageTitle.vue";
 import NextPage from "../components/layout/NextPage.vue";
 import WorkToc from "../components/analyses/WorkToc.vue";
 import WorkArticle from "../components/analyses/WorkArticle.vue";
 
 const active = useScrollSpy(works.map((w) => w.id));
+/* the background shows the tradition of the work you are reading */
+watch(active, (id) => (backdrop.tradition = traditionOf[id] || "all"), { immediate: true });
 </script>
 
 <template>

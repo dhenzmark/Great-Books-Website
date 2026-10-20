@@ -7,6 +7,8 @@ import { pageTransition } from "./composables/pageTransition.js";
 import SiteNav from "./components/layout/SiteNav.vue";
 import SiteFooter from "./components/layout/SiteFooter.vue";
 import PaintingViewer from "./components/layout/PaintingViewer.vue";
+import TraditionBackdrop from "./components/layout/TraditionBackdrop.vue";
+import BackToTop from "./components/layout/BackToTop.vue";
 
 const router = useRouter();
 const route = useRoute();
@@ -88,6 +90,7 @@ onMounted(() => router.isReady().then(() => nextTick(applyPendingScroll)));
 </script>
 
 <template>
+  <TraditionBackdrop />
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="side-word" aria-hidden="true">Epic Voices</div>
   <div class="panel" @click="followInternalLink">
@@ -103,5 +106,6 @@ onMounted(() => router.isReady().then(() => nextTick(applyPendingScroll)));
     <small>Epic Voices</small>
     <strong>{{ destination }}</strong>
   </div>
+  <BackToTop />
   <PaintingViewer />
 </template>

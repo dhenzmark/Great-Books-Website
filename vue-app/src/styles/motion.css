@@ -8,13 +8,13 @@
 /* ---------- transition card: full-screen panel used by the links at the bottom of the page (driven by App.vue) ---------- */
 .transition-card { position: fixed; inset: 0; z-index: 350; display: grid; place-content: center; gap: 10px; text-align: center; background: var(--panel); border-top: 1px solid var(--gold-line); transform: translateY(100%); visibility: hidden; pointer-events: none; }
 .transition-card small { font: 500 .72rem var(--sans); text-transform: uppercase; letter-spacing: .3em; color: var(--muted); }
-.transition-card strong { font: 400 clamp(2rem, 5vw, 3.6rem)/1.1 var(--serif); color: var(--copper); }
+.transition-card strong { font: 400 clamp(2rem, 5vw, 3.6rem)/1.1 var(--serif); color: var(--ivory); }
 /* the new page's title and hero animations wait while the card still covers them */
 .card-hold .page * { animation-play-state: paused !important; }
 
 /* ---------- the "next page" card at the end of each page: a copper glow sweeps in on hover ---------- */
 .next-page { position: relative; overflow: hidden; isolation: isolate; }
-.next-page::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(201, 138, 90, .14), rgba(201, 138, 90, 0)); transform: scaleX(0); transform-origin: 0 50%; transition: transform .7s var(--ease); }
+.next-page::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(205, 178, 124, .14), rgba(205, 178, 124, 0)); transform: scaleX(0); transform-origin: 0 50%; transition: transform .7s var(--ease); }
 .next-page:hover::before, .next-page:focus-visible::before { transform: scaleX(1); }
 .next-page small { transition: color .3s ease, letter-spacing .6s var(--ease); }
 .next-page:hover small { color: var(--gold); letter-spacing: .22em; }
@@ -74,7 +74,7 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
   position: sticky; top: 0; z-index: 60; /* above the page, so the mobile menu also stays on top */
   min-height: var(--nav-h); padding-top: 14px; padding-bottom: 14px;
   background: rgba(28, 28, 28, .82); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
-  border-bottom: 1px solid rgba(227, 176, 98, .14);
+  border-bottom: 1px solid rgba(205, 178, 124, .14);
 }
 .toc { top: calc(var(--nav-h) + 24px); }
 .work { scroll-margin-top: calc(var(--nav-h) + 16px); }
@@ -153,7 +153,7 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 .journey.drawn .stop circle { transform: none; }
 .principle { transition: background-color .4s ease; }
 .principle-glyph { transition: letter-spacing .8s var(--ease), color .4s ease; }
-.principle:hover .principle-glyph { letter-spacing: .06em; color: #f3c77f; }
+.principle:hover .principle-glyph { letter-spacing: .06em; color: #dcc79b; }
 
 /* ---------- painting viewer: opens and closes smoothly ---------- */
 dialog.lightbox[open]::backdrop { animation: backdrop-in .35s ease both; }
@@ -183,23 +183,72 @@ dialog.lightbox.closing::backdrop { animation: backdrop-out .22s ease forwards; 
   .journey .stop circle { transform: none; }
 }
 
-/* ---------- the backdrop outside the panel: glows, a gold ring, stars and a vignette ---------- */
-/* one fixed layer, so it is composited once and never repaints while scrolling */
-body::before {
-  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  background:
-    radial-gradient(ellipse 60% 55% at 8% 12%, rgba(201, 138, 90, .2), transparent 70%),
-    radial-gradient(ellipse 55% 60% at 96% 88%, rgba(63, 124, 134, .2), transparent 70%),
-    radial-gradient(ellipse 40% 35% at 92% 8%, rgba(227, 176, 98, .08), transparent 70%),
-    radial-gradient(circle at 50% 50%, transparent 55%, rgba(0, 0, 0, .55) 100%),
-    url("../assets/ornament.svg") center / cover no-repeat,
-    #121212;
-}
-body::after {
-  content: ""; position: fixed; z-index: -1; pointer-events: none;
-  width: 130vmax; height: 130vmax; left: -55vmax; top: 18vh; border-radius: 50%;
-  border: 1px solid rgba(227, 176, 98, .09);
-  box-shadow: 0 0 0 46px rgba(227, 176, 98, .025), inset 0 0 0 1px rgba(227, 176, 98, .04);
-}
+/* ---------- page backdrop: base colour and glows (the tradition motifs are TraditionBackdrop.vue) ---------- */
+html { background: #0b0d12; }
 body { background: transparent; }
-html { background: #121212; }
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 45% at 6% 4%, rgba(220, 210, 190, .06), transparent 70%),   /* faint lamplight */
+    radial-gradient(ellipse 50% 50% at 100% 100%, rgba(46, 70, 104, .35), transparent 70%), /* deep sea-blue */
+    radial-gradient(circle at 50% 45%, transparent 45%, rgba(0, 0, 0, .55) 100%),         /* vignette */
+    linear-gradient(170deg, #15141a 0%, #0e1118 55%, #0a0c10 100%);
+}
+/* let the sky through the panel */
+/* desktop: a mostly solid panel, so the tradition motifs show faintly through it;
+   phones: the panel fills the screen, so it lets the backdrop through */
+.panel { background: rgba(27, 26, 27, .85); }
+@media (max-width: 640px) { .panel { background: rgba(18, 18, 22, .5); } .tb-grain { display: none; } }
+
+/* ---------- the four traditions (TraditionBackdrop.vue) ---------- */
+.tb { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.tb-layer { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; will-change: opacity; contain: strict; } /* own layer: fading never repaints */
+.tb-layer.on { opacity: 1; }
+.tb i { position: absolute; background: center / contain no-repeat; }
+.tb-motif { width: max(110vmax, 900px); aspect-ratio: 1; left: 50%; top: 50%; translate: -36% -50%; }
+@media (max-width: 760px) { .tb-motif { width: 175vmax; translate: -50% -46%; } }
+/* a tint per tradition */
+.tb-layer.is-hebrew { background: radial-gradient(ellipse 70% 60% at 70% 45%, rgba(150, 140, 125, .14), transparent 70%); }   /* desert stone */
+.tb-layer.is-indian { background: radial-gradient(ellipse 70% 60% at 70% 45%, rgba(36, 104, 112, .2), transparent 70%), radial-gradient(ellipse 50% 40% at 10% 90%, rgba(80, 60, 120, .14), transparent 70%); } /* peacock teal, indigo */
+.tb-layer.is-greek { background: radial-gradient(ellipse 70% 60% at 70% 45%, rgba(48, 98, 140, .26), transparent 70%); }    /* Aegean blue */
+.tb-layer.is-french { background: radial-gradient(ellipse 70% 60% at 70% 45%, rgba(40, 58, 140, .26), transparent 70%); } /* royal blue */
+/* all four together: one emblem in each corner */
+.tb-corner { width: max(52vmax, 520px); aspect-ratio: 1; opacity: .8; }
+.tb-corner.is-hebrew { left: 0; top: 0; translate: -42% -42%; }
+.tb-corner.is-indian { right: 0; top: 0; translate: 42% -42%; }
+.tb-corner.is-greek { left: 0; bottom: 0; translate: -42% 42%; }
+.tb-corner.is-french { right: 0; bottom: 0; translate: 42% 42%; }
+@media (max-width: 760px) { .tb-corner { width: 64vmax; opacity: .45; translate: none !important; } .tb-corner.is-hebrew { left: -34vmax; top: -30vmax; } .tb-corner.is-indian { right: -34vmax; top: -30vmax; } .tb-corner.is-greek { left: -34vmax; bottom: -30vmax; } .tb-corner.is-french { right: -34vmax; bottom: -30vmax; } }
+.tb-grain { position: absolute; inset: 0; background: url("../assets/grain.svg"); opacity: .9; will-change: opacity; }
+
+/* ---------- reveals in both directions (v-reveal) ---------- */
+/* coming back from above: drop in from the top, and paintings unveil from their bottom edge */
+.js .reveal[data-from="above"] { transform: translateY(-24px); }
+.js .reveal.in[data-from="above"] { transform: none; }
+.js .plate.reveal[data-from="above"]:not(.in) .plate-window,
+.js .exhibit.reveal[data-from="above"]:not(.in) .img,
+.js .stack.reveal[data-from="above"]:not(.in) .s1,
+.js .f-pic.reveal[data-from="above"]:not(.in) > img,
+.js .f-pic2.reveal[data-from="above"]:not(.in) > img { clip-path: inset(100% 0 0 0); }
+.js .plate.reveal.in[data-from="above"] .plate-window,
+.js .exhibit.reveal.in[data-from="above"] .img,
+.js .stack.reveal.in[data-from="above"] .s1,
+.js .f-pic.reveal.in[data-from="above"] > img,
+.js .f-pic2.reveal.in[data-from="above"] > img { animation-name: unveil-up; }
+@keyframes unveil-up { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0); } }
+/* resetting happens off screen: do it instantly, so nothing is caught half-way */
+.js .reveal:not(.in) { transition-duration: 0s; transition-delay: 0s; }
+
+/* ---------- back to top ---------- */
+.to-top { position: fixed; z-index: 70; right: clamp(16px, 2.4vw, 32px); bottom: clamp(16px, 2.4vw, 32px); width: 52px; height: 52px; padding: 0; border: 0; border-radius: 50%; background: rgba(20, 20, 20, .88); color: var(--gold); cursor: pointer; box-shadow: 0 8px 24px rgba(0, 0, 0, .45); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); opacity: 0; transform: translateY(14px) scale(.9); pointer-events: none; transition: opacity .35s ease, transform .45s var(--ease), background-color .2s ease; }
+.to-top.is-on { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { background: #2a2622; }
+.to-top:active { transform: scale(.94); }
+.to-top svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.to-top .ring-track { fill: none; stroke: rgba(205, 178, 124, .18); stroke-width: 1.5; }
+.to-top .ring { fill: none; stroke: var(--gold); stroke-width: 1.5; stroke-linecap: round; transform: rotate(-90deg); transform-origin: 50% 50%; }
+.to-top .arrow { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: transform .35s var(--ease); }
+.to-top:hover .arrow { transform: translateY(-2px); }
+@media (max-width: 760px) { .to-top { width: 46px; height: 46px; } }
+/* out of the way while the journey map is running (it has its own controls there) */
+body:has(.odm:not(.is-paused)) .to-top { opacity: 0; pointer-events: none; }

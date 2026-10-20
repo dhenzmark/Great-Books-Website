@@ -1,7 +1,7 @@
 /* ---------- The wanderings of Odysseus (OdysseyMap.vue) ---------- */
 .odm {
   --sea: #173f46; --sea-deep: #0d2a30; --land: #dccb9f; --land-edge: #7a6443; --ink: #2a2118;
-  --route: #c4512f; --card: #f2ead8;
+  --route: #cdb27c; --card: #f2ead8;
   position: relative; margin: 36px 0 12px;
 }
 .odm-stage {
@@ -27,7 +27,7 @@
 .odm-label.is-sea { font-style: italic; font-size: 1rem; letter-spacing: .14em; color: rgba(214, 233, 228, .55); }
 .odm-label.is-land { font-size: .78rem; letter-spacing: .32em; text-transform: uppercase; color: rgba(42, 33, 24, .55); }
 
-.odm-ship { position: absolute; left: 0; top: 0; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--route); box-shadow: 0 0 0 4px rgba(242, 234, 216, .9), 0 0 0 10px rgba(196, 81, 47, .25); z-index: 3; }
+.odm-ship { position: absolute; left: 0; top: 0; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--route); box-shadow: 0 0 0 4px rgba(242, 234, 216, .9), 0 0 0 10px rgba(205, 178, 124, .25); z-index: 3; }
 
 .odm-pin { position: absolute; z-index: 2; display: flex; align-items: center; gap: 8px; padding: 0; border: 0; background: none; cursor: pointer; transform: translate(-13px, -13px); font: inherit; }
 .odm-pin.is-left { flex-direction: row-reverse; transform: translate(calc(-100% + 13px), -13px); }
@@ -46,12 +46,12 @@
 .odm-list button.is-done { color: rgba(242, 234, 216, .85); }
 .odm-list button.is-done .odm-list-dot { background: currentColor; }
 .odm-list button.is-active { color: #fff; }
-.odm-list button.is-active .odm-list-dot { background: var(--route); border-color: var(--route); box-shadow: 0 0 0 3px rgba(196, 81, 47, .35); }
+.odm-list button.is-active .odm-list-dot { background: var(--route); border-color: var(--route); box-shadow: 0 0 0 3px rgba(205, 178, 124, .35); }
 .odm-list button:hover { color: #fff; }
 
 /* stat chips, top */
 .odm-chips { position: absolute; z-index: 4; top: 18px; right: 460px; display: flex; gap: 6px; }
-.odm-chips span { padding: 6px 12px; border-radius: 9px; background: var(--ink); color: var(--card); font: 600 .72rem var(--sans); letter-spacing: .03em; box-shadow: 0 0 0 2px rgba(196, 81, 47, .7); white-space: nowrap; }
+.odm-chips span { padding: 6px 12px; border-radius: 9px; background: var(--ink); color: var(--card); font: 600 .72rem var(--sans); letter-spacing: .03em; box-shadow: 0 0 0 2px rgba(205, 178, 124, .7); white-space: nowrap; }
 
 /* mini map, bottom left */
 .odm-mini { position: absolute; z-index: 4; left: 18px; bottom: 52px; width: 150px; height: auto; aspect-ratio: auto; border-radius: 12px; border: 2px solid var(--ink); background: var(--sea-deep); box-shadow: 0 6px 20px rgba(0, 0, 0, .35); }
@@ -109,7 +109,7 @@
 .odm.is-still .odm-card, .odm.is-still .odm-timeline, .odm.is-still .odm-mini, .odm.is-still .odm-ship, .odm.is-still .odm-chips { display: none; }
 .odm.is-still .odm-pin-name { display: none; }
 .odm-still-list { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 22px; }
-.odm-still-list h4 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: 1.35rem; color: var(--copper); }
+.odm-still-list h4 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: 1.35rem; color: var(--ivory); }
 .odm-still-list p:last-child { margin: 0; color: #cfc8bd; }
 
 /* ---------- the button that opens the map ---------- */
@@ -117,10 +117,10 @@
 .odm-open { display: flex; align-items: center; gap: 18px; width: 100%; padding: 18px 22px; border: 1px solid var(--gold-line); border-radius: 14px; background: linear-gradient(120deg, rgba(23, 63, 70, .55), rgba(13, 42, 48, .3)); color: var(--text); text-align: left; cursor: pointer; transition: border-color .25s ease, background-color .25s ease, transform .2s var(--ease); }
 .odm-open:hover { border-color: var(--gold); }
 .odm-open:active { transform: scale(.99); }
-.odm-open-icon { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: rgba(227, 176, 98, .12); color: var(--gold); }
+.odm-open-icon { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: rgba(205, 178, 124, .12); color: var(--gold); }
 .odm-open-icon svg { width: 26px; height: 26px; }
 .odm-open-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
-.odm-open-text strong { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; color: var(--copper); }
+.odm-open-text strong { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; color: var(--ivory); }
 .odm-open-text small { font-size: .82rem; color: var(--muted); }
 .odm-open-arrow { flex: none; font-size: 1.4rem; color: var(--gold); transition: transform .3s var(--ease); }
 .odm-open:hover .odm-open-arrow { transform: translateX(5px); }
@@ -146,20 +146,20 @@
    Site theme: the chart drawn in the portfolio's own palette
    (dark gallery panel, copper and gold line work, serif labels)
    ===================================================================== */
-.odm { --sea: #1a1a1a; --sea-deep: #111; --land: #2b2722; --land-edge: rgba(227, 176, 98, .55); --ink: var(--text); --route: var(--copper); --card: var(--panel); }
+.odm { --sea: #1a1a1a; --sea-deep: #111; --land: #2b2722; --land-edge: rgba(205, 178, 124, .55); --ink: var(--text); --route: var(--copper); --card: var(--panel); }
 .odm-stage { background: radial-gradient(ellipse at 45% 40%, #1f1d1b, #121212 80%); border-color: var(--gold-line); }
 .odm-stage::after { box-shadow: inset 0 0 140px rgba(0, 0, 0, .7); }
 
 /* the chart */
-.odm-coast { fill: #2a2622; stroke: rgba(227, 176, 98, .6); stroke-width: 1; }
-.odm-ripple { stroke: rgba(227, 176, 98, .1); }
-.odm-ripple-2 { stroke: rgba(227, 176, 98, .04); }
-#odm-waves path { stroke: rgba(227, 176, 98, .09); }
+.odm-coast { fill: #2a2622; stroke: rgba(205, 178, 124, .6); stroke-width: 1; }
+.odm-ripple { stroke: rgba(205, 178, 124, .1); }
+.odm-ripple-2 { stroke: rgba(205, 178, 124, .04); }
+#odm-waves path { stroke: rgba(205, 178, 124, .09); }
 .odm-route-ahead { stroke: rgba(236, 230, 220, .28); }
-.odm-route-done { stroke: var(--copper); filter: drop-shadow(0 0 6px rgba(201, 138, 90, .45)); }
-.odm-label.is-sea { color: rgba(227, 176, 98, .42); }
+.odm-route-done { stroke: var(--copper); filter: drop-shadow(0 0 6px rgba(205, 178, 124, .45)); }
+.odm-label.is-sea { color: rgba(205, 178, 124, .42); }
 .odm-label.is-land { color: rgba(236, 230, 220, .38); }
-.odm-ship { background: var(--gold); box-shadow: 0 0 0 4px rgba(14, 14, 14, .85), 0 0 0 9px rgba(227, 176, 98, .3), 0 0 22px 6px rgba(227, 176, 98, .35); }
+.odm-ship { background: var(--gold); box-shadow: 0 0 0 4px rgba(14, 14, 14, .85), 0 0 0 9px rgba(205, 178, 124, .3), 0 0 22px 6px rgba(205, 178, 124, .35); }
 
 /* pins */
 .odm-pin-dot { background: #1c1c1c; border: 1px solid var(--gold-line); color: var(--muted); font-family: var(--serif); font-weight: 400; font-size: .8rem; }
@@ -169,11 +169,11 @@
 .odm-pin:hover .odm-pin-name { background: #0e0e0e; }
 
 /* side list, chips, mini map, timeline */
-.odm-list { background: rgba(14, 14, 14, .82); border: 1px solid rgba(227, 176, 98, .18); }
+.odm-list { background: rgba(14, 14, 14, .82); border: 1px solid rgba(205, 178, 124, .18); }
 .odm-list button { font: 400 .74rem var(--serif); letter-spacing: .12em; color: var(--muted); text-shadow: none; }
 .odm-list button.is-done { color: #cfc8bd; }
 .odm-list button.is-active { color: var(--gold); }
-.odm-list button.is-active .odm-list-dot { background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 3px rgba(227, 176, 98, .25); }
+.odm-list button.is-active .odm-list-dot { background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 3px rgba(205, 178, 124, .25); }
 .odm-chips span { background: rgba(14, 14, 14, .85); color: var(--text); box-shadow: none; border: 1px solid var(--gold-line); font: 400 .78rem var(--serif); letter-spacing: .06em; }
 .odm-mini { background: #111; border: 1px solid var(--gold-line); }
 .odm-mini-land { fill: #2f2a24; }
@@ -181,13 +181,13 @@
 .odm-mini-dot { fill: var(--gold); stroke: rgba(14, 14, 14, .9); }
 .odm-timeline { background: rgba(236, 230, 220, .14); }
 .odm-timeline-fill { background: var(--copper); }
-.odm-timeline i { background: #141414; border: 1px solid rgba(227, 176, 98, .45); }
+.odm-timeline i { background: #141414; border: 1px solid rgba(205, 178, 124, .45); }
 .odm-timeline i.is-done { background: var(--gold); border-color: var(--gold); }
 
 /* story card: like the site's insight boxes */
 .odm-card { background: rgba(28, 28, 28, .96); color: var(--text); border: 1px solid var(--gold-line); box-shadow: 0 24px 60px rgba(0, 0, 0, .55); }
 .odm-card-eyebrow { font: 400 .74rem var(--serif); letter-spacing: .16em; color: var(--gold); }
-.odm-card h4 { font-weight: 400; color: var(--copper); font-size: 1.8rem; }
+.odm-card h4 { font-weight: 400; color: var(--ivory); font-size: 1.8rem; }
 .odm-card-body p:last-child { color: #cfc8bd; }
 .odm-card-nav { border-top: 1px solid rgba(255, 255, 255, .1); }
 .odm-card-nav span { color: var(--muted); font-family: var(--serif); }
@@ -202,7 +202,7 @@
 
 /* the opening button: a museum label with a small chart */
 .odm-open { position: relative; overflow: hidden; isolation: isolate; border: 1px solid var(--gold-line); border-radius: 0; background: rgba(28, 28, 28, .85); padding: 22px 26px; }
-.odm-open::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(201, 138, 90, .14), rgba(201, 138, 90, 0)); transform: scaleX(0); transform-origin: 0 50%; transition: transform .7s var(--ease); }
+.odm-open::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(205, 178, 124, .14), rgba(205, 178, 124, 0)); transform: scaleX(0); transform-origin: 0 50%; transition: transform .7s var(--ease); }
 .odm-open:hover::before, .odm-open:focus-visible::before { transform: scaleX(1); }
 .odm-open:hover { border-color: var(--copper); }
 .odm-open-icon { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--gold-line); background: none; color: var(--gold); }
