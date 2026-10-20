@@ -552,3 +552,62 @@ dialog.lightbox .dialog-body::-webkit-scrollbar { display: none; }
 /* while the journey map is running, the painting behind the Odyssey steps aside */
 .work-backdrop { transition: opacity .6s ease; }
 .work:has(.odm:not(.is-paused)) .work-backdrop { opacity: 0; }
+
+/* ---------- timeline on phones: one big picture at a time, titles travel with it ---------- */
+@media (max-width: 860px) {
+  .eras, .strip { scrollbar-width: none; -ms-overflow-style: none; }
+  .eras::-webkit-scrollbar, .strip::-webkit-scrollbar { display: none; }
+  /* the base line belongs to each title, so it runs the whole scrolled length */
+  .eras { gap: 0; scroll-padding-inline: 40%; }
+  .eras::after { display: none; }
+  .eras li:not(.era-ink) { position: relative; padding: 0 12px; }
+  .eras li:not(.era-ink)::before { content: ""; position: absolute; left: 0; right: 0; bottom: 6px; height: 1px; background: var(--copper); opacity: .6; }
+  .strip { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 62vw; gap: 12px; padding-inline: calc(19vw - 6px); scroll-snap-type: x mandatory; overscroll-behavior-x: contain; }
+  .strip button { scroll-snap-align: center; aspect-ratio: 4 / 5; border-radius: 12px; }
+  .strip button.on { transform: none; }
+  .explore-nav > button { width: 40px; flex-basis: 40px; }
+}
+
+/* ---------- phones ---------- */
+.journey-hint { display: none; }
+@media (max-width: 760px) {
+  /* analyses: the seven works as one swipeable row that stays under the navbar */
+  .toc { position: sticky; top: var(--nav-h); z-index: 30; margin: 0 calc(-1 * var(--pad)); padding: 10px var(--pad) 12px; background: rgba(20, 20, 20, .94); border-bottom: 1px solid rgba(227, 176, 98, .14); }
+  .with-toc { grid-template-columns: minmax(0, 1fr); } /* the long row of works must not widen the column */
+  .toc { min-width: 0; }
+  .toc > p { display: none; }
+  .toc ol { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
+  .toc ol::-webkit-scrollbar { display: none; }
+  .toc li { flex: none; scroll-snap-align: start; }
+  .toc a { min-height: 38px; white-space: nowrap; font-size: .85rem; }
+  .work { scroll-margin-top: calc(var(--nav-h) + 76px); }
+
+  /* tabs: one row you can swipe instead of two wrapped lines */
+  .tablist { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--pad)); padding-inline: var(--pad); }
+  .tablist::-webkit-scrollbar { display: none; }
+  .tab { flex: none; white-space: nowrap; }
+
+  /* single columns that can never be stretched wider than the screen by their content */
+  .feature, .work-grid, .work-foot, .welcome, .figures, .compare-pair, .era-detail { grid-template-columns: minmax(0, 1fr) !important; }
+  .feature > *, .welcome > *, .work-foot > * { min-width: 0; }
+  /* masterpiece: the anger chart keeps a readable size and scrolls sideways */
+  .journey-scroll { overflow-x: auto; margin-inline: calc(-1 * var(--pad)); padding-inline: var(--pad); scrollbar-width: none; }
+  .journey-scroll::-webkit-scrollbar { display: none; }
+  .journey-scroll .journey { width: 640px; max-width: none; }
+  .journey-hint { display: inline; color: var(--gold); }
+
+  /* learning: the comparison table becomes one card per work */
+  .table-wrap { overflow: visible; }
+  .table-wrap table, .table-wrap tbody, .table-wrap tr, .table-wrap th, .table-wrap td { display: block; min-width: 0; width: auto; }
+  .table-wrap thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .table-wrap tr { margin-bottom: 14px; padding: 18px 20px; border-radius: 14px; background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .06); }
+  .table-wrap th, .table-wrap td { padding: 0; border: 0; }
+  .table-wrap tbody th { margin-bottom: 10px; font-size: 1.3rem; }
+  .table-wrap td { display: grid; grid-template-columns: 7.5em 1fr; gap: 10px; padding: 7px 0; border-top: 1px solid rgba(255, 255, 255, .06); }
+  .table-wrap td::before { content: attr(data-label); font-family: var(--serif); text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; color: var(--muted); padding-top: .2em; }
+
+  /* profile: the portrait full width, not a small offset box */
+  .stack { min-height: 0; }
+  .stack .s1 { position: relative; left: 0; width: 100%; max-width: 420px; margin: 0 auto; border-radius: 16px; }
+  .figures .f-text { padding: 0; }
+}

@@ -1,6 +1,6 @@
 <script setup>
 /* Pick a work on the timeline to see when it was composed. */
-import { ref, computed, nextTick } from "vue";
+import { ref, computed, nextTick, watch, onBeforeUnmount } from "vue";
 import { eras } from "../../data/site.js";
 import { useInk } from "../../composables/useInk.js";
 import SectionHead from "../ui/SectionHead.vue";
@@ -24,8 +24,63 @@ function go(i, focus = false) {
   if (next === at.value) return;
   direction.value = next > at.value ? "next" : "prev";
   at.value = next;
-  if (focus) nextTick(() => tabs.value[next].focus());
+  if (focus) nextTick(() => tabs.value[next].focus({ preventScroll: true }));
 }
+
+/*
+  On narrow screens the titles and the pictures both scroll sideways. They move together:
+  swiping the pictures carries the titles along, the picture that settles in the middle
+  becomes the chosen work, and choosing a title slides the pictures to it.
+*/
+const strip = ref(null);
+const scrollable = (el) => el && el.scrollWidth > el.clientWidth + 2;
+let fromStrip = false;
+let queued = false;
+let settle = 0;
+
+function centreOf(el, child) {
+  return child.offsetLeft + child.offsetWidth / 2 - el.clientWidth / 2;
+}
+
+function onStripScroll() {
+  if (queued) return;
+  queued = true;
+  requestAnimationFrame(() => {
+    queued = false;
+    const s = strip.value, l = list.value;
+    if (!scrollable(s)) return;
+    /* titles follow the pictures, proportionally */
+    if (scrollable(l)) {
+      const ratio = s.scrollLeft / (s.scrollWidth - s.clientWidth);
+      l.scrollLeft = ratio * (l.scrollWidth - l.clientWidth);
+    }
+    /* the picture nearest the middle is the chosen one */
+    const mid = s.scrollLeft + s.clientWidth / 2;
+    let best = 0, dist = Infinity;
+    [...s.children].forEach((b, k) => {
+      const d = Math.abs(b.offsetLeft + b.offsetWidth / 2 - mid);
+      if (d < dist) { dist = d; best = k; }
+    });
+    clearTimeout(settle);
+    settle = setTimeout(() => {
+      if (best !== at.value) { fromStrip = true; go(best); }
+    }, 90);
+  });
+}
+
+watch(at, (i) => {
+  nextTick(() => {
+    const behavior = matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+    const s = strip.value, l = list.value;
+    /* a swipe already moved both rows; only taps and arrows need to slide them */
+    if (!fromStrip) {
+      if (scrollable(s)) s.scrollTo({ left: centreOf(s, s.children[i]), behavior });
+      else if (scrollable(l)) l.scrollTo({ left: centreOf(l, tabs.value[i]), behavior });
+    }
+    fromStrip = false;
+  });
+});
+onBeforeUnmount(() => clearTimeout(settle));
 
 function onKey(e) {
   if (e.key === "ArrowRight") { e.preventDefault(); go(at.value + 1, true); }
@@ -65,7 +120,7 @@ function onKey(e) {
           </button>
         </div>
 
-        <div class="strip" aria-hidden="true">
+        <div ref="strip" class="strip" aria-hidden="true" @scroll.passive="onStripScroll">
           <button v-for="(e, i) in eras" :key="e.tab" type="button" tabindex="-1" :class="{ on: i === at }" @click="go(i)">
             <img :src="e.thumb" alt="" loading="lazy" />
           </button>

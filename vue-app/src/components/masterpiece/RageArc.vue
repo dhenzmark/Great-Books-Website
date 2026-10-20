@@ -22,6 +22,7 @@ onMounted(() => (length.value = Math.ceil(path.value.getTotalLength())));
 
 <template>
   <figure style="margin: 0">
+    <div class="journey-scroll" tabindex="0" role="region" aria-label="Chart of Achilles' anger, scroll sideways on small screens">
     <svg ref="svg" class="journey" :class="{ drawn }" :style="{ '--len': length }" viewBox="0 0 640 340" role="img" aria-labelledby="arc-title arc-desc">
       <title id="arc-title">The rise and fall of Achilles' rage</title>
       <desc id="arc-desc">
@@ -36,6 +37,7 @@ onMounted(() => (length.value = Math.ceil(path.value.getTotalLength())));
         <text :x="s.tx ?? s.x" :y="(s.ty ?? s.y + 28) + 16" :text-anchor="s.anchor">{{ s.book }}</text>
       </g>
     </svg>
-    <figcaption style="font-size: 0.82rem; color: var(--muted); margin-top: 8px">The higher the line, the hotter Achilles&rsquo; anger.</figcaption>
+    </div>
+    <figcaption style="font-size: 0.82rem; color: var(--muted); margin-top: 8px">The higher the line, the hotter Achilles&rsquo; anger.<span class="journey-hint"> Swipe to follow the whole arc.</span></figcaption>
   </figure>
 </template>

@@ -12,7 +12,7 @@ import comparison from "../../data/comparison.js";
       <tbody>
         <tr v-for="[work, ...cells] in comparison.rows" :key="work">
           <th scope="row">{{ work }}</th>
-          <td v-for="(cell, i) in cells" :key="i">{{ cell }}</td>
+          <td v-for="(cell, i) in cells" :key="i" :data-label="comparison.head[i + 1]">{{ cell }}</td>
         </tr>
       </tbody>
     </table>
