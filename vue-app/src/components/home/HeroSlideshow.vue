@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
   <div class="hero-slides" aria-live="polite">
     <Transition name="slide">
       <figure :key="current">
-        <img :src="slide.src" :alt="slide.alt" :fetchpriority="current === 0 ? 'high' : undefined" />
+        <img :src="slide.src" :alt="slide.alt" decoding="async" :fetchpriority="current === 0 ? 'high' : undefined" />
         <figcaption>{{ slide.caption }}</figcaption>
       </figure>
     </Transition>

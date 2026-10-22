@@ -73,7 +73,7 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 .panel > .nav {
   position: sticky; top: 0; z-index: 60; /* above the page, so the mobile menu also stays on top */
   min-height: var(--nav-h); padding-top: 14px; padding-bottom: 14px;
-  background: rgba(28, 28, 28, .82); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  background: rgba(24, 23, 24, .97); /* near-solid instead of a blur: a blurred bar is re-blurred on every scroll frame */
   border-bottom: 1px solid rgba(205, 178, 124, .14);
 }
 .toc { top: calc(var(--nav-h) + 24px); }
@@ -128,8 +128,8 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 .tablist .tab[aria-selected="true"] { border-bottom-color: transparent; }
 .tab-ink { position: absolute; left: 0; top: 0; height: 2px; width: var(--w, 0); background: var(--gold); transform: translate(var(--x, 0), calc(var(--b, 2px) - 2px)); transition: transform .45s var(--ease), width .45s var(--ease); pointer-events: none; }
 .tabpanel { animation: none; }
-.tabs[data-dir="next"] .tabpanel:not([hidden]) { animation: panel-next .5s var(--ease) both; }
-.tabs[data-dir="prev"] .tabpanel:not([hidden]) { animation: panel-prev .5s var(--ease) both; }
+/* panel entrance is done in TabGroup.vue (height, slide and stagger together) */
+.tab-stage { overflow: clip; overflow-clip-margin: 24px; } /* clip only while the height eases */
 @keyframes panel-next { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
 @keyframes panel-prev { from { opacity: 0; transform: translateX(-22px); } to { opacity: 1; transform: none; } }
 
@@ -239,7 +239,7 @@ body::before {
 .js .reveal:not(.in) { transition-duration: 0s; transition-delay: 0s; }
 
 /* ---------- back to top ---------- */
-.to-top { position: fixed; z-index: 70; right: clamp(16px, 2.4vw, 32px); bottom: clamp(16px, 2.4vw, 32px); width: 52px; height: 52px; padding: 0; border: 0; border-radius: 50%; background: rgba(20, 20, 20, .88); color: var(--gold); cursor: pointer; box-shadow: 0 8px 24px rgba(0, 0, 0, .45); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); opacity: 0; transform: translateY(14px) scale(.9); pointer-events: none; transition: opacity .35s ease, transform .45s var(--ease), background-color .2s ease; }
+.to-top { position: fixed; z-index: 70; right: clamp(16px, 2.4vw, 32px); bottom: clamp(16px, 2.4vw, 32px); width: 52px; height: 52px; padding: 0; border: 0; border-radius: 50%; background: rgba(20, 20, 20, .94); color: var(--gold); cursor: pointer; box-shadow: 0 8px 24px rgba(0, 0, 0, .45); opacity: 0; transform: translateY(14px) scale(.9); pointer-events: none; transition: opacity .35s ease, transform .45s var(--ease), background-color .2s ease; }
 .to-top.is-on { opacity: 1; transform: none; pointer-events: auto; }
 .to-top:hover { background: #2a2622; }
 .to-top:active { transform: scale(.94); }

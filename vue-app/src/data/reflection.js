@@ -34,11 +34,23 @@ export default [
   },
   {
     "tag": "h3",
+    "html": "The lens that changed my reading"
+  },
+  {
+    "tag": "p",
+    "html": "Of the six literary lenses we used, the <strong>psychological lens</strong> influenced me the most. It taught me to stop asking only what a character did and to ask why. Through it, Achilles stopped being just a violent hero and became a grieving man who did not know what to do with his pain, and the mother in the <em>Panchatantra</em> stopped being simply careless and became someone whose fear acted faster than her eyes. The other lenses mattered too: the feminist lens made me question Sita’s trial, the historical lens explained the bias in <em>Roland</em>, and the formalist lens showed me how the shape of Job carries its meaning. But the psychological lens is the one I keep using without trying, even outside literature."
+  },
+  {
+    "tag": "h3",
     "html": "What I will carry forward"
   },
   {
     "tag": "p",
     "html": "These stories have lasted for thousands of years because they speak to something that does not change: the human heart. People still struggle with suffering, still argue about duty, still get angry, still long for home, and still wonder whether courage means fighting alone or asking for help."
+  },
+  {
+    "tag": "p",
+    "html": "I want to carry these lessons beyond this course. As a future IT professional, I will work in teams, solve problems under pressure, and build systems that real people depend on. The mongoose tale reminds me to check the facts before acting on a first impression, whether I am reading a bug report or a rumor. Krishna’s advice helps me focus on doing the work well instead of worrying only about results, and the many perspectives I practiced through the literary lenses remind me that the people who use what I build may see it very differently from me."
   },
   {
     "tag": "p",

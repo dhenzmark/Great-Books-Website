@@ -7,6 +7,7 @@ import { ref, nextTick, onBeforeUnmount, defineAsyncComponent } from "vue";
 import { prefersReducedMotion } from "../../composables/motion.js";
 import stops from "../../data/odyssey/stops.js";
 import "../../styles/odyssey-map.css";
+import preview from "../../assets/journey-preview.svg";
 
 const OdysseyMap = defineAsyncComponent(() => import("./OdysseyMap.vue"));
 
@@ -64,6 +65,7 @@ onBeforeUnmount(stopListening);
 <template>
   <div class="odm-toggle">
     <button v-if="!open" ref="opener" type="button" class="odm-open" @click="show">
+      <img class="odm-open-map" :src="preview" alt="" loading="lazy" decoding="async" />
       <span class="odm-open-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z" /><path d="M9 4v14M15 6v14" /></svg>
       </span>
@@ -71,7 +73,7 @@ onBeforeUnmount(stopListening);
         <strong>Follow the journey on the map</strong>
         <small>{{ stops.length }} stops from Troy to Ithaca · scroll to sail along</small>
       </span>
-      <span class="odm-open-arrow" aria-hidden="true">→</span>
+      <span class="odm-open-cta" aria-hidden="true">Open the map <span class="odm-open-arrow">→</span></span>
     </button>
 
     <div v-else ref="box" class="odm-open-box">

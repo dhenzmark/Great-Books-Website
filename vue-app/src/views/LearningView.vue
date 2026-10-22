@@ -2,6 +2,7 @@
 import PageTitle from "../components/layout/PageTitle.vue";
 import NextPage from "../components/layout/NextPage.vue";
 import LessonGrid from "../components/learning/LessonGrid.vue";
+import LensGuide from "../components/learning/LensGuide.vue";
 import ComparisonTable from "../components/learning/ComparisonTable.vue";
 import CraftNotes from "../components/learning/CraftNotes.vue";
 </script>
@@ -28,6 +29,7 @@ import CraftNotes from "../components/learning/CraftNotes.vue";
       <section id="learning" class="section" aria-labelledby="page-title">
         <div class="wrap">
           <LessonGrid />
+          <LensGuide />
           <ComparisonTable />
           <CraftNotes />
         </div>

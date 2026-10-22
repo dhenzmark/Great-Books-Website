@@ -35,7 +35,7 @@ const parts = computed(() => {
         <span v-for="c in parts.prefix" :key="c.i" class="char" :style="{ '--i': c.i }">{{ c.ch }}</span>
         <span class="nw">
           <span v-for="c in parts.before" :key="c.i" class="char" :style="{ '--i': c.i }">{{ c.ch }}</span>
-          <span class="o-img" :style="{ '--i': parts.o }"><img :src="image" alt="" /></span>
+          <span class="o-img" :style="{ '--i': parts.o }"><img :src="image" alt="" decoding="async" /></span>
           <span v-for="c in parts.after" :key="c.i" class="char" :style="{ '--i': c.i }">{{ c.ch }}</span>
         </span>
         <span v-for="c in parts.suffix" :key="c.i" class="char" :style="{ '--i': c.i }">{{ c.ch }}</span>

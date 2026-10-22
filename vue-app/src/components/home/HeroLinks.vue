@@ -15,7 +15,7 @@ const cards = [
 <template>
   <div class="hero-row">
     <RouterLink v-for="card in cards" :key="card.label" :to="card.to">
-      <div class="img"><img :src="card.src" :alt="card.alt" loading="lazy" :style="card.objectPosition ? { objectPosition: card.objectPosition } : null" /></div>
+      <div class="img"><img :src="card.src" :alt="card.alt" loading="lazy" decoding="async" :style="card.objectPosition ? { objectPosition: card.objectPosition } : null" /></div>
       <p class="label">{{ card.label }}</p>
       <strong>{{ card.title }}</strong>
       <small>{{ card.text }}</small>

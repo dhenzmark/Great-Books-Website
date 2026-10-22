@@ -26,6 +26,10 @@ export default [
     "kicker": "c. 6th–4th century BCE",
     "meta": [
       [
+        "Literary lens",
+        "Formalist"
+      ],
+      [
         "Source",
         "The Book of Job, chapters 38–42"
       ],
@@ -55,6 +59,10 @@ export default [
         "html": "<p>The Book of Job opens in the court of heaven. God praises Job as a blameless and upright man, but the Adversary (in Hebrew, <em>ha-satan</em>) argues that Job is faithful only because he is rich and protected. God allows Job to be tested. In a single day Job loses his oxen, sheep, camels, servants, and all ten of his children. He is then struck with painful sores from head to foot. Even so, he refuses to curse God.</p> <p>Three friends, Eliphaz, Bildad, and Zophar, come to comfort him. They sit with him in silence for seven days, but when they finally speak, they insist that Job must have sinned, because God only punishes the guilty. Job rejects this. He knows he is innocent, and he demands a hearing before God. A younger man, Elihu, adds his own speech. Then God finally answers Job “out of the whirlwind.”</p> <p>God does not explain why Job suffered. Instead, God asks a flood of questions: Where were you when I laid the foundations of the earth? Can you command the morning or feed the young lions? God describes the wild ass, the ostrich, the war horse, the hawk, and finally two great creatures, Behemoth and Leviathan, that no human can tame. Job is humbled. He says that before he had only heard of God, but now he has seen Him. God rebukes the three friends for not speaking rightly, and Job’s fortunes are restored twice over.</p>"
       },
       {
+        "label": "Formalist Lens",
+        "html": "<p>A formalist reading looks at the text itself: its structure and its techniques. Job is built as a <strong>frame</strong>. A short prose story at the beginning and end, in which Job loses everything and has it restored, surrounds a long poem of argument in the middle. The plain prose makes the poetry feel even more intense, as if the story stops so that the real struggle can be heard.</p> <p>Inside the poem, the friends speak in confident statements, while God answers almost entirely in <strong>rhetorical questions</strong>: “Where wast thou when I laid the foundations of the earth?” The form itself carries the meaning. Job asked for an explanation, and the poem answers him with questions he cannot answer. The <strong>parallelism</strong> of Hebrew verse, in which each line repeats or widens the one before it, makes the speeches roll forward like the whirlwind itself, and the long catalogue of animals, from the wild ass to Leviathan, turns the answer into a tour of creation. Looking closely at how the book is built showed me that its lack of a neat explanation is not a gap. It is the point.</p>"
+      },
+      {
         "label": "Characters",
         "html": "<ul class=\"char-list\"> <li><strong>Job</strong>A wealthy, righteous man whose faith is tested by total loss. He is honest about his anger and pain.</li> <li><strong>God</strong>The Creator, who speaks from the storm with questions rather than answers.</li> <li><strong>The Adversary</strong>A member of the heavenly court who challenges whether Job’s goodness is genuine.</li> <li><strong>The Friends</strong>Eliphaz, Bildad, Zophar, and later Elihu, who defend a simple rule that suffering always means sin.</li> </ul>"
       },
@@ -76,7 +84,8 @@ export default [
       "text": "“I have heard of thee by the hearing of the ear: but now mine eye seeth thee.”",
       "cite": "Job 42:5, King James Version"
     },
-    "insight": "What surprised me most was that God never gives Job a reason. At first this felt unfair. Then I realized the speech is not an answer but a change of view. Job stops seeing only his own pain and starts seeing how large the world is. In the Philippines, we often face typhoons, floods, and losses we did not cause. Job taught me that I do not always need an explanation to keep going, and that sitting quietly with someone who is hurting may help more than explaining their pain."
+    "insight": "What surprised me most was that God never gives Job a reason. At first this felt unfair. Then I realized the speech is not an answer but a change of view. Job stops seeing only his own pain and starts seeing how large the world is. In the Philippines, we often face typhoons, floods, and losses we did not cause. Job taught me that I do not always need an explanation to keep going, and that sitting quietly with someone who is hurting may help more than explaining their pain.",
+    "lens": "Formalist"
   },
   {
     "id": "panchatantra",
@@ -103,6 +112,10 @@ export default [
     },
     "kicker": "c. 200 BCE – 300 CE",
     "meta": [
+      [
+        "Literary lens",
+        "Psychological"
+      ],
       [
         "Attributed to",
         "Vishnu Sharma"
@@ -133,6 +146,10 @@ export default [
         "html": "<p>The story of the Brahmin’s wife and the mongoose comes from the fifth book of the <em>Panchatantra</em>, <em>Ill-Considered Action</em>. A Brahmin named Devasharman and his wife long for a child. When a son is finally born to them, a mongoose is born nearby on the same day, and the wife takes the little animal in and raises it beside her baby, feeding and caring for it as if it were a second son. Still, she never fully trusts it. Mongooses are wild creatures, and she worries that one day it might turn on the child.</p> <p>One day she goes out to fetch water from the pond. She leaves the baby with her husband and warns him to guard the boy from the mongoose. But the Brahmin soon leaves too, to go begging for alms, and the house is left with only the sleeping child and the mongoose. While they are gone, a black snake slides out of its hole and moves toward the baby. The mongoose sees it, fights it, and tears it to pieces.</p> <p>Proud of what he has done, the mongoose runs to meet the mother on her way home, his face still red with the snake’s blood. She sees the blood and is sure he has killed her son. Without stopping to look, she throws her heavy water pitcher down on him and kills him on the spot. Then she rushes home and finds her baby sleeping peacefully beside the torn body of the snake. Overcome with grief and guilt, she weeps for the mongoose she had raised as a son, and she blames her husband for leaving the child alone.</p>"
       },
       {
+        "label": "Psychological Lens",
+        "html": "<p>A psychological reading asks what is happening inside the characters: their motives, fears and emotions. From the start, the Brahmin’s wife loves the mongoose but never fully trusts it. That hidden <strong>anxiety</strong> is waiting for a reason, so when she sees blood on his face, her fear fills in the rest of the story before her eyes can. She does not see a mongoose that fought a snake. She sees the thing she has always been afraid of.</p> <p>Her action is <strong>impulsive</strong>: fear turns straight into violence, with no space to stop and check. The mongoose, too, acts from emotion. He runs to her proudly, wanting to be recognized, which is exactly what puts him in danger. The father’s decision to leave the house shows another side of the mind: he puts his own errand ahead of his duty. The story ends with <strong>guilt</strong>, and the mother’s grief is the real lesson of the fable. Reading it this way showed me that the tale is less about a mistake than about how quickly a frightened mind can turn love into harm.</p>"
+      },
+      {
         "label": "Characters",
         "html": "<ul class=\"char-list\"> <li><strong>The mongoose</strong>Raised alongside the baby, he risks his life to kill the snake and is killed for it by the one he trusted most.</li> <li><strong>The Brahmin’s wife</strong>A loving mother whose fear turns into a sudden, terrible judgment.</li> <li><strong>Devasharman</strong>The Brahmin, who is told to guard his son but leaves to beg for alms.</li> <li><strong>The baby</strong>The sleeping son at the center of the story, saved without ever knowing it.</li> <li><strong>The black snake</strong>The real danger, which no one but the mongoose sees.</li> </ul>"
       },
@@ -154,7 +171,8 @@ export default [
       "text": "Do not act until you have looked closely at a thing, or you may destroy the one who saved you.",
       "cite": "The moral of the mongoose tale, in my own words"
     },
-    "insight": "The mongoose tale is short, but it stayed with me more than many of the longer epics. The mother is not cruel. She is frightened, and her fear makes her act before she looks. I see the same thing in myself when I react to a message or a rumor before I know the whole story, especially online, where a single screenshot can look like proof. What hurts most is that she had raised the mongoose like her own son. The story reminded me that the people we love deserve a second look before we judge them."
+    "insight": "The mongoose tale is short, but it stayed with me more than many of the longer epics. The mother is not cruel. She is frightened, and her fear makes her act before she looks. I see the same thing in myself when I react to a message or a rumor before I know the whole story, especially online, where a single screenshot can look like proof. What hurts most is that she had raised the mongoose like her own son. The story reminded me that the people we love deserve a second look before we judge them.",
+    "lens": "Psychological"
   },
   {
     "id": "ramayana",
@@ -180,6 +198,10 @@ export default [
     },
     "kicker": "c. 5th century BCE – 1st century CE",
     "meta": [
+      [
+        "Literary lens",
+        "Feminist"
+      ],
       [
         "Attributed to",
         "Valmiki"
@@ -210,6 +232,10 @@ export default [
         "html": "<p>The <em>Ramayana</em> tells the story of Prince Rama of Ayodhya, the eldest son of King Dasharatha, who is loved by everyone. Rama wins the hand of Princess Sita by lifting and breaking a mighty bow that no other suitor could even move. Just before Rama is to be crowned, his stepmother Kaikeyi reminds the king of two wishes he once promised her. She demands that her own son, Bharata, become king and that Rama be sent into the forest for fourteen years. Bound by his word, Dasharatha agrees, and he soon dies of grief.</p> <p>Rama accepts his exile without complaint. Sita and his loyal brother Lakshmana insist on going with him. Bharata refuses to take the throne and rules only as Rama’s representative, placing Rama’s sandals on the throne. In the forest, the demon king Ravana of Lanka tricks Rama and Lakshmana with a golden deer and carries Sita away. The vulture king Jatayu tries to stop him and is mortally wounded.</p> <p>Searching for Sita, Rama allies with the monkey king Sugriva and his devoted general Hanuman. Hanuman leaps across the ocean to Lanka, finds Sita, and brings back word of her. An army of monkeys and bears builds a bridge to the island. In a great war, Rama kills Ravana and rescues Sita. Because she lived in another man’s palace, Sita undergoes a trial by fire to prove her purity, and the fire god returns her unharmed. Rama returns to Ayodhya and is crowned, beginning a golden age of just rule.</p>"
       },
       {
+        "label": "Feminist Lens",
+        "html": "<p>A feminist reading looks at gender, representation and power. Sita is admired as the ideal wife, and she is not passive: she <strong>chooses</strong> to follow Rama into exile when she could have stayed in comfort, and she resists Ravana throughout her captivity. Yet the story keeps measuring her by her loyalty to a man. After she is rescued, it is Sita, not her captor, who must prove her purity by walking through fire.</p> <p>The trial by fire shows how a society can place the <strong>burden of proof on women</strong>, even when they have done nothing wrong. The epic’s other women are shaped by the same power structure. Kaikeyi gains power only through promises a king once made to her, and the story remembers her as the cause of the whole tragedy. Reading the Ramayana through this lens did not make me reject it. It helped me admire Sita’s strength while questioning the standards the story judges her by, standards that still affect how women are treated today.</p>"
+      },
+      {
         "label": "Characters",
         "html": "<ul class=\"char-list\"> <li><strong>Rama</strong>The ideal prince and an avatar of the god Vishnu, who always chooses duty over desire.</li> <li><strong>Sita</strong>Rama’s faithful wife, admired for her courage, loyalty, and inner strength.</li> <li><strong>Lakshmana</strong>Rama’s devoted younger brother and constant companion.</li> <li><strong>Hanuman</strong>The powerful monkey general, a symbol of selfless devotion.</li> <li><strong>Ravana</strong>The ten-headed king of Lanka, learned and mighty but ruined by pride and desire.</li> </ul>"
       },
@@ -231,7 +257,8 @@ export default [
       "text": "A father’s promise must be kept. I will not return to the throne until my fourteen years in the forest are complete.",
       "cite": "Rama’s answer to Bharata’s plea, Ayodhya Kanda, paraphrased"
     },
-    "insight": "Rama’s choice to accept exile was hard for me to understand at first. He valued his father’s word more than his own comfort, which reminded me of <em>utang na loob</em> and how deeply we feel duty to our parents. I also found Sita’s trial by fire troubling, because it shows how societies often place a heavier burden of proof on women. Learning that the Maranao have their own version made this epic feel close to home."
+    "insight": "Rama’s choice to accept exile was hard for me to understand at first. He valued his father’s word more than his own comfort, which reminded me of <em>utang na loob</em> and how deeply we feel duty to our parents. I also found Sita’s trial by fire troubling, because it shows how societies often place a heavier burden of proof on women. Learning that the Maranao have their own version made this epic feel close to home.",
+    "lens": "Feminist"
   },
   {
     "id": "mahabharata",
@@ -258,6 +285,10 @@ export default [
     },
     "kicker": "c. 400 BCE – 400 CE",
     "meta": [
+      [
+        "Literary lens",
+        "Marxist"
+      ],
       [
         "Attributed to",
         "Vyasa"
@@ -288,6 +319,10 @@ export default [
         "html": "<p>The <em>Mahabharata</em> is often called the longest poem in the world. At its center is a struggle between two branches of the royal family of Hastinapura. The five Pandava brothers, Yudhishthira, Bhima, Arjuna, Nakula, and Sahadeva, are the sons of King Pandu. Their one hundred cousins, the Kauravas, are led by the jealous Duryodhana, eldest son of the blind king Dhritarashtra.</p> <p>Duryodhana resents the Pandavas from childhood and tries many times to destroy them. Arjuna wins the princess Draupadi in an archery contest, and she becomes the wife of all five brothers. Later, Duryodhana’s uncle Shakuni challenges Yudhishthira to a rigged game of dice. Yudhishthira gambles away his kingdom, his brothers, himself, and finally Draupadi, who is dragged into the royal hall and humiliated. The Pandavas must then spend twelve years in exile and a thirteenth year in disguise.</p> <p>When they return, Duryodhana refuses to give back even five villages. On the battlefield of Kurukshetra, Arjuna sees his teachers, cousins, and elders in the opposing army and loses the will to fight. His charioteer, Krishna, an avatar of Vishnu, speaks to him about duty, the soul, and devotion. This dialogue is the <em>Bhagavad Gita</em>. The war lasts eighteen days and kills nearly everyone. The Pandavas win, but the victory feels hollow, and the epic ends with their final journey toward heaven.</p>"
       },
       {
+        "label": "Marxist Lens",
+        "html": "<p>A Marxist reading looks at class, economics and power: who owns what, and who pays for it. At its core, the Mahabharata is a fight over <strong>property</strong>. Two branches of one royal family go to war over a kingdom, and Duryodhana refuses to give the Pandavas even five villages. The rulers argue about inheritance, but the people who die on the battlefield of Kurukshetra are mostly soldiers who never owned any of that land.</p> <p>The game of dice makes the logic of ownership shocking. Yudhishthira bets his wealth, his kingdom, his brothers, himself and finally Draupadi, as if a person were <strong>property</strong> to be wagered. Karna’s story shows how birth and status decide a person’s place. Raised by a charioteer, he is mocked and shut out despite his skill, and the only friend who accepts him is Duryodhana, which binds him to the wrong side. Through this lens the epic becomes a story about how the struggles of the powerful are paid for by everyone below them.</p>"
+      },
+      {
         "label": "Characters",
         "html": "<ul class=\"char-list\"> <li><strong>Yudhishthira</strong>The eldest Pandava, known for honesty, but weakened by his love of gambling.</li> <li><strong>Arjuna</strong>The great archer, whose doubts on the battlefield lead to the Bhagavad Gita.</li> <li><strong>Krishna</strong>Arjuna’s friend, guide, and charioteer, who reveals himself as divine.</li> <li><strong>Draupadi</strong>The Pandavas’ wife, whose public humiliation becomes a cause of the war.</li> <li><strong>Duryodhana</strong>The proud Kaurava prince, driven by envy of his cousins.</li> <li><strong>Karna</strong>A tragic warrior who, unknown to all, is the Pandavas’ eldest brother, yet fights loyally for Duryodhana.</li> </ul>"
       },
@@ -309,7 +344,8 @@ export default [
       "text": "“You have a right to your actions, but never to the fruits of your actions.”",
       "cite": "Krishna to Arjuna, Bhagavad Gita 2.47"
     },
-    "insight": "This was the most challenging work for me because there is no clean line between good and bad. I felt sorry for Karna, who fought on the “wrong” side out of loyalty to the only friend who respected him. Krishna’s teaching helped me as a student, because I often worry so much about grades that I forget to focus on learning. The family torn apart over land and pride also reminded me of real inheritance disputes I have heard about."
+    "insight": "This was the most challenging work for me because there is no clean line between good and bad. I felt sorry for Karna, who fought on the “wrong” side out of loyalty to the only friend who respected him. Krishna’s teaching helped me as a student, because I often worry so much about grades that I forget to focus on learning. The family torn apart over land and pride also reminded me of real inheritance disputes I have heard about.",
+    "lens": "Marxist"
   },
   {
     "id": "iliad",
@@ -336,6 +372,10 @@ export default [
     },
     "kicker": "c. 8th century BCE",
     "meta": [
+      [
+        "Literary lens",
+        "Psychological"
+      ],
       [
         "Attributed to",
         "Homer"
@@ -364,6 +404,10 @@ export default [
       {
         "label": "Summary",
         "html": "<p>The <em>Iliad</em> takes place during the tenth and final year of the Trojan War, which began when the Trojan prince Paris carried off Helen, wife of the Spartan king Menelaus. Rather than tell the whole war, the poem focuses on a few weeks and on one emotion: the rage of Achilles, the greatest Greek warrior.</p> <p>Agamemnon, leader of the Greek army, is forced to give up a captive woman, so he takes Achilles’ prize, Briseis, instead. Insulted, Achilles withdraws from battle and asks his mother, the sea goddess Thetis, to make the Greeks suffer until they honor him. Without Achilles, the Greeks are driven back to their ships by the Trojan prince Hector.</p> <p>Achilles’ closest friend, Patroclus, borrows his armor and leads a counterattack, but Hector kills him. Achilles’ anger now turns against Hector. He returns to battle, kills Hector outside the walls of Troy, and drags the body behind his chariot for days. In the final book, old King Priam secretly enters the Greek camp and begs for his son’s body. Achilles, remembering his own father, weeps with Priam and returns the body. The poem ends with Hector’s funeral, not with the fall of Troy.</p>"
+      },
+      {
+        "label": "Psychological Lens",
+        "html": "<p>A psychological reading follows what drives the characters from within. The Iliad announces its subject in its first word: rage. Achilles’ anger begins as <strong>wounded pride</strong> when Agamemnon takes Briseis from him in front of the army. Instead of facing the insult, he withdraws and wishes suffering on his own side, so that the Greeks will feel what they have lost without him.</p> <p>When Patroclus dies, Achilles’ grief turns into something more dangerous. He cannot bear the guilt of having let his friend fight in his place, so he <strong>redirects</strong> his pain outward onto Hector, and even after killing him he drags the body for days because the grief is still there. The turning point is psychological, not military. When Priam kneels and reminds Achilles of his own aging father, Achilles finally sees his own pain in his enemy, and the two weep together. Reading the poem this way showed me that its true climax is not a victory but a man finally able to feel compassion again.</p>"
       },
       {
         "label": "Characters",
@@ -425,7 +469,8 @@ export default [
       "text": "“Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans.”",
       "cite": "Book I, opening line, translated by Samuel Butler"
     },
-    "insight": "I expected the <em>Iliad</em> to celebrate war, but it actually mourns it. The scene that affected me most was Hector saying goodbye to his wife and baby son, who is frightened by his father’s helmet. Hector laughs, takes it off, and holds the child. Achilles showed me how wounded pride, or <em>hiya</em>, can make a person hurt everyone around them. His reconciliation with Priam taught me that compassion can exist even between enemies. This is my favorite work, and I explain why on the <a href=\"/masterpiece\">Masterpiece</a> page."
+    "insight": "I expected the <em>Iliad</em> to celebrate war, but it actually mourns it. The scene that affected me most was Hector saying goodbye to his wife and baby son, who is frightened by his father’s helmet. Hector laughs, takes it off, and holds the child. Achilles showed me how wounded pride, or <em>hiya</em>, can make a person hurt everyone around them. His reconciliation with Priam taught me that compassion can exist even between enemies. This is my favorite work, and I explain why on the <a href=\"/masterpiece\">Masterpiece</a> page.",
+    "lens": "Psychological"
   },
   {
     "id": "odyssey",
@@ -452,6 +497,10 @@ export default [
     },
     "kicker": "Late 8th century BCE",
     "meta": [
+      [
+        "Literary lens",
+        "Reader-Response"
+      ],
       [
         "Attributed to",
         "Homer"
@@ -482,6 +531,10 @@ export default [
         "html": "<p>The <em>Odyssey</em> follows Odysseus, king of Ithaca, on his ten-year journey home after the Trojan War. When the poem begins, he has been held for seven years on the island of the nymph Calypso. Meanwhile, more than a hundred suitors have taken over his palace, eating his food and pressuring his wife, Penelope, to remarry. His son, Telemachus, now a young man, sets out to find news of his father.</p> <p>The gods finally free Odysseus. Shipwrecked among the Phaeacians, he tells the story of his adventures. He blinded the Cyclops Polyphemus, a son of Poseidon, after tricking him by saying his name was “Nobody.” His men opened a bag of winds and blew their ships off course. The witch Circe turned his crew into pigs. He traveled to the underworld to consult the dead prophet Tiresias. He heard the song of the Sirens while tied to the mast, sailed between the monster Scylla and the whirlpool Charybdis, and lost his last companions after they ate the sacred cattle of the sun god.</p> <p>The Phaeacians carry Odysseus home. Disguised as a beggar by the goddess Athena, he reunites with Telemachus and tests the loyalty of his household. Penelope announces that she will marry whoever can string Odysseus’ great bow and shoot an arrow through twelve axe heads. Only the beggar succeeds. He reveals himself, and with Telemachus he kills the suitors. Penelope tests him one last time with the secret of their bed, carved from a living olive tree, and the couple is finally reunited.</p>"
       },
       {
+        "label": "Reader-Response Lens",
+        "html": "<p>A reader-response reading says that meaning is made in the meeting between the text and the reader, so the same poem can mean different things to different people. An ancient Greek listener might have focused on <em>xenia</em>, the sacred duty of hospitality, and on the suitors who break it. Reading the Odyssey today, as a Filipino, I found myself paying the most attention to the people <strong>left behind</strong>.</p> <p>Penelope holding the household together for twenty years, and Telemachus growing up without his father, reminded me of families with a parent working abroad, who wait through birthdays and holidays for a homecoming. Because of that, Odysseus’ adventures with monsters felt less important to me than the long wait in Ithaca, and the reunion in Book 23 moved me more than any battle. This lens helped me see that my own experience is not a distraction from the text. It is part of how the text speaks, which is one reason a three-thousand-year-old poem can still feel personal.</p>"
+      },
+      {
         "label": "Characters",
         "html": "<ul class=\"char-list\"> <li><strong>Odysseus</strong>A clever, patient, and sometimes reckless hero who survives by his wits.</li> <li><strong>Penelope</strong>His faithful wife, who outwits the suitors by weaving and unweaving a burial shroud.</li> <li><strong>Telemachus</strong>Their son, who grows from a boy into a man over the course of the poem.</li> <li><strong>Athena</strong>The goddess of wisdom, who guides and protects Odysseus.</li> <li><strong>Poseidon</strong>The sea god, who punishes Odysseus for blinding his son.</li> </ul>"
       },
@@ -503,7 +556,8 @@ export default [
       "text": "“Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy.”",
       "cite": "Book I, opening lines, translated by Samuel Butler"
     },
-    "insight": "The <em>Odyssey</em> made me think of the many Filipino families with a parent working abroad. Like Penelope and Telemachus, they wait for years, holding the household together while hoping for a homecoming. Odysseus is not perfect, and his pride causes years of suffering, but he never stops trying to get home. His story reminded me that patience and cleverness can matter as much as strength."
+    "insight": "The <em>Odyssey</em> made me think of the many Filipino families with a parent working abroad. Like Penelope and Telemachus, they wait for years, holding the household together while hoping for a homecoming. Odysseus is not perfect, and his pride causes years of suffering, but he never stops trying to get home. His story reminded me that patience and cleverness can matter as much as strength.",
+    "lens": "Reader-Response"
   },
   {
     "id": "roland",
@@ -530,6 +584,10 @@ export default [
     },
     "kicker": "c. 1100 CE",
     "meta": [
+      [
+        "Literary lens",
+        "Historical"
+      ],
       [
         "Author",
         "Unknown; the manuscript names a Turoldus"
@@ -560,6 +618,10 @@ export default [
         "html": "<p><em>The Song of Roland</em> is set during the wars of Charlemagne, emperor of the Franks, in Spain. After seven years of fighting, only the city of Saragossa, ruled by the Saracen king Marsile, remains unconquered. Marsile offers a false peace. Roland, Charlemagne’s nephew and greatest knight, proposes his stepfather Ganelon as the messenger to Marsile. Furious and afraid, Ganelon plots revenge. He arranges for Marsile to ambush the rear guard of the Frankish army, led by Roland, as it crosses the mountain pass of Roncevaux.</p> <p>As the huge Saracen army approaches, Roland’s wise friend Oliver begs him three times to blow his horn, the Oliphant, to call Charlemagne back. Roland refuses, saying it would bring shame on himself and on France. The rear guard fights heroically, but one by one the twelve peers fall. Only when almost everyone is dead does Roland blow the horn, so hard that his temples burst. He tries to break his sword, Durendal, so that no enemy will take it, but it will not shatter. He dies facing Spain, offering his glove to God, and angels carry his soul to paradise.</p> <p>Charlemagne returns, mourns his nephew, and takes revenge. God makes the sun stand still so he can pursue the enemy. He also defeats Baligant, the emir of Babylon, who has come to aid Marsile. Back in France, Ganelon is put on trial. His guilt is decided by a trial by combat, which Charlemagne’s champion Thierry wins, and Ganelon is executed.</p>"
       },
       {
+        "label": "Historical Lens",
+        "html": "<p>A historical reading places a work in the time and culture that produced it. <em>The Song of Roland</em> is based on a real event: in 778, the rear guard of Charlemagne’s army was ambushed at the pass of Roncevaux. Historically, the attackers were <strong>Basques</strong>, local Christian mountain people. But the poem was written down around 1100, the time of the First Crusade, and the poet turned the enemy into a vast Saracen army, so that a small defeat became a holy war between Christianity and Islam.</p> <p>Knowing this explains the poem’s values: <strong>feudal loyalty</strong> to one’s lord, the glory of dying in battle, and its unfair portrayal of Muslims, which reflects the attitudes of the Crusades era rather than the facts of 778. The historical lens also connects the poem to the Philippines. The legend of Charlemagne and his knights arrived with Spanish colonization and shaped the <em>komedya</em> or <em>moro-moro</em>, folk plays about Christians fighting Moors. Reading historically helped me appreciate the poem while understanding why parts of it should be questioned.</p>"
+      },
+      {
         "label": "Characters",
         "html": "<ul class=\"char-list\"> <li><strong>Roland</strong>Charlemagne’s nephew, brave and loyal, but proud to the point of disaster.</li> <li><strong>Oliver</strong>Roland’s best friend and brother-in-arms, the voice of good judgment.</li> <li><strong>Charlemagne</strong>The aged emperor, presented as God’s chosen ruler.</li> <li><strong>Ganelon</strong>Roland’s stepfather, whose treason causes the massacre.</li> <li><strong>Archbishop Turpin</strong>A warrior priest who fights and blesses the dying knights.</li> </ul>"
       },
@@ -581,6 +643,7 @@ export default [
       "text": "“Roland is fierce and Oliver is wise.”",
       "cite": "Laisse 87, line 1093"
     },
-    "insight": "Roland’s refusal to blow the horn frustrated me, because it cost the lives of his whole rear guard. Still, I understood the pressure he felt not to look weak. Many of us refuse to ask for help because of pride or fear of being judged. Oliver showed me that wisdom is also a form of courage. I also read the poem critically, because it portrays Muslims unfairly, and learning that our <em>moro-moro</em> plays came from this tradition made me think about how stories shape the way one group sees another."
+    "insight": "Roland’s refusal to blow the horn frustrated me, because it cost the lives of his whole rear guard. Still, I understood the pressure he felt not to look weak. Many of us refuse to ask for help because of pride or fear of being judged. Oliver showed me that wisdom is also a form of courage. I also read the poem critically, because it portrays Muslims unfairly, and learning that our <em>moro-moro</em> plays came from this tradition made me think about how stories shape the way one group sees another.",
+    "lens": "Historical"
   }
 ];

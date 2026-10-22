@@ -38,6 +38,7 @@ const roman = ["I", "II", "III", "IV", "V", "VI", "VII"];
     <div class="work-poster-middle">
       <h3 :id="work.titleId" class="work-poster-title">{{ work.title }}</h3>
       <p class="work-poster-orig" :class="work.orig.font" :lang="work.orig.lang">{{ work.orig.text }}</p>
+      <p class="work-poster-lens">Read through the <strong>{{ work.lens }}</strong> lens</p>
       <p class="work-poster-hook">{{ work.hook }}</p>
     </div>
 

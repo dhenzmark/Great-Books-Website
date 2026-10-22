@@ -5,7 +5,7 @@ const facts = [
   ["Name", author],
   ["Course", "4th Year BS Information Technology"],
   ["Section", "GEC-GB-NRn 1454"],
-  ["Subject", "Art Appreciation"],
+  ["Subject", "Great Books"],
   ["Instructor", "Charlot San Buenaventura"],
   ["School", "University of Nueva Caceres"],
 ];
@@ -32,13 +32,18 @@ const photo = "assets/img/me.jpeg";
           Before this class, I thought of epics as long, difficult poems that only scholars read. I was wrong. Once I looked past the unfamiliar
           names, I found families arguing, friends grieving, leaders making mistakes, and ordinary people trying to do the right thing.
         </p>
+        <p>
+          When Great Books began, I expected to memorize plots and characters for exams and move on. Instead, the course taught me to read the same
+          story through different literary lenses and to connect ancient epics to my own family, culture, and community. I came out of it reading more
+          slowly and asking better questions, not only of books but of the people around me.
+        </p>
         <ul class="facts" aria-label="Student details">
           <li v-for="[label, value] in facts" :key="label"><span>{{ label }}</span>{{ value }}</li>
         </ul>
         <RouterLink class="btn" to="/analyses">Read the analyses</RouterLink>
       </div>
       <div v-reveal class="stack">
-        <div class="s1"><img :src="photo" :alt="author" :style="{ objectPosition: photoPosition }" /></div>
+        <div class="s1"><img :src="photo" :alt="author" decoding="async" :style="{ objectPosition: photoPosition }" /></div>
       </div>
     </div>
   </section>

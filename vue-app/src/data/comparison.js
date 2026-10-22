@@ -3,6 +3,7 @@ export default {
   "head": [
     "Work",
     "Tradition",
+    "Lens",
     "Central figure",
     "Main conflict",
     "Core value",
@@ -12,6 +13,7 @@ export default {
     [
       "Voice out of the Whirlwind",
       "Hebrew",
+      "Formalist",
       "Job",
       "A righteous man versus unexplained suffering",
       "Faith and humility",
@@ -20,6 +22,7 @@ export default {
     [
       "The Panchatantra",
       "Indian",
+      "Psychological",
       "The Brahmin’s wife and the mongoose",
       "A mother’s fear against a loyal animal’s courage",
       "Careful judgment",
@@ -28,6 +31,7 @@ export default {
     [
       "The Ramayana",
       "Indian",
+      "Feminist",
       "Rama",
       "Righteousness versus pride and desire",
       "Dharma",
@@ -36,6 +40,7 @@ export default {
     [
       "The Mahabharata",
       "Indian",
+      "Marxist",
       "Arjuna and the Pandavas",
       "Cousins at war over a kingdom",
       "Duty without attachment",
@@ -44,6 +49,7 @@ export default {
     [
       "The Iliad",
       "Greek",
+      "Psychological",
       "Achilles",
       "Wounded pride in the middle of a war",
       "Honor and glory",
@@ -52,6 +58,7 @@ export default {
     [
       "The Odyssey",
       "Greek",
+      "Reader-Response",
       "Odysseus",
       "A long journey home against gods and monsters",
       "Cleverness and loyalty",
@@ -60,6 +67,7 @@ export default {
     [
       "The Song of Roland",
       "French",
+      "Historical",
       "Roland",
       "Loyal knights betrayed in battle",
       "Feudal loyalty",

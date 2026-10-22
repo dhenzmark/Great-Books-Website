@@ -122,7 +122,7 @@ function onKey(e) {
 
         <div ref="strip" class="strip" aria-hidden="true" @scroll.passive="onStripScroll">
           <button v-for="(e, i) in eras" :key="e.tab" type="button" tabindex="-1" :class="{ on: i === at }" @click="go(i)">
-            <img :src="e.thumb" alt="" loading="lazy" />
+            <img :src="e.thumb" alt="" loading="lazy" decoding="async" />
           </button>
         </div>
 

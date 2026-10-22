@@ -19,7 +19,7 @@ const year = new Date().getFullYear();
       </div>
       <ImageCredits />
       <div class="footer-row">
-        <p>A literary portfolio for Art Appreciation.</p>
+        <p>A literary portfolio for Great Books.</p>
         <p><a href="#top">Back to top</a></p>
       </div>
     </div>
