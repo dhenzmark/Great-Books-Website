@@ -3,7 +3,8 @@
   A 3D artifact shown in Sketchfab's own viewer, beside a museum-style label.
   The models aren't downloadable, so embedding is the permitted way to show them.
   The viewer loads by itself as soon as its work comes into view, even while another tab
-  (such as Summary) is open, so it is ready by the time the reader reaches it.
+  (such as Summary) is open, so it is ready by the time the reader reaches it, and unloads
+  again once the work is a screen behind.
   A still picture stands in until it has loaded.
   Put the label's paragraph(s) in the default slot.
 */
@@ -35,26 +36,40 @@ const embedUrl =
 const live = ref(false); // viewer requested
 const shown = ref(false); // viewer finished loading: the still picture fades away
 const stage = ref(null);
-let io = null;
+let near = null;
+let far = null;
+let fadeTimer = 0;
 
 onMounted(() => {
   if (!("IntersectionObserver" in window)) return (live.value = true);
-  io = new IntersectionObserver(
-    ([e]) => {
-      if (!e.isIntersecting) return;
-      live.value = true;
-      io.disconnect();
-    },
-    { rootMargin: "200px 0px" }
-  );
   /* watch the whole analysis, not the (possibly hidden) tab the viewer sits in */
-  io.observe(stage.value.closest("article") || stage.value);
+  const target = stage.value.closest("article") || stage.value;
+  /* load as the analysis comes near... */
+  near = new IntersectionObserver(([e]) => e.isIntersecting && (live.value = true), { rootMargin: "200px 0px" });
+  /* ...and unload once it is more than a screen away, so works already passed don't keep a
+     3D scene running (on phones several at once make scrolling lag); the still picture returns */
+  far = new IntersectionObserver(
+    ([e]) => {
+      if (e.isIntersecting) return;
+      clearTimeout(fadeTimer);
+      live.value = false;
+      shown.value = false;
+    },
+    { rootMargin: "100% 0px" }
+  );
+  near.observe(target);
+  far.observe(target);
 });
 /* give the viewer a moment to draw the model before the still picture fades */
 function onLoaded() {
-  setTimeout(() => (shown.value = true), 1200);
+  clearTimeout(fadeTimer);
+  fadeTimer = setTimeout(() => live.value && (shown.value = true), 1200);
 }
-onBeforeUnmount(() => io && io.disconnect());
+onBeforeUnmount(() => {
+  clearTimeout(fadeTimer);
+  near && near.disconnect();
+  far && far.disconnect();
+});
 </script>
 
 <template>

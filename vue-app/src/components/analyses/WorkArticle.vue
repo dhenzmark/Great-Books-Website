@@ -13,14 +13,14 @@ import BowArtifact from "./BowArtifact.vue";
 import ChariotArtifact from "./ChariotArtifact.vue";
 import PitcherArtifact from "./PitcherArtifact.vue";
 import RamaBowArtifact from "./RamaBowArtifact.vue";
-import WhirlwindArtifact from "./WhirlwindArtifact.vue";
+import JobArtifact from "./JobArtifact.vue";
 
 const props = defineProps({
   work: { type: Object, required: true },
   current: { type: Boolean, default: false },
 });
 
-const artifacts = { panchatantra: PitcherArtifact, mahabharata: ChariotArtifact, iliad: ShieldArtifact, odyssey: BowArtifact, roland: OliphantArtifact, ramayana: RamaBowArtifact, job: WhirlwindArtifact };
+const artifacts = { panchatantra: PitcherArtifact, mahabharata: ChariotArtifact, iliad: ShieldArtifact, odyssey: BowArtifact, roland: OliphantArtifact, ramayana: RamaBowArtifact, job: JobArtifact };
 const elementsTab = props.work.tabs.findIndex((t) => t.label === "Literary Elements");
 </script>
 
