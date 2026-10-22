@@ -229,3 +229,15 @@
   .odm-open::after { background: linear-gradient(0deg, rgba(14, 14, 14, .97) 0%, rgba(14, 14, 14, .85) 42%, rgba(14, 14, 14, 0) 72%); }
   .odm-open-cta { margin-left: 64px; }
 }
+
+/* the title line stays visible above the map while you scroll through the journey */
+.odm-open-box { --odm-title-h: 44px; }
+.odm-open-title { position: sticky; top: var(--nav-h); z-index: 6; display: flex; align-items: center; height: var(--odm-title-h); margin: 0; background: #1b1a1b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.odm-open-box .odm { margin-top: 0; }
+.odm-open-box .odm-stage { top: calc(var(--nav-h) + var(--odm-title-h)); height: calc(100vh - var(--nav-h) - var(--odm-title-h) - 14px); height: calc(100svh - var(--nav-h) - var(--odm-title-h) - 14px); }
+@media (max-width: 760px) { .odm-open-box { --odm-title-h: 52px; } .odm-open-title { white-space: normal; line-height: 1.35; font-size: .72rem; } }
+/* phones: while the map is running, the list-of-works bar steps aside for the map's title */
+@media (max-width: 760px) {
+  .toc { transition: opacity .3s ease; }
+  .with-toc:has(.odm:not(.is-paused)) .toc { opacity: 0; pointer-events: none; }
+}

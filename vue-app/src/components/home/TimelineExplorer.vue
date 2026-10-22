@@ -70,7 +70,7 @@ function onStripScroll() {
 
 watch(at, (i) => {
   nextTick(() => {
-    const behavior = matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+    const behavior = "smooth";
     const s = strip.value, l = list.value;
     /* a swipe already moved both rows; only taps and arrows need to slide them */
     if (!fromStrip) {

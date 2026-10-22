@@ -9,7 +9,7 @@ import ReflectionLetter from "../components/reflection/ReflectionLetter.vue";
     <PageTitle
       label="Reflection"
       before="REFLECTI"
-      image="assets/img/iliad-david-andromache.jpg"
+      image="assets/img/iliad-david-andromache.webp"
       after="N"
       quote-source="From my reflection"
     >

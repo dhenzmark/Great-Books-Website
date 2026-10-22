@@ -3,13 +3,16 @@
   The journey map stays closed (and unloaded) until the reader asks for it.
   A click outside it (or Esc) pauses it; its close button closes it.
 */
-import { ref, nextTick, onBeforeUnmount, defineAsyncComponent } from "vue";
+import { ref, nextTick, onMounted, onBeforeUnmount, defineAsyncComponent } from "vue";
 import { prefersReducedMotion } from "../../composables/motion.js";
 import stops from "../../data/odyssey/stops.js";
 import "../../styles/odyssey-map.css";
 import preview from "../../assets/journey-preview.svg";
 
-const OdysseyMap = defineAsyncComponent(() => import("./OdysseyMap.vue"));
+/* the map's code is fetched ahead of time (when the button comes into view), so opening never waits */
+let mapModule = null;
+const loadMap = () => (mapModule ||= import("./OdysseyMap.vue"));
+const OdysseyMap = defineAsyncComponent(loadMap);
 
 const open = ref(false);
 const box = ref(null);
@@ -30,12 +33,22 @@ function onKey(e) {
 }
 
 async function show() {
+  if (open.value) return;
   paused.value = false;
+  /*
+    The map adds a very tall section. Browsers normally keep the text below it in place by
+    jumping the page down by that height, which lands mid-journey and then rewinds to Troy.
+    Switch that off while the map opens, so the reader stays at the start and simply glides
+    the short way down to the top of the map.
+  */
+  const html = document.documentElement;
+  html.style.overflowAnchor = "none";
   open.value = true;
   await nextTick();
   const toMap = () => box.value?.scrollIntoView({ behavior: behavior(), block: "start" });
   setTimeout(toMap, 80);
   setTimeout(toMap, 700); // again once the map has loaded and taken its full height
+  setTimeout(() => (html.style.overflowAnchor = ""), 1600);
   /* listen after this click has finished, so it doesn't count as "outside" */
   setTimeout(() => {
     document.addEventListener("pointerdown", onPointerDown);
@@ -59,7 +72,18 @@ function hide() {
   });
 }
 
-onBeforeUnmount(stopListening);
+/* start fetching the map while the reader is still approaching the button */
+let near = null;
+onMounted(() => {
+  if (!("IntersectionObserver" in window)) return loadMap();
+  near = new IntersectionObserver(([e]) => { if (e.isIntersecting) { loadMap(); near.disconnect(); } }, { rootMargin: "800px 0px" });
+  if (opener.value) near.observe(opener.value);
+});
+
+onBeforeUnmount(() => {
+  stopListening();
+  if (near) near.disconnect();
+});
 </script>
 
 <template>

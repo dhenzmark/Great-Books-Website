@@ -7,7 +7,7 @@ import ProfileFigures from "../components/profile/ProfileFigures.vue";
 
 <template>
   <div class="page">
-    <PageTitle label="Profile" before="PR" image="assets/img/mahabharata-krishna-arjuna.jpg" after="FILE" quote-source="From my profile">
+    <PageTitle label="Profile" before="PR" image="assets/img/mahabharata-krishna-arjuna.webp" after="FILE" quote-source="From my profile">
       Who I am, how I read, and why these old stories still matter to a student in the Philippines today.
       <template #quote>These works feel ancient, but the people in them feel surprisingly close.</template>
       <template #credit>Picture above: Krishna and Arjuna on the chariot, India, 18th&ndash;19th century.</template>

@@ -7,11 +7,21 @@ import WorkGallery from "./WorkGallery.vue";
 import WorkPoster from "./WorkPoster.vue";
 import OdysseyMapToggle from "./OdysseyMapToggle.vue";
 import WorkBackdrop from "./WorkBackdrop.vue";
+import OliphantArtifact from "./OliphantArtifact.vue";
+import ShieldArtifact from "./ShieldArtifact.vue";
+import BowArtifact from "./BowArtifact.vue";
+import ChariotArtifact from "./ChariotArtifact.vue";
+import PitcherArtifact from "./PitcherArtifact.vue";
+import RamaBowArtifact from "./RamaBowArtifact.vue";
+import WhirlwindArtifact from "./WhirlwindArtifact.vue";
 
-defineProps({
+const props = defineProps({
   work: { type: Object, required: true },
   current: { type: Boolean, default: false },
 });
+
+const artifacts = { panchatantra: PitcherArtifact, mahabharata: ChariotArtifact, iliad: ShieldArtifact, odyssey: BowArtifact, roland: OliphantArtifact, ramayana: RamaBowArtifact, job: WhirlwindArtifact };
+const elementsTab = props.work.tabs.findIndex((t) => t.label === "Literary Elements");
 </script>
 
 <template>
@@ -22,7 +32,10 @@ defineProps({
 
     <TabGroup v-reveal :tabs="work.tabs" :prefix="work.tabPrefix" :label="`${work.title} analysis`">
       <template v-if="work.id === 'odyssey'" #panel-0><OdysseyMapToggle /></template>
+      <!-- 3D artifacts sit in Literary Elements, beside the symbolism they illustrate -->
+      <template v-if="artifacts[work.id]" #[`panel-${elementsTab}`]><component :is="artifacts[work.id]" /></template>
     </TabGroup>
+
 
     <WorkGallery v-if="work.gallery.length" :title="`${work.title} in Art`" :paintings="work.gallery" />
 

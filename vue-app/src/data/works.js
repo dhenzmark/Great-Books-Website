@@ -12,11 +12,11 @@ export default [
       "lang": "he"
     },
     "plate": {
-      "src": "assets/img/job-blake-engraving.jpg",
+      "src": "assets/img/job-blake-engraving.webp",
       "alt": "Blake's engraving of God in a whirlwind speaking to Job and his wife, framed by verses",
       "fit": "contain",
       "look": {
-        "src": "assets/img/job-blake-engraving.jpg",
+        "src": "assets/img/job-blake-engraving.webp",
         "title": "The Lord Answering Job out of the Whirlwind",
         "caption": "William Blake, plate 13 of Illustrations of the Book of Job, engraving, 1826.",
         "text": "Blake surrounds the scene with lines from Job 38. God leans out of the storm with arms spread wide, while Job and his wife kneel below. The swirling lines make the whirlwind feel alive."
@@ -72,7 +72,7 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The book uses a <strong>frame structure</strong>: a simple prose story at the beginning and end surrounds a long and complex poem in the middle. The whirlwind speeches rely on <strong>rhetorical questions</strong>, which do not expect answers but overwhelm the listener with wonder. The poetry uses <strong>parallelism</strong>, a feature of Hebrew verse in which a second line repeats or expands the first, as in “Hast thou entered into the springs of the sea? or hast thou walked in the search of the depth?” Vivid <strong>imagery</strong> of animals and storms turns the speech into a tour of creation. The story is also full of <strong>dramatic irony</strong>: the reader knows about the heavenly test, but Job and his friends never learn of it.</p>"
+        "html": "<p>The book uses a <strong>frame structure</strong>: a simple prose story at the beginning and end surrounds a long and complex poem in the middle. The whirlwind speeches rely on <strong>rhetorical questions</strong>, which do not expect answers but overwhelm the listener with wonder. The poetry uses <strong>parallelism</strong>, a feature of Hebrew verse in which a second line repeats or expands the first, as in “Hast thou entered into the springs of the sea? or hast thou walked in the search of the depth?” Vivid <strong>imagery</strong> of animals and storms turns the speech into a tour of creation. The story is also full of <strong>dramatic irony</strong>: the reader knows about the heavenly test, but Job and his friends never learn of it.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>The land of Uz, somewhere “in the east,” in an ancient age of patriarchs, and the court of heaven, where the test is agreed. Because the heavenly scenes happen out of Job’s sight, the setting itself creates the book’s tension.</li> <li><strong>Conflict</strong><em>Person vs. God and fate:</em> Job against suffering he cannot explain and a God who stays silent. <em>Person vs. person:</em> Job against the friends who insist he must have sinned.</li> <li><strong>Symbolism</strong>The whirlwind stands for God’s overwhelming power and mystery. Behemoth and Leviathan represent a creation too vast for humans to control, and Job’s doubled fortunes at the end suggest grace rather than payment.</li> <li><strong>Point of View</strong>Third-person omniscient in the prose frame, so the reader sees the heavenly court that Job never sees. The poem is told mostly through the characters’ own speeches, so each voice is heard directly.</li> <li><strong>Tone</strong>Anguished and defiant in Job’s speeches, confident and lecturing in the friends’, awe-filled and overwhelming in God’s answer, and quietly restorative at the end.</li> <li><strong>Style</strong>Hebrew poetry built on parallelism, rhetorical questions and vivid images of nature, set inside a simple prose frame.</li> </ul>"
       },
       {
         "label": "Context",
@@ -99,11 +99,11 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "assets/img/panchatantra-mongoose.jpg",
+      "src": "assets/img/panchatantra-mongoose.webp",
       "alt": "A bearded man finds his baby asleep and safe in its crib, while a weasel stands beside a snake cut into pieces",
       "objectPosition": "50% 50%",
       "look": {
-        "src": "assets/img/panchatantra-mongoose.jpg",
+        "src": "assets/img/panchatantra-mongoose.webp",
         "title": "The Ascetic Finds his Son Alive in his Crib",
         "caption": "Folio from a Kalila wa Dimna manuscript, India, second quarter of the 16th century. The Metropolitan Museum of Art.",
         "text": "In Kalila wa Dimna, the Arabic version of the Panchatantra, the mongoose becomes a weasel and the parent is an ascetic. The painter shows the moment of discovery: the child asleep and unharmed, the snake lying in pieces, and the loyal animal that saved him."
@@ -159,7 +159,7 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The tale is a <strong>fable</strong>: a short story with animal characters that teaches a clear lesson. Its power comes from <strong>dramatic irony</strong>. The reader watches the mongoose kill the snake, so we know the truth while the mother does not, and we can only watch as she makes her mistake. The wife’s early distrust of the mongoose works as <strong>foreshadowing</strong>, since her fear is already waiting for a reason. The blood on the mongoose’s face is the central <strong>symbol</strong>: one piece of evidence with two opposite meanings. Even the ordinary water pitcher, carried for the family’s daily needs, becomes the weapon of a tragedy. Like the other stories in the fifth book, the tale belongs to a chain of warnings about acting in haste.</p>"
+        "html": "<p>The tale is a <strong>fable</strong>: a short story with animal characters that teaches a clear lesson. Its power comes from <strong>dramatic irony</strong>. The reader watches the mongoose kill the snake, so we know the truth while the mother does not, and we can only watch as she makes her mistake. The wife’s early distrust of the mongoose works as <strong>foreshadowing</strong>, since her fear is already waiting for a reason. The blood on the mongoose’s face is the central <strong>symbol</strong>: one piece of evidence with two opposite meanings. Even the ordinary water pitcher, carried for the family’s daily needs, becomes the weapon of a tragedy. Like the other stories in the fifth book, the tale belongs to a chain of warnings about acting in haste.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>A Brahmin’s humble household in an Indian village, with a pond nearby and a snake’s hole close to the house. It is an ordinary, everyday world, which makes the danger feel close.</li> <li><strong>Conflict</strong><em>Person vs. self:</em> the mother’s fear against her own judgment. <em>Nature:</em> the mongoose against the snake that threatens the baby.</li> <li><strong>Symbolism</strong>The blood on the mongoose’s face is evidence that can mean two opposite things. The water pitcher, carried for the family’s daily needs, becomes a weapon, and the snake stands for the real danger people overlook while fearing the wrong thing.</li> <li><strong>Point of View</strong>Third-person omniscient, told as a story inside the larger frame of Vishnu Sharma teaching the princes. The reader learns the truth before the mother does.</li> <li><strong>Tone</strong>Calm and instructive at first, then suddenly tragic, ending in regret and a clear warning.</li> <li><strong>Style</strong>Short, plain prose that moves quickly to its lesson, with brief verses that state the moral, as fables do.</li> </ul>"
       },
       {
         "label": "Context",
@@ -186,10 +186,10 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "assets/img/ramayana-ravi-varma-jatayu.jpg",
+      "src": "assets/img/ramayana-ravi-varma-jatayu.webp",
       "alt": "The demon king Ravana raises his sword against the giant bird Jatayu as Sita recoils",
       "look": {
-        "src": "assets/img/ramayana-ravi-varma-jatayu.jpg",
+        "src": "assets/img/ramayana-ravi-varma-jatayu.webp",
         "title": "Ravana Cutting the Wing of Jatayu",
         "caption": "Raja Ravi Varma, c. 1895.",
         "text": "As Ravana carries Sita away to Lanka, the old vulture king Jatayu tries to stop him and is fatally wounded. Ravi Varma, one of India's most celebrated painters, combined Indian subjects with European oil-painting techniques."
@@ -245,7 +245,7 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The <em>Ramayana</em> is written mostly in the <strong>shloka</strong>, a verse form that tradition says Valmiki invented when grief over a slain bird burst from him as poetry. It uses <strong>archetypes</strong>: the perfect hero, the faithful wife, the loyal servant, and the proud villain. The forest works as a <strong>symbol</strong> of testing, a place outside ordinary life where character is proven. Supernatural elements, such as shape-shifting demons and a flying monkey, are woven into a moral universe. The golden deer is an example of <strong>foreshadowing</strong>, since a beautiful illusion leads to great loss.</p>"
+        "html": "<p>The <em>Ramayana</em> is written mostly in the <strong>shloka</strong>, a verse form that tradition says Valmiki invented when grief over a slain bird burst from him as poetry. It uses <strong>archetypes</strong>: the perfect hero, the faithful wife, the loyal servant, and the proud villain. The forest works as a <strong>symbol</strong> of testing, a place outside ordinary life where character is proven. Supernatural elements, such as shape-shifting demons and a flying monkey, are woven into a moral universe. The golden deer is an example of <strong>foreshadowing</strong>, since a beautiful illusion leads to great loss.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>The royal court of Ayodhya, the Dandaka forest of Rama’s fourteen-year exile, and Ravana’s island kingdom of Lanka. The forest is a place of testing, outside ordinary life.</li> <li><strong>Conflict</strong><em>Person vs. person:</em> Rama against Ravana, good against evil. <em>Person vs. self:</em> duty against desire, as when Dasharatha must keep a promise that destroys him.</li> <li><strong>Symbolism</strong>The golden deer stands for a beautiful illusion that leads to loss. Rama’s sandals on the empty throne represent rightful rule and Bharata’s loyalty, and Sita’s fire stands for purity, along with the harsh standard used to judge her.</li> <li><strong>Point of View</strong>Third-person omniscient, told by the sage Valmiki, who is also a character in the story and later shelters Sita.</li> <li><strong>Tone</strong>Reverent and idealizing as it celebrates dharma, sorrowful in the exile and the loss of Sita, and triumphant at Rama’s return.</li> <li><strong>Style</strong>Sanskrit shloka verse with long descriptions, repeated epithets for Rama, archetypal heroes and villains, and supernatural events.</li> </ul>"
       },
       {
         "label": "Context",
@@ -272,11 +272,11 @@ export default [
       "lang": "sa"
     },
     "plate": {
-      "src": "assets/img/mahabharata-razmnama.jpg",
+      "src": "assets/img/mahabharata-razmnama.webp",
       "alt": "Mughal miniature of a river of fire sweeping across a battlefield of horsemen and warriors",
       "objectPosition": "50% 70%",
       "look": {
-        "src": "assets/img/mahabharata-razmnama.jpg",
+        "src": "assets/img/mahabharata-razmnama.webp",
         "title": "Ashvatthama Fires the Narayana Weapon at the Pandavas",
         "caption": "Folio from a Razmnama, the Persian translation of the Mahabharata, c. 1616–17. The Metropolitan Museum of Art.",
         "text": "The Mughal emperor Akbar ordered the Mahabharata translated into Persian so that his court could understand Hindu culture. In this battle scene from Kurukshetra, a cosmic fire weapon pours over the Pandava army."
@@ -332,11 +332,11 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The epic uses a <strong>frame narrative</strong> with several layers of storytellers. It is told by the bard Vaishampayana at a great snake sacrifice and retold by Ugrashravas to sages in a forest. It contains many <strong>embedded stories</strong>, such as the tale of Savitri and Satyavan. The <strong>Bhagavad Gita</strong> is a philosophical dialogue placed at the moment of greatest tension, just before battle. Characters like Karna are <strong>tragic figures</strong>, admirable people destroyed by loyalty and fate. The work is also full of <strong>moral ambiguity</strong>, since even the heroes win by breaking the rules of fair combat.</p>"
+        "html": "<p>The epic uses a <strong>frame narrative</strong> with several layers of storytellers. It is told by the bard Vaishampayana at a great snake sacrifice and retold by Ugrashravas to sages in a forest. It contains many <strong>embedded stories</strong>, such as the tale of Savitri and Satyavan. The <strong>Bhagavad Gita</strong> is a philosophical dialogue placed at the moment of greatest tension, just before battle. Characters like Karna are <strong>tragic figures</strong>, admirable people destroyed by loyalty and fate. The work is also full of <strong>moral ambiguity</strong>, since even the heroes win by breaking the rules of fair combat.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>The kingdom of Hastinapura, the dice hall where the Pandavas lose everything, their years of exile, and finally the battlefield of Kurukshetra, in an age of warrior-kings.</li> <li><strong>Conflict</strong><em>Person vs. person:</em> the Pandavas against their cousins, the Kauravas. <em>Person vs. self:</em> Arjuna’s doubt about fighting his own family. <em>Person vs. fate:</em> a war everyone seems unable to stop.</li> <li><strong>Symbolism</strong>Krishna driving Arjuna’s chariot represents the soul guided by the divine. The game of dice stands for folly and fate, and Kurukshetra is called the “field of dharma,” where duty itself is tested.</li> <li><strong>Point of View</strong>Layered narrators: Vyasa composes it, Vaishampayana recites it, and Ugrashravas retells it. Inside the story, Sanjaya describes the war to the blind king Dhritarashtra, so the war is seen through a messenger’s eyes.</li> <li><strong>Tone</strong>Grand and philosophical, growing more tragic and morally uneasy, and mournful at the end, when even the winners have lost almost everything.</li> <li><strong>Style</strong>A vast epic full of embedded stories, long dialogues and teaching passages, with the Bhagavad Gita placed at the moment of greatest tension.</li> </ul>"
       },
       {
         "label": "Context",
-        "html": "<p>The <em>Mahabharata</em> grew over many centuries as storytellers added material. It is both a story and a library of religion, law, politics, and philosophy. The <em>Bhagavad Gita</em> is one of the most important texts of Hinduism and has influenced thinkers around the world, including Mahatma Gandhi. In the 1580s the Mughal emperor Akbar had it translated into Persian as the <em>Razmnama</em>, the “Book of War,” and its painted pages are now treasured in museums.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:523/377\"><img src=\"assets/img/mahabharata-krishna-arjuna.jpg\" alt=\"Krishna, painted blue, drives a chariot pulled by white horses while Arjuna sits behind him\" loading=\"lazy\"></div></div> <figcaption>Krishna and Arjuna on the chariot, India, 18th–19th century.</figcaption> </figure>"
+        "html": "<p>The <em>Mahabharata</em> grew over many centuries as storytellers added material. It is both a story and a library of religion, law, politics, and philosophy. The <em>Bhagavad Gita</em> is one of the most important texts of Hinduism and has influenced thinkers around the world, including Mahatma Gandhi. In the 1580s the Mughal emperor Akbar had it translated into Persian as the <em>Razmnama</em>, the “Book of War,” and its painted pages are now treasured in museums.</p> <figure class=\"plate\" style=\"max-width:520px;margin-top:20px\"> <div class=\"plate-frame pat-indian\"><div class=\"plate-window\" style=\"aspect-ratio:523/377\"><img src=\"assets/img/mahabharata-krishna-arjuna.webp\" alt=\"Krishna, painted blue, drives a chariot pulled by white horses while Arjuna sits behind him\" loading=\"lazy\"></div></div> <figcaption>Krishna and Arjuna on the chariot, India, 18th–19th century.</figcaption> </figure>"
       }
     ],
     "gallery": [],
@@ -359,11 +359,11 @@ export default [
       "lang": "grc"
     },
     "plate": {
-      "src": "assets/img/iliad-ivanov-priam.jpg",
+      "src": "assets/img/iliad-ivanov-priam.webp",
       "alt": "The old king Priam kneels and kisses the hand of Achilles, who sits in his tent",
       "wide": true,
       "look": {
-        "src": "assets/img/iliad-ivanov-priam.jpg",
+        "src": "assets/img/iliad-ivanov-priam.webp",
         "title": "Priam Asking Achilles for the Return of Hector’s Body",
         "caption": "Alexander Ivanov, 1824. State Tretyakov Gallery, Moscow.",
         "text": "In Book 24, King Priam secretly enters the Greek camp and kisses the hands of the man who killed his son. Ivanov paints the moment Achilles begins to soften, as the grieving father reminds him of his own."
@@ -419,7 +419,7 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The poem begins <strong>in medias res</strong>, in the middle of the action, and opens with an <strong>invocation to the Muse</strong>. Homer uses <strong>epithets</strong>, repeated descriptive phrases such as “swift-footed Achilles” and “Hector, breaker of horses,” which helped oral poets compose and audiences remember. <strong>Extended similes</strong> compare battle scenes to storms, fires, and lions attacking cattle, bringing the peaceful world into the violent one. The gods act as <strong>divine machinery</strong>, taking sides and interfering. Homer also gives brief histories of minor soldiers at the moment they die, so that no death is meaningless.</p>"
+        "html": "<p>The poem begins <strong>in medias res</strong>, in the middle of the action, and opens with an <strong>invocation to the Muse</strong>. Homer uses <strong>epithets</strong>, repeated descriptive phrases such as “swift-footed Achilles” and “Hector, breaker of horses,” which helped oral poets compose and audiences remember. <strong>Extended similes</strong> compare battle scenes to storms, fires, and lions attacking cattle, bringing the peaceful world into the violent one. The gods act as <strong>divine machinery</strong>, taking sides and interfering. Homer also gives brief histories of minor soldiers at the moment they die, so that no death is meaningless.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>The Greek camp on the beach and the plain before the walls of Troy, in the tenth and final year of the Trojan War, with scenes inside Troy and on Mount Olympus. The war has gone on so long that everyone is exhausted, which raises the stakes of every quarrel.</li> <li><strong>Conflict</strong><em>Person vs. person:</em> Achilles against Agamemnon, and later against Hector. <em>Person vs. self:</em> Achilles against his own rage and grief. <em>Person vs. fate:</em> his choice between a short life with glory and a long one without it.</li> <li><strong>Symbolism</strong>The shield of Achilles shows the whole world of peace and war. Hector’s helmet, which frightens his baby son, stands for the way war separates a father from his family, and Hector’s body, finally returned, represents honor and shared humanity.</li> <li><strong>Point of View</strong>Third-person omniscient. The narrator calls on the Muse, moves between the Greek and Trojan sides, and even shows the gods arguing on Olympus.</li> <li><strong>Tone</strong>Solemn and tragic. It mourns war more than it celebrates it, and it ends in compassion rather than victory.</li> <li><strong>Style</strong>Dactylic hexameter with repeated epithets, extended similes, formal speeches and catalogues, built for oral performance.</li> </ul>"
       },
       {
         "label": "Context",
@@ -428,10 +428,10 @@ export default [
     ],
     "gallery": [
       {
-        "src": "assets/img/iliad-patroclus.jpg",
+        "src": "assets/img/iliad-patroclus.webp",
         "alt": "Achilles weeps over the pale body of Patroclus, surrounded by mourners",
         "look": {
-          "src": "assets/img/iliad-patroclus.jpg",
+          "src": "assets/img/iliad-patroclus.webp",
           "title": "Achilles Lamenting the Death of Patroclus",
           "caption": "Gavin Hamilton, 1760–63. Scottish National Gallery.",
           "text": "The death of Patroclus is the turning point of the Iliad. Grief replaces Achilles' anger at Agamemnon with a new and deadlier rage against Hector."
@@ -440,10 +440,10 @@ export default [
         "text": "Achilles mourns Patroclus. Gavin Hamilton, 1760–63."
       },
       {
-        "src": "assets/img/iliad-matsch-triumph.jpg",
+        "src": "assets/img/iliad-matsch-triumph.webp",
         "alt": "Achilles raises Hector's helmet as his chariot drags Hector's body before Troy",
         "look": {
-          "src": "assets/img/iliad-matsch-triumph.jpg",
+          "src": "assets/img/iliad-matsch-triumph.webp",
           "title": "The Triumph of Achilles",
           "caption": "Franz von Matsch, 1892. Achilleion Palace, Corfu.",
           "text": "Achilles holds Hector's helmet high as he drags the body of the Trojan prince past the walls of Troy, where the Trojans watch in horror. The painting shows how rage turns into cruelty."
@@ -452,11 +452,11 @@ export default [
         "text": "Achilles drags Hector before Troy. Franz von Matsch, 1892."
       },
       {
-        "src": "assets/img/iliad-david-andromache.jpg",
+        "src": "assets/img/iliad-david-andromache.webp",
         "alt": "Andromache sits grieving beside the body of Hector, holding her young son",
         "objectPosition": "50% 30%",
         "look": {
-          "src": "assets/img/iliad-david-andromache.jpg",
+          "src": "assets/img/iliad-david-andromache.webp",
           "title": "Andromache Mourning Hector",
           "caption": "Jacques-Louis David, 1783. Musée du Louvre, Paris.",
           "text": "Hector's wife Andromache weeps beside his body while their son Astyanax reaches for her. David reminds us that every hero killed in battle leaves a family behind."
@@ -484,11 +484,11 @@ export default [
       "lang": "grc"
     },
     "plate": {
-      "src": "assets/img/odyssey-waterhouse-sirens.jpg",
+      "src": "assets/img/odyssey-waterhouse-sirens.webp",
       "alt": "Odysseus is tied to his ship's mast while bird-bodied Sirens swoop around the rowing crew",
       "wide": true,
       "look": {
-        "src": "assets/img/odyssey-waterhouse-sirens.jpg",
+        "src": "assets/img/odyssey-waterhouse-sirens.webp",
         "title": "Ulysses and the Sirens",
         "caption": "John William Waterhouse, 1891. National Gallery of Victoria, Melbourne.",
         "text": "Odysseus (Ulysses in Latin) has his crew plug their ears with wax and tie him to the mast so he can hear the Sirens' song without steering toward his death. Waterhouse paints the Sirens as birds with women's faces, as ancient Greek vases did."
@@ -544,7 +544,7 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>Like the <em>Iliad</em>, the <em>Odyssey</em> begins <strong>in medias res</strong>. Most of the famous adventures are told in a <strong>flashback</strong>, with Odysseus narrating his own story, which makes him an entertaining but not always reliable storyteller. The poem uses <strong>epithets</strong> such as “wise Penelope” and “Odysseus of many turns.” <strong>Disguise and recognition scenes</strong> create suspense in the second half. The journey can also be read as an <strong>allegory</strong> of life, with each island representing a different temptation or danger.</p>"
+        "html": "<p>Like the <em>Iliad</em>, the <em>Odyssey</em> begins <strong>in medias res</strong>. Most of the famous adventures are told in a <strong>flashback</strong>, with Odysseus narrating his own story, which makes him an entertaining but not always reliable storyteller. The poem uses <strong>epithets</strong> such as “wise Penelope” and “Odysseus of many turns.” <strong>Disguise and recognition scenes</strong> create suspense in the second half. The journey can also be read as an <strong>allegory</strong> of life, with each island representing a different temptation or danger.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>The Mediterranean Sea and its islands in the ten years after the Trojan War, from Calypso’s island and the Phaeacians’ kingdom to Odysseus’s home of Ithaca, where the suitors have taken over his palace.</li> <li><strong>Conflict</strong><em>Person vs. nature and the gods:</em> the sea, monsters and Poseidon’s anger. <em>Person vs. person:</em> Odysseus against the suitors. <em>Person vs. self:</em> his pride and the temptation to give up on home.</li> <li><strong>Symbolism</strong>The sea represents the obstacles between Odysseus and home. Penelope’s weaving stands for faithful cleverness and patience, the bed carved from a living olive tree for a marriage that is rooted and unmovable, and the great bow for the rightful king.</li> <li><strong>Point of View</strong>Third-person omniscient overall, but Books 9 to 12 are told by Odysseus himself in the first person, which makes him an entertaining but not always reliable narrator.</li> <li><strong>Tone</strong>Adventurous and suspenseful at sea, full of longing for home, and deeply satisfying at the reunion.</li> <li><strong>Style</strong>Dactylic hexameter with epithets such as “Odysseus of many turns,” a long flashback, and suspenseful scenes of disguise and recognition.</li> </ul>"
       },
       {
         "label": "Context",
@@ -571,11 +571,11 @@ export default [
       "lang": "fro"
     },
     "plate": {
-      "src": "assets/img/roland-fouquet.jpg",
+      "src": "assets/img/roland-fouquet.webp",
       "alt": "Medieval painting of Roland kneeling on a green hill among fallen knights, striking his sword against a rock",
       "wide": true,
       "look": {
-        "src": "assets/img/roland-fouquet.jpg",
+        "src": "assets/img/roland-fouquet.webp",
         "title": "The Death of Roland",
         "caption": "Jean Fouquet, from the Grandes Chroniques de France, c. 1455–60. Bibliothèque nationale de France.",
         "text": "Fouquet shows several moments at once. The battle rages on the left, while Roland tries to break his sword Durendal on a rock so that no enemy can take it. Nearby, he lies dying with his horn."
@@ -631,7 +631,7 @@ export default [
       },
       {
         "label": "Literary Elements",
-        "html": "<p>The poem is written in <strong>laisses</strong>, stanzas of varying length in which each line ends with the same vowel sound, a pattern called <strong>assonance</strong>. It uses <strong>parallel laisses</strong>, retelling the same moment several times from slightly different angles, such as the three times Oliver asks Roland to blow the horn. Objects like the sword Durendal and the Oliphant are <strong>symbols</strong> of knightly identity and pride. Roland and Oliver are drawn as <strong>foils</strong>, each making the other’s qualities clearer. The poem also uses <strong>hyperbole</strong>, with knights cutting through enemies and horses in a single stroke.</p>"
+        "html": "<p>The poem is written in <strong>laisses</strong>, stanzas of varying length in which each line ends with the same vowel sound, a pattern called <strong>assonance</strong>. It uses <strong>parallel laisses</strong>, retelling the same moment several times from slightly different angles, such as the three times Oliver asks Roland to blow the horn. Objects like the sword Durendal and the Oliphant are <strong>symbols</strong> of knightly identity and pride. Roland and Oliver are drawn as <strong>foils</strong>, each making the other’s qualities clearer. The poem also uses <strong>hyperbole</strong>, with knights cutting through enemies and horses in a single stroke.</p> <ul class=\"char-list element-list\"> <li><strong>Setting</strong>Charlemagne’s campaign in Spain in 778, the mountain pass of Roncevaux in the Pyrenees, and later Charlemagne’s court in France, where Ganelon is put on trial.</li> <li><strong>Conflict</strong><em>Person vs. person:</em> the Franks against the Saracens, and Roland against the traitor Ganelon. <em>Person vs. self:</em> Roland’s pride against wisdom. <em>Person vs. society:</em> feudal loyalty against betrayal.</li> <li><strong>Symbolism</strong>The sword Durendal and the horn, the Oliphant, stand for Roland’s identity and pride. Roland offering his glove to God represents a vassal’s loyalty to his lord, and the sun standing still shows heaven taking Charlemagne’s side.</li> <li><strong>Point of View</strong>Third-person, with a narrator who openly comments and judges, as in “Roland is fierce and Oliver is wise,” and who clearly takes the Franks’ side.</li> <li><strong>Tone</strong>Heroic and patriotic, mournful at Roland’s death, and strongly biased against the Saracens.</li> <li><strong>Style</strong>Short laisses linked by assonance, repeated scenes told from slightly different angles, formulaic phrases and hyperbole.</li> </ul>"
       },
       {
         "label": "Context",

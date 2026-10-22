@@ -1,5 +1,5 @@
 <script setup>
-/* A framed painting with an optional "Look closer" button and caption. */
+/* A framed painting with an optional "View more" button and caption. */
 import { computed } from "vue";
 import LookButton from "./LookButton.vue";
 

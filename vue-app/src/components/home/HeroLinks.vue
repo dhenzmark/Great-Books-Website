@@ -6,8 +6,8 @@ const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0,
 const today = paintingsOfTheDay[dayOfYear % paintingsOfTheDay.length];
 
 const cards = [
-  { to: "/analyses", src: "assets/img/mahabharata-razmnama.jpg", alt: "Mughal miniature of a river of fire over a battlefield", objectPosition: "50% 65%", label: "Analyses", title: "Seven close readings", text: "Plot, characters, themes, craft and context" },
-  { to: "/masterpiece", src: "assets/img/iliad-matsch-triumph.jpg", alt: "Achilles in his chariot before the walls of Troy", label: "Favorite masterpiece", title: "The Iliad", text: "Why the rage of Achilles stays with me" },
+  { to: "/analyses", src: "assets/img/mahabharata-razmnama.webp", alt: "Mughal miniature of a river of fire over a battlefield", objectPosition: "50% 65%", label: "Analyses", title: "Seven close readings", text: "Plot, characters, themes, craft and context" },
+  { to: "/masterpiece", src: "assets/img/iliad-matsch-triumph.webp", alt: "Achilles in his chariot before the walls of Troy", label: "Favorite masterpiece", title: "The Iliad", text: "Why the rage of Achilles stays with me" },
   { to: today.to, src: today.src, alt: today.alt, label: "Painting of the day", title: today.title, text: today.by },
 ];
 </script>

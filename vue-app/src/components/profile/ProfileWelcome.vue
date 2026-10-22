@@ -12,7 +12,7 @@ const facts = [
 
 /* Move your photo inside its frame: the second number moves it up (higher) or down (lower). */
 const photoPosition = "50% 65%";
-const photo = "assets/img/me.jpeg";
+const photo = "assets/img/me.webp";
 </script>
 
 <template>

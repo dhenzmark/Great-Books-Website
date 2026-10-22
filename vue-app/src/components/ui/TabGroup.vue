@@ -23,6 +23,26 @@ const buttons = ref([]);
 const stage = ref(null);
 let heightAnim = null;
 let switching = 0;
+let pinUntil = 0;
+
+/* keep the tab bar where it was on screen while the panel changes height (the browser's
+   scroll anchoring would otherwise hold the content below still and throw the tabs around) */
+function pinTabs(ms) {
+  const root = document.documentElement;
+  const startTop = list.value.getBoundingClientRect().top;
+  const running = pinUntil > performance.now();
+  pinUntil = performance.now() + ms;
+  root.style.overflowAnchor = "none";
+  if (running) return;
+  const hold = () => {
+    if (!list.value) return;
+    const drift = list.value.getBoundingClientRect().top - startTop;
+    if (Math.abs(drift) > 0.5) window.scrollBy({ top: drift, behavior: "instant" });
+    if (performance.now() < pinUntil) requestAnimationFrame(hold);
+    else root.style.overflowAnchor = "";
+  };
+  requestAnimationFrame(hold);
+}
 const { style: ink } = useInk(list, "[aria-selected='true']", selected);
 
 async function select(i, focus = false) {
@@ -35,6 +55,7 @@ async function select(i, focus = false) {
   const box = stage.value;
   const reduced = prefersReducedMotion();
   const token = ++switching;
+  pinTabs(reduced ? 300 : 1000);
   /* the old panel fades and slides away first, instead of vanishing in one frame */
   const old = box.querySelector(".tabpanel:not([hidden])");
   if (old && !reduced) {

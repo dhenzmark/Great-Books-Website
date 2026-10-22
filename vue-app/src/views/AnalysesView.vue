@@ -19,12 +19,12 @@ watch(active, (id) => (backdrop.tradition = traditionOf[id] || "all"), { immedia
       label="Seven Works"
       prefix="SEVEN "
       before="W"
-      image="assets/img/panchatantra-lion-bull.jpg"
+      image="assets/img/panchatantra-lion-bull.webp"
       after="RKS"
       quote-source="Job 38:4, King James Version"
     >
       Each analysis reads its work through one literary lens, then covers the story, its characters, its themes, how it is told, and the culture
-      that produced it. Use the tabs to move through each one, and select any painting to look closer.
+      that produced it. Use the tabs to move through each one, and select any painting to view more.
       <template #quote>&ldquo;Where wast thou when I laid the foundations of the earth?&rdquo;</template>
       <template #credit>
         Pictures above: the lion and the bull from a Kalila wa Dimna manuscript, Herat, 1430, and William Blake, The Lord Answering Job out of the

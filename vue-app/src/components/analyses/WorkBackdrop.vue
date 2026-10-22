@@ -7,13 +7,13 @@
 defineProps({ id: { type: String, required: true } });
 
 const art = {
-  job: { src: "assets/img/job-blake-watercolor.jpg", pos: "50% 30%" },
-  panchatantra: { src: "assets/img/panchatantra-lion-bull.jpg", pos: "50% 60%" },
-  ramayana: { src: "assets/img/ramayana-ravi-varma-jatayu.jpg", pos: "40% 25%" },
-  mahabharata: { src: "assets/img/mahabharata-razmnama.jpg", pos: "60% 35%" },
+  job: { src: "assets/img/job-blake-watercolor.webp", pos: "50% 30%" },
+  panchatantra: { src: "assets/img/panchatantra-lion-bull.webp", pos: "50% 60%" },
+  ramayana: { src: "assets/img/ramayana-ravi-varma-jatayu.webp", pos: "40% 25%" },
+  mahabharata: { src: "assets/img/mahabharata-razmnama.webp", pos: "60% 35%" },
   iliad: { src: "assets/img/homer-bust.webp", pos: "50% 30%" },
-  odyssey: { src: "assets/img/odyssey-calypso.jpg", pos: "35% 50%" },
-  roland: { src: "assets/img/roland-michallon.jpg", pos: "50% 60%" },
+  odyssey: { src: "assets/img/odyssey-calypso.webp", pos: "35% 50%" },
+  roland: { src: "assets/img/roland-michallon.webp", pos: "50% 60%" },
 };
 const stars = [[12, 18, 0], [78, 9, 1.4], [88, 62, 2.6], [30, 84, 0.8], [62, 40, 3.4]];
 </script>

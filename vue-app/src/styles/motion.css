@@ -173,14 +173,6 @@ dialog.lightbox.closing::backdrop { animation: backdrop-out .22s ease forwards; 
 .exhibit:hover .arrow svg { transform: translateX(4px); }
 .big-num { font-variant-numeric: tabular-nums; }
 
-/* ---------- reduced motion: show everything, move nothing ---------- */
-@media (prefers-reduced-motion: reduce) {
-  .js .reveal { filter: none; }
-  .js .plate.reveal .plate-window, .js .exhibit.reveal .img, .js .f-pic.reveal > img, .js .f-pic2.reveal > img, .js .stack.reveal .s1 { clip-path: none !important; }
-  .journey .path { stroke-dashoffset: 0; }
-  .journey .stop { opacity: 1; }
-  .journey .stop circle { transform: none; }
-}
 
 /* ---------- page backdrop: base colour and glows (the tradition motifs are TraditionBackdrop.vue) ---------- */
 html { background: #0b0d12; }

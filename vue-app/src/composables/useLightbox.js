@@ -1,6 +1,6 @@
 import { reactive } from "vue";
 
-/* Shared state for the "Look closer" painting viewer. */
+/* Shared state for the "View more" painting viewer. */
 export const lightbox = reactive({ painting: null, opener: null });
 
 export function openPainting(painting, opener) {

@@ -2,7 +2,7 @@
 import ArtPlate from "../ui/ArtPlate.vue";
 
 const andromache = {
-  src: "assets/img/iliad-david-andromache.jpg",
+  src: "assets/img/iliad-david-andromache.webp",
   title: "Andromache Mourning Hector",
   caption: "Jacques-Louis David, 1783. Musée du Louvre, Paris.",
   text: "The goodbye at the Scaean Gates ends here. Andromache weeps beside Hector's body while their son Astyanax reaches for her. David shows the family that Hector died trying to protect.",

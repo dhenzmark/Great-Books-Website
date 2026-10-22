@@ -43,7 +43,7 @@ function onBackdropClick(e) {
   if (e.target === dialog.value) close();
 }
 
-/* "Look closer" buttons that live inside the analysis text (rendered from HTML) */
+/* "View more" buttons that live inside the analysis text (rendered from HTML) */
 function onLookClick(e) {
   const btn = e.target.closest(".look[data-src]");
   if (!btn) return;

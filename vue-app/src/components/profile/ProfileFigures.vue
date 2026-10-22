@@ -1,7 +1,7 @@
 <script setup>
 import CountUp from "../ui/CountUp.vue";
 
-const andromache = "assets/img/iliad-david-andromache.jpg";
+const andromache = "assets/img/iliad-david-andromache.webp";
 const fresco = "assets/img/iliad-pompeii-fresco.webp";
 </script>
 

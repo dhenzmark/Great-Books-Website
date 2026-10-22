@@ -4,11 +4,11 @@ import ArtPlate from "../ui/ArtPlate.vue";
 const paintings = [
   {
     year: "Rage · 1892",
-    src: "assets/img/iliad-matsch-triumph.jpg",
+    src: "assets/img/iliad-matsch-triumph.webp",
     alt: "Achilles raises Hector's helmet as his chariot drags Hector's body before the walls of Troy",
     caption: "Franz von Matsch, The Triumph of Achilles, 1892. Achilleion Palace, Corfu.",
     look: {
-      src: "assets/img/iliad-matsch-triumph.jpg",
+      src: "assets/img/iliad-matsch-triumph.webp",
       title: "The Triumph of Achilles",
       caption: "Franz von Matsch, 1892. Achilleion Palace, Corfu.",
       text: "Achilles holds Hector's helmet high as he drags the body of the Trojan prince past the walls of Troy, where the Trojans watch in horror. The painting shows how rage turns into cruelty.",
@@ -16,11 +16,11 @@ const paintings = [
   },
   {
     year: "Mercy · 1824",
-    src: "assets/img/iliad-ivanov-priam.jpg",
+    src: "assets/img/iliad-ivanov-priam.webp",
     alt: "The old king Priam kneels and kisses the hand of Achilles, who sits in his tent",
     caption: "Alexander Ivanov, Priam Asking Achilles for the Return of Hector’s Body, 1824. State Tretyakov Gallery.",
     look: {
-      src: "assets/img/iliad-ivanov-priam.jpg",
+      src: "assets/img/iliad-ivanov-priam.webp",
       title: "Priam Asking Achilles for the Return of Hector’s Body",
       caption: "Alexander Ivanov, 1824. State Tretyakov Gallery, Moscow.",
       text: "In Book 24, King Priam secretly enters the Greek camp and kisses the hands of the man who killed his son. Ivanov paints the moment Achilles begins to soften, as the grieving father reminds him of his own.",

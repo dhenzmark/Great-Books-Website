@@ -390,19 +390,13 @@ dialog.lightbox::backdrop { background: rgba(0, 0, 0, .82); }
 /* ---------- reveal ---------- */
 .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .js .reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: no-preference) {
-  .hero h1 span, .hero-copy .line-label, .hero-copy .text-link { animation: rise 1s var(--ease) both; }
-  .hero h1 span:nth-child(2) { animation-delay: .12s; } .hero-copy .text-link { animation-delay: .3s; }
-  .title-hero h1 { animation: rise 1s var(--ease) both; }
-  .title-strip { animation: slide-in 1.2s .2s var(--ease) both; }
-}
+/* animations run for every visitor, whatever their system's "reduce motion" setting */
+.hero h1 span, .hero-copy .line-label, .hero-copy .text-link { animation: rise 1s var(--ease) both; }
+.hero h1 span:nth-child(2) { animation-delay: .12s; } .hero-copy .text-link { animation-delay: .3s; }
+.title-hero h1 { animation: rise 1s var(--ease) both; }
+.title-strip { animation: slide-in 1.2s .2s var(--ease) both; }
 @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
 @keyframes slide-in { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation: none !important; transition: none !important; }
-  .js .reveal { opacity: 1; transform: none; }
-}
 
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
@@ -641,3 +635,43 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; width: 0; heig
 .lens-works { margin: 0 0 10px; font-family: var(--serif); font-style: italic; color: var(--text); }
 @media (max-width: 900px) { .lens-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 @media (max-width: 600px) { .lens-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* the literary elements, after the tab's opening paragraph */
+.element-list { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .08); }
+.element-list em { font-style: normal; color: var(--gold); }
+
+/* ---------- 3D artifact: the shield of Achilles (ShieldArtifact.vue) ---------- */
+.artifact { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.artifact-stage { position: relative; aspect-ratio: 1; overflow: hidden; border: 1px solid var(--gold-line); background: radial-gradient(closest-side, #1d1e24, #121318); }
+/* the viewer is drawn larger than its frame, so the frame crops off Sketchfab's own buttons and badges */
+.artifact-stage iframe { position: absolute; top: -64px; left: -64px; width: calc(100% + 128px); height: calc(100% + 128px); border: 0; }
+.artifact-poster { position: absolute; inset: 0; padding: 0; border: 0; background: none; cursor: pointer; }
+.artifact-poster img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.artifact-poster:hover img, .artifact-poster:focus-visible img { transform: scale(1.05); }
+.artifact-play { position: absolute; left: 50%; bottom: 8%; translate: -50% 0; display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; background: rgba(14, 14, 14, .82); border-bottom: 1px solid var(--copper); color: var(--text); font: 500 .74rem var(--sans); text-transform: uppercase; letter-spacing: .14em; white-space: nowrap; transition: background-color .25s ease; }
+.artifact-play svg { width: 18px; height: 18px; color: var(--gold); }
+.artifact-poster:hover .artifact-play { background: #2e2a24; }
+.artifact-label h2 { margin-bottom: .25em; }
+.artifact-meta { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--gold); }
+.artifact-label > p:not(.label):not(.artifact-meta) { color: #cfc8bd; max-width: 48ch; }
+.artifact-hint { font-size: .85rem; }
+.artifact-credit { font-size: .78rem; color: var(--muted) !important; }
+.artifact-section + .next-section { padding-top: 0; }
+@media (max-width: 860px) { .artifact { grid-template-columns: minmax(0, 1fr); } }
+
+/* inside an analysis */
+.artifact-inline { margin-top: clamp(40px, 6vw, 72px); }
+.artifact-inline .artifact { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.artifact-inline .artifact-stage { aspect-ratio: 4 / 3; }
+.artifact-inline h4 { font-size: clamp(1.8rem, 3vw, 2.4rem); }
+@media (max-width: 860px) { .artifact-inline .artifact { grid-template-columns: minmax(0, 1fr); } }
+
+/* the artifacts float on the page: no frame, no box */
+.artifact-stage { border: 0; background: radial-gradient(closest-side, rgba(205, 178, 124, .08), transparent 75%); }
+/* the viewer keeps its own dark background (a paid-account setting), so its edges fade into the page instead of ending in a hard box */
+.artifact-stage { background: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent), linear-gradient(180deg, transparent, #000 9%, #000 91%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent), linear-gradient(180deg, transparent, #000 9%, #000 91%, transparent); mask-composite: intersect; }
+
+/* the still picture sits over the viewer until it has loaded, then fades away */
+.artifact-poster { z-index: 1; pointer-events: none; transition: opacity .8s ease; }
+.artifact-poster.is-gone { opacity: 0; }
+.artifact-poster .artifact-play { pointer-events: none; }
