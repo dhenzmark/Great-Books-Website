@@ -27,6 +27,7 @@ let pinUntil = 0;
 
 /* keep the tab bar where it was on screen while the panel changes height (the browser's
    scroll anchoring would otherwise hold the content below still and throw the tabs around) */
+const USER_SCROLL = ["wheel", "touchstart", "keydown", "pointerdown"];
 function pinTabs(ms) {
   const root = document.documentElement;
   const startTop = list.value.getBoundingClientRect().top;
@@ -34,12 +35,21 @@ function pinTabs(ms) {
   pinUntil = performance.now() + ms;
   root.style.overflowAnchor = "none";
   if (running) return;
+  /* the moment the reader scrolls (or taps, or presses a key) the hold lets go, so it never fights them */
+  let held = true;
+  const release = () => (held = false);
+  USER_SCROLL.forEach((t) => window.addEventListener(t, release, { passive: true, capture: true }));
   const hold = () => {
-    if (!list.value) return;
-    const drift = list.value.getBoundingClientRect().top - startTop;
-    if (Math.abs(drift) > 0.5) window.scrollBy({ top: drift, behavior: "instant" });
-    if (performance.now() < pinUntil) requestAnimationFrame(hold);
-    else root.style.overflowAnchor = "";
+    if (list.value && performance.now() < pinUntil) {
+      if (held) {
+        const drift = list.value.getBoundingClientRect().top - startTop;
+        if (Math.abs(drift) > 0.5) window.scrollBy({ top: drift, behavior: "instant" });
+      }
+      requestAnimationFrame(hold);
+    } else {
+      root.style.overflowAnchor = "";
+      USER_SCROLL.forEach((t) => window.removeEventListener(t, release, { capture: true }));
+    }
   };
   requestAnimationFrame(hold);
 }
@@ -55,7 +65,7 @@ async function select(i, focus = false) {
   const box = stage.value;
   const reduced = prefersReducedMotion();
   const token = ++switching;
-  pinTabs(reduced ? 300 : 1000);
+  pinTabs(reduced ? 300 : 800);
   /* the old panel fades and slides away first, instead of vanishing in one frame */
   const old = box.querySelector(".tabpanel:not([hidden])");
   if (old && !reduced) {
