@@ -4,6 +4,7 @@
   Once an element is completely off screen it quietly resets, ready to play again.
   Elements that arrive together are staggered top-to-bottom, left-to-right.
   Optional value: extra delay in ms, e.g. v-reveal="200".
+  v-reveal.once: plays the first time only, then stays shown (e.g. pictures you scroll back to).
 */
 import { prefersReducedMotion } from "../composables/motion.js";
 
@@ -28,6 +29,10 @@ function observers() {
           setTimeout(() => el.style.removeProperty("--d"), delay + 1600);
         }
         el.classList.add("in");
+        if (el.hasAttribute("data-reveal-once")) {
+          enter.unobserve(el);
+          leave.unobserve(el);
+        }
       });
     },
     { rootMargin: "0px 0px -8% 0px", threshold: [0, 0.02, 0.05, 0.08] }
@@ -49,6 +54,7 @@ export default {
   mounted(el, binding) {
     el.classList.add("reveal");
     if (binding.value) el.dataset.revealDelay = binding.value;
+    if (binding.modifiers.once) el.setAttribute("data-reveal-once", "");
     if (!("IntersectionObserver" in window) || prefersReducedMotion()) {
       el.classList.add("in");
       return;

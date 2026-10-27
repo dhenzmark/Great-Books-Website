@@ -42,7 +42,7 @@ const photo = "assets/img/me.webp";
         </ul>
         <RouterLink class="btn" to="/analyses">Read the analyses</RouterLink>
       </div>
-      <div v-reveal class="stack">
+      <div v-reveal.once class="stack">
         <div class="s1"><img :src="photo" :alt="author" decoding="async" :style="{ objectPosition: photoPosition }" /></div>
       </div>
     </div>
