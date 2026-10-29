@@ -23,19 +23,18 @@ const photo = "assets/img/me.webp";
       <div v-reveal>
         <h2 id="profile-title" class="copper-title">Student profile</h2>
         <p>
-          Hello! My name is {{ author }}, and I am a 4th Year BS Information Technology student. I grew up hearing stories at home: folk tales from my
-          grandparents, teleserye plots retold at the dinner table, and the legends we learned in grade school. Stories have always been the way my
-          family made sense of the world. This course gave me the chance to look at much older stories and ask the same questions people asked
-          thousands of years ago.
+          Hi, I&rsquo;m {{ author }}, a 4th Year BS Information Technology student at the University of Nueva Caceres. I&rsquo;m not a literature
+          major, but I&rsquo;ve always liked a good story, whether it&rsquo;s a folk tale my grandparents told, a teleserye my family argued about
+          over dinner, or a movie based on a book.
         </p>
         <p>
-          Before this class, I thought of epics as long, difficult poems that only scholars read. I was wrong. Once I looked past the unfamiliar
-          names, I found families arguing, friends grieving, leaders making mistakes, and ordinary people trying to do the right thing.
+          Going into Great Books, I honestly expected a lot of memorizing: long names, plot summaries, and exam questions I&rsquo;d forget right
+          after. Some of that turned out to be true, since the names really are a lot. But most of the work was reading each story through a
+          different literary lens and comparing it with things I already knew, which made these old epics much easier to get into than I expected.
         </p>
         <p>
-          When Great Books began, I expected to memorize plots and characters for exams and move on. Instead, the course taught me to read the same
-          story through different literary lenses and to connect ancient epics to my own family, culture, and community. I came out of it reading more
-          slowly and asking better questions, not only of books but of the people around me.
+          This portfolio collects that work: an analysis of each of the seven works, a closer look at my favorite, the <em>Iliad</em>, and a
+          reflection on what I took from the course.
         </p>
         <ul class="facts" aria-label="Student details">
           <li v-for="[label, value] in facts" :key="label"><span>{{ label }}</span>{{ value }}</li>

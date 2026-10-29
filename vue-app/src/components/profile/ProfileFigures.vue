@@ -12,11 +12,8 @@ const fresco = "assets/img/iliad-pompeii-fresco.webp";
         <img v-parallax="0.05" :src="andromache" alt="Andromache grieving beside the body of Hector" loading="lazy" decoding="async" style="object-position: 50% 40%" />
       </div>
       <div v-reveal class="f-text">
-        <p>I read best when I connect a story to real life. I ask what a character wants, what stands in their way, and what the story is quietly teaching.</p>
-        <p>
-          I also pay attention to culture and art: how a story reflects the beliefs of the people who first told it, and how painters across the
-          centuries have imagined its scenes.
-        </p>
+        <p>I read best when I can connect a story to something real. I look at what a character wants, what gets in their way, and why the story ends the way it does.</p>
+        <p>I also like seeing what a story says about the people who first told it, and how painters over the centuries have pictured its scenes.</p>
         <p>Interests: mythology, Philippine folklore, painting and design, music, history, and films based on books.</p>
       </div>
       <div v-reveal class="f-num">

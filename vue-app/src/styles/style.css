@@ -94,6 +94,7 @@ blockquote { margin: 0; }
 .line-label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; font-size: .9rem; color: var(--text); margin: 0 0 18px; white-space: nowrap; }
 .line-label::before { content: ""; order: 1; width: 44px; height: 1px; background: var(--text); }
 .line-label span:last-child { order: 2; }
+.line-label span:first-child { white-space: normal; } /* the longer title may wrap on phones */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 26px; background: var(--raised-2); color: var(--text); border: 0; border-bottom: 1px solid var(--copper); text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font: 500 .74rem var(--sans); cursor: pointer; transition: background-color .2s ease, transform .15s var(--ease); }
 .btn:hover { background: #3a3a3a; color: #fff; }
 .btn:active { transform: scale(.98); }

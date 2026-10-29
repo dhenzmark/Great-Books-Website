@@ -14,7 +14,11 @@ export default [
   },
   {
     "tag": "p",
-    "html": "This was not always easy. The <em>Mahabharata</em> has so many characters that I had to draw a family tree just to keep track of who was fighting whom. The language of older translations was difficult, and I often read a passage two or three times before I understood it. I also struggled with parts of these works that conflicted with my values, such as the way some women are treated and the way the enemy is portrayed in <em>The Song of Roland</em>. Learning to appreciate a work while still questioning it was one of the most important skills I gained."
+    "html": "Studying all these world classics definitely came with a few hurdles, mostly when it came to memorizing a huge wall of unfamiliar names, complex family trees, and shifting titles across totally different cultures. Keeping track of who was related to who, which god was helping which mortal, and who was actually on which side meant I had to double-check my notes a lot."
+  },
+  {
+    "tag": "p",
+    "html": "On top of that, keeping up with the actual sequence of events was a challenge on its own. The storylines move fast and jump around all over the place: one minute you’re in the middle of a massive family feud or divine intervention, and the next, a single impulsive choice or sudden twist completely flips the plot. Keeping all those names and timelines straight took some real effort, but once everything clicked, making sense of the whole journey was super satisfying."
   },
   {
     "tag": "h3",
@@ -22,15 +26,15 @@ export default [
   },
   {
     "tag": "p",
-    "html": "The biggest change is in how I read. I used to read only to find out what happens next. Now I slow down and ask why a character makes a choice, what a symbol might mean, and what the story says about the people who told it. Looking at paintings of these stories, from Persian miniatures to Victorian canvases, also taught me that every age reads the classics in its own way."
+    "html": "Through studying world literature, my personal growth has been shaped by the timeless ethical lessons found across ancient epics. Engaging with Homer’s <em>Iliad</em> expanded my capacity for empathy, teaching me to look past conflict and see the shared human vulnerability in every person, much like Achilles recognizing his own father’s grief in his enemy Priam."
   },
   {
     "tag": "p",
-    "html": "I also became more patient with difficulty. Krishna’s advice to Arjuna, to do your duty without clinging to the results, helped me during stressful weeks. I focused on understanding each work rather than worrying only about my grade, and I enjoyed the work more because of it."
+    "html": "From the <em>Ramayana</em>, I learned the weight of fulfilling one’s duties (<em>dharma</em>) with selflessness and integrity, drawing inspiration from Rama’s unwavering commitment to principle even in the face of immense personal sacrifice. The animal fables of the <em>Panchatantra</em> sharpened my sense of prudence, instilling practical wisdom, foresight, and discernment when navigating complex social dynamics and decision-making."
   },
   {
     "tag": "p",
-    "html": "Finally, I gained a deeper appreciation for my own culture. Learning that the <em>Ramayana</em> lives on in the Maranao <em>Maharadia Lawana</em>, and that Charlemagne’s knights inspired our <em>moro-moro</em> plays, showed me that the Philippines has always been part of a larger world of stories. Our own epics, like <em>Biag ni Lam-ang</em> and <em>Hinilawod</em>, deserve the same careful attention I gave to Homer and Valmiki."
+    "html": "Finally, the tragic fall of the hero in <em>The Song of Roland</em> taught me the vital importance of lowering my pride and embracing humility, serving as a powerful reminder that hubris can blind us to wiser paths and harm those who rely on us. Together, these classic works shifted my perspective from merely analyzing stories to actively applying their core virtues of compassion, responsibility, wisdom, and humility in my daily life."
   },
   {
     "tag": "h3",
@@ -50,7 +54,7 @@ export default [
   },
   {
     "tag": "p",
-    "html": "I want to carry these lessons beyond this course. As a future IT professional, I will work in teams, solve problems under pressure, and build systems that real people depend on. The mongoose tale reminds me to check the facts before acting on a first impression, whether I am reading a bug report or a rumor. Krishna’s advice helps me focus on doing the work well instead of worrying only about results, and the many perspectives I practiced through the literary lenses remind me that the people who use what I build may see it very differently from me."
+    "html": "A few of these lessons have already found their way into my everyday life. The mongoose tale is a good reminder to check the facts before reacting, especially when I’m upset or someone tells me something secondhand. Roland refusing to blow his horn is a pretty direct warning too: asking for help early isn’t weakness, and waiting too long can cost the people counting on you. And Krishna’s advice to Arjuna, to do the work well without obsessing over the result, is something I’ve already leaned on during stressful weeks."
   },
   {
     "tag": "p",
