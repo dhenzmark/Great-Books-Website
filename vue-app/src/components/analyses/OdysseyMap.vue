@@ -48,6 +48,20 @@ let visible = false;
 let frame = 0;
 let cam = null; // { x, y, l } smoothed
 let target = { l: 0 };
+/* after Previous / Next (or a stop is picked) the line and ship travel at a calm pace, easing in and out,
+   instead of racing after the quick scroll; scrolling yourself goes back to the usual close follow */
+let slow = false;
+let vel = 0;
+const USER_SCROLL = ["wheel", "touchstart", "keydown"];
+function travelSlowly() {
+  slow = true;
+  vel = 0;
+  USER_SCROLL.forEach((t) => window.addEventListener(t, stopTravel, { passive: true, capture: true }));
+}
+function stopTravel() {
+  slow = false;
+  USER_SCROLL.forEach((t) => window.removeEventListener(t, stopTravel, { capture: true }));
+}
 
 const smooth = (t) => t * t * (3 - 2 * t);
 
@@ -78,7 +92,11 @@ function render() {
   frame = 0;
   readScroll();
   if (!cam) cam = { l: target.l };
-  cam.l += (target.l - cam.l) * 0.12;
+  if (slow) {
+    vel = vel * 0.86 + (target.l - cam.l) * 0.0055; // just past critical damping: no overshoot past the stop
+    cam.l += vel;
+    if (Math.abs(target.l - cam.l) < 0.5 && Math.abs(vel) < 0.05) stopTravel();
+  } else cam.l += (target.l - cam.l) * 0.12;
   const p = pointAt(cam.l);
   const [fx, fy] = focusPoint();
   const s = scale.value;
@@ -89,7 +107,7 @@ function render() {
   miniDot.value.setAttribute("cy", p.y.toFixed(1));
   km.value = Math.round(p.km / 10) * 10;
   timeline.value = cam.l / totalLength;
-  if (visible && Math.abs(target.l - cam.l) > 0.3) frame = requestAnimationFrame(render);
+  if (visible && (Math.abs(target.l - cam.l) > 0.3 || (slow && Math.abs(vel) > 0.05))) frame = requestAnimationFrame(render);
 }
 
 function wake() {
@@ -142,8 +160,10 @@ function goTo(i) {
   const travel = root.value.offsetHeight - stage.value.offsetHeight;
   const top = root.value.getBoundingClientRect().top + window.scrollY - (parseFloat(getComputedStyle(stage.value).top) || 0);
   const p = i === 0 ? 0 : (i - 1 + 1 - HOLD / 2) / (n - 1);
+  travelSlowly();
   window.scrollTo({ top: top + p * travel, behavior: "smooth" });
 }
+
 
 onMounted(async () => {
   still.value = prefersReducedMotion();
@@ -163,6 +183,7 @@ onMounted(async () => {
 });
 
 onBeforeUnmount(() => {
+  stopTravel();
   if (io) io.disconnect();
   cancelAnimationFrame(frame);
   window.removeEventListener("scroll", wake);

@@ -467,7 +467,7 @@ dialog.lightbox .dialog-body::-webkit-scrollbar { display: none; }
 .credits-box[open] .credits { animation: fade .35s var(--ease); }
 
 /* ---------- tighter side padding ---------- */
-:root { --pad: clamp(16px, 3.4vw, 56px); --max: 1480px; }
+:root { --pad: clamp(16px, 3.4vw, 56px); --max: 1760px; }
 .panel { width: min(var(--max), 100% - 2 * clamp(0px, 1.6vw, 28px)); margin: clamp(0px, 1.6vw, 28px) auto; }
 .title-hero { max-width: 1200px; }
 
