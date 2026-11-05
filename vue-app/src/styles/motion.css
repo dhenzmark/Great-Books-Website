@@ -96,7 +96,7 @@ html { scroll-padding-top: calc(var(--nav-h) + 16px); }
 @keyframes push-in { from { transform: scale(1.09); } to { transform: none; } }
 .hero-copy > p:not(.line-label) { animation: rise 1s .2s var(--ease) both; }
 .hero h1 span:nth-child(2) { animation-delay: .12s; }
-.hero-copy .text-link { animation-delay: .3s; }
+.hero-copy .hero-actions { animation-delay: .3s; }
 .counter, .hero-row > * { animation: rise 1s var(--ease) both; }
 .counter { animation-delay: .45s; }
 .hero-row > :nth-child(1) { animation-delay: .55s; }

@@ -100,6 +100,7 @@ blockquote { margin: 0; }
 .btn:active { transform: scale(.98); }
 .text-link { color: var(--text); font-size: 1.05rem; text-decoration: underline; text-decoration-color: var(--text); text-underline-offset: 6px; }
 .text-link:hover { color: var(--gold); text-decoration-color: var(--gold); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px 32px; }
 .copper { color: var(--copper); }
 
 /* ---------- home hero (Louvre) ---------- */
@@ -392,8 +393,8 @@ dialog.lightbox::backdrop { background: rgba(0, 0, 0, .82); }
 .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .js .reveal.in { opacity: 1; transform: none; }
 /* animations run for every visitor, whatever their system's "reduce motion" setting */
-.hero h1 span, .hero-copy .line-label, .hero-copy .text-link { animation: rise 1s var(--ease) both; }
-.hero h1 span:nth-child(2) { animation-delay: .12s; } .hero-copy .text-link { animation-delay: .3s; }
+.hero h1 span, .hero-copy .line-label, .hero-copy .hero-actions { animation: rise 1s var(--ease) both; }
+.hero h1 span:nth-child(2) { animation-delay: .12s; } .hero-copy .hero-actions { animation-delay: .3s; }
 .title-hero h1 { animation: rise 1s var(--ease) both; }
 .title-strip { animation: slide-in 1.2s .2s var(--ease) both; }
 @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }

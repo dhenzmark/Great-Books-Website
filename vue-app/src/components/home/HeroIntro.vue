@@ -10,6 +10,10 @@ import { author } from "../../data/site.js";
       Seven of the world&rsquo;s oldest stories, from the Book of Job to <em>The Song of Roland</em>, each read closely and paired with the
       paintings they inspired. A portfolio by {{ author }}.
     </p>
-    <RouterLink class="text-link" to="/analyses">Read the analyses</RouterLink>
+    <div class="hero-actions">
+      <RouterLink class="text-link" to="/analyses">Read the analyses</RouterLink>
+      <!-- the same portfolio, walked through as a 3D museum -->
+      <a class="text-link" href="https://dhenzmark.github.io/Great-Books-Museum/" target="_blank" rel="noopener">Visit the 3D museum version &nearr;</a>
+    </div>
   </div>
 </template>
